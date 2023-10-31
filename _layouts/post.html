@@ -1,8 +1,90 @@
 ---
-layout: default
+layout: works
 ---
 
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+<!-- ======= Breadcrumbs ======= -->
+<div class="breadcrumbs">
+    
+    {% if page.category == "python-101" %}
+    <div class="page-header d-flex align-items-center" style="background-image: url('/assets/images/workspace/python_background.png');">
+    {% elsif page.category == "python-cryptography" %}
+    <div class="page-header d-flex align-items-center" style="background-image: url('/assets/images/workspace/cryptography_background.png');">
+    {% elsif page.category == "computational-python" %}
+    <div class="page-header d-flex align-items-center" style="background-image: url('/assets/images/workspace/computational_background.jpg');">
+    {% elsif page.category == "data-science" %}
+    <div class="page-header d-flex align-items-center" style="background-image: url('/assets/images/workspace/data_background.jpg');">
+    {% elsif page.category == "project" %}
+    <div class="page-header d-flex align-items-center" style="background-image: url('/assets/images/workspace/project_background.jpg');">
+    {% else %}
+    <div class="page-header d-flex align-items-center" style="background-image: url('/assets/images/workspace/misc_background.png');">
+    {% endif %}
+        <div class="container position-relative">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2>{{ page.title }}</h2>
+                    <p>What You Need to Know</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <ol>
+                <li><a href="/workspace/">Workspace</a></li>
 
-{{ content }}
+                {% if page.category == "python-101" %}
+                <li><a href="/workspace/python_101">Python 101</a></li>
+                {% elsif page.category == "python-cryptography" %}
+                <li><a href="/workspace/cryptography">Cryptography 101</a></li>
+                {% elsif page.category == "computational-python" %}
+                <li><a href="/workspace/computational_python">Computational Python</a></li>
+                {% elsif page.category == "data-science" %}
+                <li><a href="/workspace/data_science">Data Science</a></li>
+                {% elsif page.category == "project" %}
+                <li><a href="/workspace/projects">Projects</a></li>
+                {% else %}
+                <li><a href="#">Miscelleneous</a></li>
+                {% endif %}
+
+                <li>{{ page.title }}</li>
+            </ol>
+        </div>
+    </nav>
+</div>
+
+<!-- ======= Details Section ======= -->
+<section id="workspace" class="workspace">
+    <div class="container" data-aos="fade-up">
+
+        <div class="row g-5">
+            <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+
+                <article class="workspace-details">
+
+                    <h2 class="title">{{ page.title }}</h2>
+
+                    <div class="meta-top">
+                        <ul>
+                            <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="/workspace/about">Joj Macho</a></li>
+                            <li class="d-flex align-items-center"><i class="bi bi-files"></i> <a href="#">{{ page.category }}</a></li>
+                            <li class="d-flex align-items-center"><i class="bi bi-tags"></i>
+                                <ul class="tags">
+                                    {% for tag in page.tags %}
+                                    <li><a href="#">{{ tag }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content">
+                        {{ content }}
+                    </div>
+
+                </article>
+
+            </div>
+        </div>
+
+    </div>
+</section>
