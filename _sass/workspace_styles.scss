@@ -104,7 +104,7 @@ hr {
 
 .hero {
     width: 100%;
-    min-height: 80vh;
+    min-height: 70vh;
     background: var(--background-color) url("../images/portfolio/adelin-preda--tOr_T4qTpQ-unsplash.jpg") top center;
     background-size: cover;
     position: relative;
@@ -771,44 +771,53 @@ margin-top: 20px;
     line-height: 1.8;
 }
 
-
-.workspace .workspace-details .content h3 {
-    font-size: 32px;
-    margin-top: 30px;
-    font-weight: 600;
+.workspace .workspace-details .content h1 {
+    font-size: 48px;
     color: #1bc5fe;
-
+    font-weight: bold;
+    margin-top: 30px;
+    text-shadow: 2px 2px 3px rgba(27, 197, 254, 0.5);
 }
 
-/* .workspace .workspace-details .content h3:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 50%;
-    height: 1px;
-    background: var(--accent-blue);
-    margin: auto;
-} */
+.workspace .workspace-details .content h2 {
+    font-size: 38px;
+    color: #26a4f0;
+    text-shadow: 2px 2px 3px rgba(38, 164, 240, 0.5);
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.workspace .workspace-details .content h3 {
+    font-size: 30px;
+    color: #3093db;
+    text-shadow: 2px 2px 3px rgba(48, 147, 219, 0.5);
+    font-weight: bold;
+    margin-top: 30px;
+}
+
 
 .workspace .workspace-details .content h4 {
-    font-size: 28px;
+    font-size: 26px;
+    color: #3a82c8;
+    text-shadow: 2px 2px 3px rgba(58, 130, 200, 0.5);
+    font-weight: bold;
     margin-top: 30px;
-    font-weight: 550;
-    color: #1ba7fede;
 }
 
 .workspace .workspace-details .content h5 {
     font-size: 22px;
+    color: #4471bf;
+    text-shadow: 2px 2px 3px rgba(68, 113, 191, 0.5);
+    font-weight: bold;
     margin-top: 30px;
-    font-weight: 520;
-    color: #1b8cfede;
 }
 
 .workspace .workspace-details .content h6 {
     font-size: 18px;
+    color: #4e60ac;
+    text-shadow: 2px 2px 3px rgba(78, 96, 172, 0.5);
+    font-weight: bold;
     margin-top: 30px;
-    font-weight: 500;
-    color: #1b5bfede;
 }
 
 .workspace .image-block {
@@ -820,17 +829,6 @@ margin-top: 20px;
     border-radius: 6px;
 }
 
-/* .workspace .image-block img {
-    margin: 10px 0;
-} */
-  
-
-/* .workspace .workspace-details .content blockquote {
-    overflow: hidden;
-    background-color: rgba(27, 47, 69, 0.06);
-    padding: 30px;
-    position: relative;
-} */
 .workspace .workspace-details .content blockquote {
     background-color: rgba(27, 47, 69, 0.06);
     padding: 20px;
