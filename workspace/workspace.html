@@ -8,10 +8,13 @@ permalink: /workspace/
 <section id="hero" class="hero d-flex flex-column justify-content-center align-items-center">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-xl-6">
-                <h2 data-aos="fade-up">Hello &amp; Welcome</h2> 
-                <p data-aos="fade-up" data-aos-delay="100">Welcome to Joj Macho's Digital Haven</p> <hr>
-                <p data-aos="fade-up" data-aos-delay="200" class="intro-text">Ever wonder about Python's secrets? Curious about computational mysteries? Intrigued by the wonders of data? I've got it all and more. Welcome to a world of Python possibilities.</p>
+            <div class="col-xl-8">
+                <h2 data-aos="fade-up" class="hero-title">Welcome To My Digital Haven</h2>
+
+                <hr class="hero-divider" data-aos="fade-up" data-aos-delay="100">
+
+                <p data-aos="fade-up" data-aos-delay="200" class="hero-subtitle">Curious about Python's secrets? Up for computational challenges? Fascinated by the world of data? Explore it all and more here. Welcome to a world of Python possibilities.</p>
+
             </div>
         </div>
     </div>
@@ -26,7 +29,7 @@ permalink: /workspace/
 
                     {% for post in site.posts %}
                     <div class="col-sm-6 col-md-4 col-lg-4">
-                        <article class="d-flex flex-column">
+                        <article class="d-flex flex-column post-card">
 
                             <div class="post-img">
                                 {% if post.category == "python-101" %}
@@ -53,7 +56,7 @@ permalink: /workspace/
                                     <li class="d-flex align-items-center tags"><i class="bi bi-tags"></i>
                                         <ul class="tags">
                                             {% for tag in post.tags %}
-                                            <li><a href="#">{{ tag }}</a></li>
+                                            <li class="tag"><a href="#">{{ tag }}</a></li>
                                             {% endfor %}
                                         </ul>
                                     </li>
@@ -61,7 +64,7 @@ permalink: /workspace/
                             </div>
 
                             <div class="content">
-                                <p>{{ post.excerpt }}</p>
+                                <p>{{ post.excerpt | strip_newlines | truncatewords: 42  }}</p>
                             </div>
 
                             <div class="read-more mt-auto align-self-end">

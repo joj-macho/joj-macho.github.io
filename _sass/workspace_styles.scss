@@ -104,46 +104,36 @@ hr {
 
 .hero {
     width: 100%;
-    min-height: 60vh;
+    min-height: 80vh;
+    background: var(--background-color) url("../images/portfolio/adelin-preda--tOr_T4qTpQ-unsplash.jpg") top center;
     background-size: cover;
     position: relative;
     padding: 120px 0;
-    z-index: 3;
-}
-
-
-.hero:before {
-    position: absolute;
-    content: "";
-    background: var(--background-color) url("../images/portfolio/adelin-preda--tOr_T4qTpQ-unsplash.jpg") top center;
-    filter: brightness(75%) opacity(42%);
-    inset: 0;
-}
-
-.hero .container {
     z-index: 1;
 }
 
-.hero h2 {
+.hero-title {
     margin: 0;
-    font-size: 60px;
+    font-size: 42px;
     font-weight: 800;
-    line-height: 1.1;
-    color: #fff;
-    font-family: var(--heading-font);
-}
-
-.hero p {
-    color: var(--text-color);
-    font-size: 18px;
-    font-family: var(--subheading-font);
-}
-
-.hero .intro-text {
-    margin-top: 20px;
-    font-size: 20px;
+    line-height: 1.2;
     color: var(--heading-color);
-    font-family: var(--subheading-font);
+    font-family: var(--text-font);
+}
+
+.hero-divider {
+    width: 40%;
+    margin: 20px auto;
+    height: 2px;
+    border: 2px solid #00aaff;
+    background: linear-gradient(to right, #00aaff, #0033ff, #00aaff);
+}
+
+.hero-subtitle {
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--text-color);
+    font-family: var(--text-font)
 }
 
 
@@ -513,14 +503,26 @@ section {
 
 /* ====================== WORKSPACE PAGE STYLES ====================== */
 
-.workspace .posts-list article {
-    box-shadow: 1px 1px 3px rgba(27, 47, 69, 0.5), 2px 2px 6px rgba(138, 43, 226, 0.5); 
-    border: 1px solid rgba(27, 47, 69, 0.5);
+.workspace .post-card {
     height: 100%;
     padding: 30px;
-    border-radius: 5px;
+    background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+    border: 1px solid rgba(27, 47, 69, 0.8);
+    box-shadow: 0 0 3px rgba(0, 170, 255, 0.4);
+    border-radius: 20px;
     overflow: hidden;
+    transition: all 0.3s;
 }
+
+.workspace .post-card:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.03));
+    border-top-color: var(--accent-blue);
+    border-bottom-color: var(--accent-blue);
+    box-shadow: 0 0 8px rgba(0, 170, 255, 0.6);
+    transform: scale(1.02);
+    transition: all 0.3s;
+}
+
 
 .workspace .posts-list article+article {
     margin-top: 60px;
@@ -565,6 +567,7 @@ section {
 
 .workspace .posts-list .title a:hover {
     color: var(--link-hover-color);
+    border-bottom: 1px solid var(--link-hover-color);
 }
 
 .workspace .posts-list .meta-top {
@@ -595,13 +598,30 @@ section {
     color: var(--link-color);
     font-size: 14px;
     display: inline-block;
-    line-height: 1;
-    transition: 0.3s;
+    // line-height: 1;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    box-shadow: #3b6efc7b 0px 0px 0px 2px;
+    border-radius: 0.5vh;
+    width: fit-content;
+    padding: 0.1vw 0.6vw;
+    min-width: 0px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .workspace .posts-list .meta-top a:hover {
     color: var(--link-hover-color);
+    box-shadow: rgb(15, 95, 113) 0px 0px 0px 2px;
+}   
+
+.workspace .posts-list .meta-top .tags {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0px;
 }
+
 
 
 .workspace .posts-list .content {
