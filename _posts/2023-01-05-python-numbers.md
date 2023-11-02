@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Python Numbers"
-sub-title: "A Comprehensive Guide to Python Data Structures + Examples and Best Practices"
-tags: "python basics tutorial"
+title: "Numeric Data Types"
+sub-title: "Understanding Python Data Structures: A Guide, Examples and Best Practices"
+tags: "python basics numbers"
 category: "python-101"
 ---
 
@@ -400,6 +400,6 @@ By being aware of these considerations and following best practices, you can eff
 
 ## Summary <hr>
 
-In this tutorial, we explored the world of numeric data types in Python. We discussed integers, floating-point numbers, complex numbers, type conversion, mathematical operations, and their practical applications in various domains. By understanding the characteristics and functionalities of numeric data types, you now have a solid foundation for working effectively with numeric data in Python.
+Great job! You've explored Python's numeric data types in-depth. From integers to complex numbers, you've uncovered their characteristics, learned about type conversions, and understood how to perform various mathematical operations. These numeric data types have wide-ranging practical applications across diverse domains.
 
-Next in the Python Programming 101 series is "Understanding Python Data Structures: Python Lists and Tuples" where I'll dive into understanding the characteristics and functionalities of numeric data types in Python.
+Armed with this knowledge, you now have a strong foundation for efficiently handling numeric data in Python. But that's not enough, next up is [Understanding Python Data Structures: Lists & Tuples Data Types]({% post_url 2023-01-06-python-lists-and-tuples %}).

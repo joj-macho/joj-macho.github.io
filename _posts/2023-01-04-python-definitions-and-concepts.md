@@ -273,6 +273,6 @@ This is just one example of how Python can be used to solve real-world problems.
 
 ## Summary <hr>
 
-Constants, statements, and expressions, and comments are fundamental concepts in Python that every programmer must understand. By using these concepts effectively, you can write better code and solve real-world problems. Now that you have a solid understanding of Python variables, constants, statements, expressions, datatypes, and operators, you're equipped with the tools to write dynamic and engaging Python code. By mastering these concepts, you can breathe life into your programs, making them vibrant, expressive, and effective.
+Variables, constants, statements, and expressions, and comments are fundamental concepts in Python that every programmer must understand. By using these concepts effectively, you can write better code and solve real-world problems. These definitions and concepts will equip you with the tools to write dynamic and engaging Python code, by mastering these concepts, you can breathe life into your programs, making them vibrant, expressive, and effective.
 
-Next in the Python Programming 101 series is "Understanding Python Data Structures: Python Numbers" where I'll dive into understanding the characteristics and functionalities of numeric data types in Python.
+Next in the Python Programming 101 series is [Understanding Python Data Structures: Numeric Data Types]({% post_url 2023-01-05-python-numbers %}) where we'll dive into understanding the characteristics and functionalities of numeric data types in Python.
