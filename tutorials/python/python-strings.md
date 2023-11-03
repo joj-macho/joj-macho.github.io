@@ -2,7 +2,7 @@
 layout: post
 title: "String Data Types"
 sub-title: "Understanding Python Data Structures: A Guide, Examples and Best Practices"
-tags: "python basics strings"
+tags: ["python", "basics", "strings"]
 category: "python-101"
 permalink: /workspace/python-101/strings
 ---

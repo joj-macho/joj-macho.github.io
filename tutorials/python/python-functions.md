@@ -2,7 +2,7 @@
 layout: post
 title: "Python Functions"
 sub-title: "Organizing Code with Python Functions and Modules"
-tags: "python basics functions"
+tags: ["python", "basics", "functions"]
 category: "python-101"
 permalink: /workspace/python-101/functions
 ---

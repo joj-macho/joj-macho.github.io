@@ -2,7 +2,7 @@
 layout: post
 title: "Lists & Tuples Data Types"
 sub-title: "Understanding Python Data Structures: A Guide, Examples and Best Practices"
-tags: "python basics lists tuples"
+tags: ["python", "basics", "lists", "tuples"]
 category: "python-101"
 permalink: /workspace/python-101/lists-and-tuples
 ---

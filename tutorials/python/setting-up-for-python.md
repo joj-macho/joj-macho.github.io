@@ -2,7 +2,7 @@
 layout: post
 title: "Setting Up Your Python Programming Environment"
 sub-title: "A Step-by-Step Guide to Configuring Your Coding Workspace"
-tags: "python basics tutorial"
+tags: ["python", "basics"]
 category: "python-101"
 permalink: /workspace/python-101/setting-up
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "Python Control Flow"
 sub-title: "Making Decisions and Repeating Actions"
-tags: "python basics loops"
+tags: ["python", "basics", "loops"]
 category: "python-101"
 permalink: /workspace/python-101/control-flow
 ---

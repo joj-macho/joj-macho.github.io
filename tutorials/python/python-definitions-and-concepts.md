@@ -2,7 +2,7 @@
 layout: post
 title: "Python Definitions and Concepts"
 sub-title: "A Beginner's Guide to Python Variables, Constants, Statements, and Expressions"
-tags: "python basics tutorial"
+tags: ["python", "basics"]
 category: "python-101"
 permalink: /workspace/python-101/definitions-and-concepts
 ---

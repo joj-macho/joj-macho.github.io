@@ -2,7 +2,7 @@
 layout: post
 title: "Numeric Data Types"
 sub-title: "Understanding Python Data Structures: A Guide, Examples and Best Practices"
-tags: "python basics numbers"
+tags: ["python", "basics", "numbers"]
 category: "python-101"
 permalink: /workspace/python-101/numbers
 ---

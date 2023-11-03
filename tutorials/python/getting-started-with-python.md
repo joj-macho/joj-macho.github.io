@@ -2,7 +2,7 @@
 layout: post
 title: "Getting Started with Python Programming"
 sub-title: "What You Need to Know"
-tags: "python basics tutorial"
+tags: ["python", "basics"]
 category: "python-101"
 permalink: /workspace/python-101/getting-started
 ---

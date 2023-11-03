@@ -2,7 +2,7 @@
 layout: post
 title: "Python File Handling"
 sub-title: "Working with External Data in Python"
-tags: "python basics tutorial"
+tags: ["python", "basics"]
 category: "python-101"
 permalink: /workspace/python-101/file-handling
 ---
