@@ -2,7 +2,7 @@
 layout: post
 title: "A Project Post"
 tags: "python project-1"
-category: "miscelleneous"
+category: "project"
 ---
 
 This is a post that describes a project. Add more items to make it longer.
