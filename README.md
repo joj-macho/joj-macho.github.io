@@ -1,25 +1,28 @@
 # My-Portfolio-Site
 
-Welcome to my portfolio website repository! This project showcases my work and projects, offering a glimpse into my skills and experience. The website is built using HTML, CSS, and JavaScript.
+Welcome to my portfolio website repository! This project showcases my work and projects, offering a glimpse into my skills and experience. The website is built using HTML, CSS, JavaScript, and Jekyll.
 
 
 ## Overview
 
-This repository houses the source code for my portfolio website. The site consists of a portfolio page and a workspace page. The portfolio page highlights key projects and works as a landing space, while the workspace page provides a deeper dive into my projects and creations.
+This repository holds the source code for my portfolio website. The site is divided into two main sections:
+
+- **Portfolio Page:** A welcoming landing space that highlights key projects and introduces me.
+- **Workspace Page:** A deeper dive into my projects, organized into various categories for your exploration.
 
 ## Portfolio Outputs
 
-Here are some samples of my portfolio outputs:
+Here are some samples of what you'll find on my portfolio website:
 
 ### Main Portfolio Page
 
-Sample of the main header of the portfolio website.
+The main header of the portfolio website
 
 <p align="center">
   <img src="portfolio-output/main-page-output.png" alt='Main Portfolio Page'>
 </p>
 
-Sample of about me page and projects in the portfolio.
+Detailed about me page and project highlights in the portfolio.
 
 <p align="center">
   <img src="portfolio-output/about-page-output.png" alt='Main About Page'>
@@ -29,13 +32,13 @@ Sample of about me page and projects in the portfolio.
 
 ### Workspace Page
 
-Sample of workspace front page covering various categories.
+The front page of the workspace section covering various project categories.
 
 <p align="center">
   <img src="portfolio-output/workspace-page-output.png" alt='Main Workspace Page'>
 </p>
 
-Sample of Python Programming 101 and Computational Programming with Python sections on workspace.
+In-depth sections on Python Programming and Computational Programming with Python.
 
 <p align="center">
   <img src="portfolio-output/python-page-output.png" alt='Python Page'>
@@ -43,9 +46,11 @@ Sample of Python Programming 101 and Computational Programming with Python secti
 </p>
 
 ## Technologies Used
+
 - HTML
 - CSS
 - JavaScript
+- Jekyll
 
 
 ## License 📝
