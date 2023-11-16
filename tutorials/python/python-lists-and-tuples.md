@@ -678,10 +678,73 @@ In this example, the `fruits_list` is converted to a tuple using the `tuple()` f
 Lists and tuples are versatile data structures in Python that find applications in various real-world scenarios. Here are some practical use cases where lists and tuples are commonly employed:
 
 - **Data Collection and Storage**: Lists and tuples are ideal for collecting and storing data elements. For instance, you can use a list to hold a collection of user inputs, sensor readings, or database query results. Tuples can be useful for storing fixed data sequences, such as coordinates or database records.
+
+{% highlight python %}
+# Collect user inputs in a list
+user_inputs = []
+
+for _ in range(3):
+    user_input = input('Enter something: ')
+    user_inputs.append(user_input)
+
+print('User Inputs:', user_inputs)
+
+# Output
+Enter something: Alice
+Enter something: Bob
+Enter something: Charlie
+User Inputs: ['Alice', 'Bob', 'Charlie']
+{% endhighlight %}
+
 - **Data Manipulation and Processing**: Lists and tuples provide powerful tools for manipulating and processing data. You can use list comprehensions, built-in functions, and methods to perform operations like filtering, mapping, and sorting on the elements. Tuples, being immutable, guarantee data integrity and can be used to represent data that shouldn't be modified.
+
+{% highlight python %}
+# Use list comprehension to filter even numbers
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers = [num for num in numbers if num % 2 == 0]
+
+print('Even Numbers:', even_numbers)
+
+# Output
+Even Numbers: [2, 4, 6, 8, 10]
+{% endhighlight %}
+
 - **Iterating and Looping**: Lists and tuples can be easily iterated over using loops, making them suitable for tasks that involve repetitive operations. By accessing individual elements, you can perform specific actions on each item in the collection.
+
+{% highlight python %}
+# Iterate over a list and perform an action
+fruits = ['apple', 'banana', 'orange']
+
+for fruit in fruits:
+    print(f'Eating {fruit}')
+
+# Output
+Eating apple
+Eating banana
+Eating orange
+{% endhighlight %}
+
 - **Function Arguments and Return Values**: Lists and tuples are frequently used to pass arguments to functions or as return values from functions. They allow you to group related values and pass them as a single entity, making function calls more organized and manageable.
+
+{% highlight python %}
+# Function returning a tuple of square and cube
+def calculate_square_and_cube(number):
+    return number**2, number**3
+
+result = calculate_square_and_cube(4)
+print('Square and Cube:', result)
+
+# Output
+Square and Cube: (16, 64)
+{% endhighlight %}
+
 - **Configuration Settings and Constants**: Lists and tuples are commonly employed to store configuration settings or constants in programs. By using a list or tuple, you can maintain a collection of values that are not meant to be modified during runtime.
+
+{% highlight python %}
+# Program configuration settings
+config_settings = ('debug_mode', 'log_level', 'timeout', 'max_attempts')
+{% endhighlight %}
+
 
 ## Summary <hr>
 

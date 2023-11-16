@@ -15,7 +15,6 @@ As someone who's passionate about science, programming has been a game-changer i
 
 Let's start with the basics. As you begin your programming journey, it's important to pick up some widely used computer science terms. In this section, I'll cover some of the key terms you'll encounter.
 
-
 - **A Computer:** The fundamental hardware that processes information and executes programs.
 - **Operating Systems:** Software that manages computer hardware and software resources, controlling and coordinating activities and resource sharing.
 - **Scripting and Programming:** Scripting and programming are two fundamental concepts in computer science that are often used interchangeably. Scripting focuses on automating tasks and building simple applications, while programming involves developing more complex software by writing code that must be compiled before execution.
@@ -48,7 +47,6 @@ Let's start with the basics. As you begin your programming journey, it's importa
 - **Security and Privacy:** Protecting software and user data from vulnerabilities and threats.
 - **Cloud Computing:** Using remote servers on the internet to store, manage, and process data on demand.
 - **Internet of Things (IoT):** Interconnecting devices via software, electronics, and network connectivity to collect and exchange data.
-
 
 Whew, that's quite a collection to commit to memory, but don't worry! Learning these terms will give you a solid foundation as you delve deeper into the world of programming. Moving on ...
 

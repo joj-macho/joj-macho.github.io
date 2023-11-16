@@ -162,7 +162,8 @@ Once you have set up your programming environment and created your project folde
  print("Hello Python!")
 {% endhighlight %}
 
-Open your text editor or IDE and create a new file. Save the file as `hello.py` in your project folder. The extension `.py` tells your text editor that your file is written in Python.
+- Open your text editor or IDE (Integrated Development Environment).
+- Create a new file and save it as `hello.py` within your project folder. The `.py` extension indicates that your file is written in Python.
 
 ### Running Your Python Program
 
@@ -170,7 +171,7 @@ To run your program in your text editor or IDE, you can simply select <em>Run > 
 
 ### Running Python Programs from a Terminal
 
-Sometimes, it's useful to run your Python program from a terminal. This is especially handy if you want to run an existing program without opening it for editing. Below are step-by-step instructions for running your program from a terminal, depending on your operating system.
+Sometimes, you might prefer to run your Python program from a terminal. This can be useful when you want to execute an existing program without making further edits. Below, you'll find step-by-step instructions for running your program from a terminal, based on your operating system.
 
 Follow these steps to run your Python program from a terminal:
 
@@ -180,6 +181,11 @@ Follow these steps to run your Python program from a terminal:
 - Your program will run, and the output will be displayed in the terminal window.
               
 It's that simple!
+
+The above `hello.py` program prints "Hello World" to the screen. Feel free to try other words and phrases. Your computer can happily display just about anything you like, true or not.
+
+Curious about how the "Hello World" program looks in other programming languages? Check out Wikipedia's collection of "Hello World" programs in various languages <a href="http://en.wikipedia.org/wiki/Hello_world_program_examples" target="_new">here</a>. It's fascinating to see the diversity of programming languages and how their complexity can vary, often reflected in the simplicity of the "Hello World" program.
+
 
 ## Troubleshooting Common Programming Errors <hr>
 

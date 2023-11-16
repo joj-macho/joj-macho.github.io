@@ -17,7 +17,7 @@ Identifiers, on the other hand, are like labels that you give to variables to re
 
 ### Naming Variables and Identifiers
 
-When naming variables and identifiers in Python, it's crucial to adhere to a set of rules and conventions. By following these guidelines, you can prevent errors and make your code more readable. Additionally, adopting standard naming conventions used in the Python community helps create a consistent style and improves code comprehension. Consider the following naming rules:
+When naming variables and identifiers in Python, it's crucial to adhere to a set of rules and conventions. By following these guidelines, <a href="https://peps.python.org/pep-0008/" target="_new">PEP-8</a>, you can prevent errors and make your code more readable. Additionally, adopting standard naming conventions used in the Python community helps create a consistent style and improves code comprehension. Consider the following naming rules:
 
 - Variable names should only contain letters, numbers, and underscores.
 - They should start with a letter or an underscore, but never with a number.
@@ -120,7 +120,7 @@ Single-line comments start with the `#` character and provide brief explanations
 
 {% highlight python %}
 # This is a single-line comment
-x = 42  # Assigns the value 42 to variable x
+x = 42  # This is an end-of-line comment
 {% endhighlight %}
 
 ### Multi-Line Comments
@@ -161,9 +161,11 @@ else:
     print('x is non-positive')
 {% endhighlight %}
 
+Statements are run sequentially. The computer does not look ahead.
+
 ### Expressions
 
-An expression is a combination of values, variables, and operators that produces a result. Expressions can be as simple as a single value, like "42", or as complex as a mathematical formula, like "2 * (3 + 4)". They calculate values that can be used in your program. They can be used in various contexts, such as in the body of a loop or as a parameter to a function.
+An expression is a combination of values, variables, and operators that produces a result. Expressions can be as simple as a single value, like "42", or as complex as a mathematical formula, like "2 * (3 + 4)**2". They calculate values that can be used in your program. They can be used in various contexts, such as in the body of a loop or as a parameter to a function.
 
 {% highlight python %}
 # Arithmetic expression
@@ -225,10 +227,10 @@ Operators are symbols or special keywords in Python that perform various operati
 
 - Arithmetic operators: Perform basic mathematical operations such as addition (+), subtraction (-), multiplication (*), division (/), and modulus (%).
 - Comparison operators: Compare two values and return a Boolean result, such as equal to (==), not equal to (!=), greater than (&gt;), less than (&lt;), etc.
-- Logical operators: Combine Boolean values and return a Boolean result, such as and, or, and not.
-- Assignment operators: Assign values to variables, such as =, +=, -=, etc.
-- Membership operators: Test if a value is a member of a sequence, such as in and not in.
-- Identity operators: Compare the identity of two objects, such as is and is not.
+- Logical operators: Combine Boolean values and return a Boolean result, such as "and", "or", and "not".
+- Assignment operators: Assign values to variables, such as (=), (+=), (-=), etc.
+- Membership operators: Test if a value is a member of a sequence, such as "in" and "not in".
+- Identity operators: Compare the identity of two objects, such as 'is' and "is not".
 
 Understanding and using operators allows you to perform calculations, make comparisons, and control the flow of your program effectively.
 
