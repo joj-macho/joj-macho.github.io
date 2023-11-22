@@ -7,8 +7,7 @@ category: "python-101"
 permalink: /workspace/python-101/functions
 ---
 
-In programming, functions play a crucial role in making our code more organized, efficient, and reusable. Functions are named blocks of code that perform specific tasks. They allow us to encapsulate functionality and call it whenever needed, reducing code duplication and improving code readability. In this tutorial, we will explore the concept of functions in Python and learn how to write reusable code using functions.
-
+In programming, functions play a crucial role in making our code more organized, efficient, and reusable. These named blocks of code serve as mini-programs, enabling the division of code into smaller, manageable units. This tutorial delves into the concept of functions in Python, illustrating how they contribute to creating modular and reusable code.
 
 ## Functions as Equations <hr>
 
@@ -16,24 +15,23 @@ In the scientific context, equations are essential for representing various phen
 
 #### Declaring and Syntax: Defining the Equation
 
-When scientists seek to express a relationship mathematically, they begin by defining an equation. Variables are assigned, mathematical operations are specified, and the relationship between inputs and outputs is articulated. In programming, functions can be seen as equations, where the function name is declared, parameters (variables) are defined, and the code is written to determine how inputs are processed to produce desired outputs.
+When expressing a relationship mathematically, you often define an equation by assigning variables, specifying mathematical operations, and articulating the relationship between inputs and outputs. In programming, functions mirror this concept, where the function name is declared, parameters (variables) are defined, and code is written to process inputs and produce desired outputs.
 
 #### Parameters and Arguments: Input Values in the Equation
 
-In equations, variables act as placeholders for input values, allowing scientists to substitute different values to observe corresponding outcomes. Similarly, functions in programming utilize parameters to accept input values. When calling a function, we provide arguments that correspond to the parameters. These arguments serve as input values, which the function processes based on its internal logic.
+Just as variables act as placeholders for input values in equations, functions in programming use parameters to accept input values. When calling a function, arguments are provided, serving as input values processed by the function's internal logic.
 
 #### Returning Values from Functions: Output of the Equation
 
 Just as equations yield results, functions in programming can generate outputs or return values. After performing calculations or transformations on input data, a function produces a result. This result can be further utilized within the program or serve as a solution to a specific problem, analogous to how an equation's output provides valuable information in the scientific realm.
 
-By treating functions as equations, we can adopt a scientific mindset in our code development process. Each function represents a distinct relationship or transformation, allowing us to input different values and observe the corresponding outputs.
-
+By treating functions as equations, a scientific mindset can be adopted in code development, with each function representing a distinct relationship or transformation.
 
 ## Function Declaration and Syntax <hr>
 
-In Python, functions are defined using the `def` keyword, followed by the function name and a set of parentheses `()`. Parameters can be specified within the parentheses, and functions can return values if necessary. Employing functions enables us to break down intricate tasks into manageable units, fostering code modularity and maintainability.
-When creating a function, we utilize the `def` keyword followed by the function name and a set of parentheses. The parentheses can hold parameters (optional) that allow us to pass information to the function. The function body consists of indented code that specifies the tasks to be performed. Functions can also return values, providing the result of their computations to the program.
-The syntax for defining a function is as follows:
+In Python, functions are defined using the `def` keyword, followed by the function name and a set of parentheses `()`. This section outlines the syntax and provides examples to illustrate the process.
+
+Function Declaration Syntax:
 
 {% highlight python %}
 def function_name(parameters):
@@ -42,179 +40,241 @@ def function_name(parameters):
     # Return values if necessary
 {% endhighlight %}
 
-Here's an example:
+Here's an example of a simple function:
 
 {% highlight python %}
+# Defining a function
 def hello():
-    print("Hello!")
+    print('Hello!')
 
+# Calling the function
 hello()
+
+# Output:
+Hello!
 {% endhighlight %}
 
 In this example, we define a function named `hello()` that simply prints "Hello!". When we call the function using `hello()`, it executes the code inside the function's body, resulting in the output "Hello!".
 
-In general, functions appear in a program from three different sources:
-
-- From Python itself – Numerous functions (like `print()`) are an integral part of Python and are always available without any additional effort; we call these functions built-in functions.
-- From Python's preinstalled modules – A lot of functions, very useful ones, but used significantly less often than built-in ones, are available in a number of modules installed together with Python; using these functions requires some additional steps to make them fully accessible.
-- Directly from our code – We can write our own functions, place them inside the code, and use them freely. These functions are known as user-defined functions.
+#### Key Aspects of a Function
 
 In a function, notice that:
 
-- It always starts with the keyword `def` (for "define").
-- After `def`, the name of the function is written (the rules for naming functions are exactly the same as for naming variables).
-- Next to the function name, a pair of parentheses `()` is placed. Inside the parentheses, input parameters are written (optional). It is possible to have a function with no input parameters. If more than one parameter is passed, they are separated by a comma.
-- The line ends with a colon, which is always required.
-- The body of the function consists of one or more statements. All those statements inside the body of the function are indented. Any statement that is not indented will not be part of the function.
-- At last, there is an optional return statement.
+- It starts with the keyword `def`.
+- The function name follows the same rules as variable names (see [Python Definitions and Concepts](/workspace/python-101/definitions-and-concepts)).
+- Parameters, if any, are specified within parentheses, separated by commas.
+- A colon (`:`) at the end of the line is always required.
+- The function body consists of indented statements.
+- An optional return statement can be used to return values.
 
-When a function is called, Python remembers the place where it happened and jumps into the invoked function. The body of the function is then executed, and once reaching the end of the function, Python returns to the place directly after the point of invocation. It is important not to call a function that is not known at the moment of invocation because Python reads the code from top to bottom. It will not look ahead to find a function to put in the right place.
+#### Function Execution Flow
 
-Example
-
-{% highlight python %}
-def first_function():
-    print("My first function")
-    print("Start...")
-
-first_function()
-print("End...")
-{% endhighlight %}
-
-Here, the driver code consists of a single line, `first_function()`, which is written below the function definition. It means to call the function or invoke it. It executes what is inside the function definition.
-
-Observe that the error we are getting is `NameError: name 'first_function' is not defined`. It means we have not defined the function before calling it.
-
-It is advisable to avoid having the same function and variable name.
+When a function is called, Python follows a specific flow: it jumps into the invoked function, executes its body, and then returns to the point after the invocation. It's crucial to have functions defined before calling them because Python reads code from top to bottom. Let's explore this with examples.
 
 {% highlight python %}
-first_function = 1
-first_function()
-def first_function():
-    print("My first function")
+def my_function():
+    print('Hello!')
+    print('This is my function.')
+
+my_function()
+print('Bye!')
+
+# Output
+Hello!
+This is my function.
+Bye!
 {% endhighlight %}
 
-Observe that we have assigned a value to a variable named `first_function`, which causes Python to forget its previous role of being a function. When we assigned `first_function = 1`, it is treated as a variable, so the function named `first_function()` becomes unavailable. Apart from that, while calling a function name, there is always a pair of parentheses to invoke a function.
+In this example, the function `my_function()` is defined and then called. When called, it executes the body of the function, i.e. prints "Hello!" and "This is my function.". After the function execution, Python moves to the next line, printing "Bye!". The flow is linear, starting from the top.
 
-We are free to mix our code with functions. It means it is not necessary to put all our functions at the top of the source file. But one thing to remember is to define the function before calling it. Example:
+If the function call (`my_function()`) were placed before the function definition, Python would raise an error, specifically a `NameError: name 'my_function' is not defined`. This is because at the time of the function call, Python hasn't encountered the function definition yet. To avoid such errors, it's important to define functions before calling them.
+
+**Caution: Avoiding Function-Variable Conflicts**: It is advisable to avoid having the same function and variable name. Here's why:
+
+{% highlight python %}
+def my_function():
+    print('This is my function')
+
+my_function = 1
+my_function()
+
+# Output
+TypeError: 'int' object is not callable
+{% endhighlight %}
+
+Observe that a function named `my_function` is defined, but then its name is assigned the value `1`. When attempting to call `my_function()`, Python raises a `TypeError` because the function name now refers to an integer, not a callable function. This can be resolved by using distinct names for functions and variables to prevent confusion and errors.
+
+**Functions' Placement in Code**: Functions don't need to be placed at the top of the source file. Ensure functions are defined before calling them.
 
 {% highlight python %}
 def main_function():
-    print("Start...")
+    print('This is the main function')
     first_function()
-    print("End...")
+    print('Bye')
 
-def first_function():
-    print("My first function")
+def my_function():
+    print('This is my function')
 
 main_function()
 
 # Output
-Start...
-My first function
-End...
+This is the main function
+This is my function
+Bye
 {% endhighlight %}
 
-In this example, we define a `main_function()` that calls `first_function()` to execute some code. Both functions are defined before they are used, allowing the code to execute without errors. The output will be:
+In this example, `main_function()` calls `my_function()`, and both functions are defined before use, allowing error-free execution.
 
-### Parameters and Arguments: Customizing the Input
+#### Sources of Functions
 
-In Python, functions can accept parameters as placeholders for input values. By providing arguments when calling a function, we can customize the input for each function call. This allows functions to handle different data and perform specific actions based on the provided values.
+Functions in a program can come from three different sources:
 
-#### Understanding Parameters and Arguments
+- **From Python itself**: Numerous functions, like `print()` or `len()`, are integral parts of Python and are always available as built-in functions.
+- **From Python's pre-installed modules**: Many useful functions, though used less often, are available in modules installed with Python. Using these functions requires additional steps.
+- **Directly from our code**: We can write our functions, known as user-defined functions, freely within our code.
 
-Let's consider a simple example:
+
+## Parameters and Arguments <hr>
+
+Functions are powerful tools for performing tasks and operations. To make these functions flexible and adaptable, we use parameters and arguments to control their behavior and input.
+
+A function's parameters are defined within the parentheses of the `def` statement. These parameters act as placeholders for the values the function will work with. When we call a function, we provide actual values, known as arguments, which customize the function's input for that specific invocation.
+
+Consider the following example:
 
 {% highlight python %}
 def hello(name):
-    print("Hello, " + name + "!")
+    print(f'Hello, {name}!')
 
-hello("Alice")
-hello("Bob")
+hello('Alice')
+hello('Bob')
+
+# Output
+Hello, Alice!
+Hello, Bob!
 {% endhighlight %}
 
-In this example, we define a function named `hello()` with a parameter `name`. The function takes the provided `name` argument and incorporates it into the greeting message. By calling the function with different arguments, such as "Alice" and "Bob", we can customize the output and address different individuals.
+In this case, the function `hello()` has a parameter `name`, and we customize its behavior by providing different arguments ('Alice' and 'Bob') during function calls.
 
-The variable `name` in the function definition of `hello()` is an example of a parameter, which represents a piece of information the function needs to do its job. The value 'Alice' in the function call `hello("Alice")` is an example of an argument. An argument is a piece of information that’s passed from a function call to a function. When we call the function, we place the value we want the function to work with in parentheses. In this case, the argument 'Alice' was passed to the function `hello()`, and the value was assigned to the parameter `name`.
+It's essential to distinguish between parameters and arguments. Parameters are the variables listed in the function definition, while arguments are the values passed to the function during a call. In the example above, `name` is a parameter, and 'Alice' and 'Bob' are arguments.
 
-#### Passing Arguments
+### Types of Arguments
 
-Because a function definition can have multiple parameters, a function call may need multiple arguments. You can pass arguments to your functions in a number of ways. Let's look at positional arguments, keyword arguments, and default values.
+Python supports various ways of passing arguments to functions, including positional arguments, keyword arguments, and default values.
 
-##### Positional Arguments
+#### Positional Arguments
 
-When you call a function, Python matches each argument in the function call with a parameter in the function definition based on their order. Values matched up this way are called positional arguments.
+When you call a function, Python matches each argument based on their order in the function call. These are called positional arguments.
 
-To see how this works, let's consider an example where we define a function to display information about your login data:
+Here's an example:
 
 {% highlight python %}
 def login_data(username, password):
-    print("Username:", username)
-    print("Password:", password)
+    print(f'Username: {username}')
+    print(f'Password: {password}')
 
 login_data('Alice', 'alice123')
-login_data('Bob', 'bobypass')
+print()
+login_data('Bob', 'boby1990')
+
+# Output
+Username: Alice
+Password: alice123
+
+Username: Bob
+Password: boby1990
 {% endhighlight %}
 
 In this example, we define a function named `login_data()` that takes two parameters: `username` and `password`. When we call the function `login_data()`, we provide a username and a password as arguments, in that order. For example, in the function call `login_data('Alice', 'alice123')`, the argument 'Alice' is assigned to the parameter `username`, and the argument 'alice123' is assigned to the parameter `password`. In the function body, these two parameters are used to display information about the login data being described.
 
-##### Keyword Arguments
+#### Keyword Arguments
 
-A keyword argument is a name-value pair that you pass to a function. You directly associate the name and the value within the argument, which allows you to pass arguments in any order.
+Keyword arguments allow passing arguments in any order by associating names with values.
 
-Let's rewrite the login_data() example using keyword arguments:
+Example:
 
 {% highlight python %}
 def login_data(username, password):
-    print("Username:", username)
-    print("Password:", password)
+    print(f'Username: {username}')
+    print(f'Password: {password}')
 
 login_data(username='Alice', password='alice123')
-login_data(password='bobypass', username='Bob')
+login_data(password='boby1990', username='Bob')
 {% endhighlight %}
 
 In this case, the order of the arguments doesn't matter because Python knows which parameter each argument should be matched with. Using keyword arguments can make your function calls more readable and less prone to errors, especially when dealing with functions that have multiple parameters.
 
-##### Default Values
+#### Default Arguments
 
-When writing a function, you can define default values for parameters. If an argument for a parameter is not provided in the function call, Python uses the parameter's default value. This allows you to make certain arguments optional.
+Default values for parameters make certain arguments optional. They provide a way to reduce complexity by assigning a default value if an argument is not provided.
 
-Let's update the login_data() example to include default values for the parameters:
+We specify a default argument in the def statement, following the parameter name and an equal (`=`) sign. Here's an example:
 
 {% highlight python %}
 def login_data(username='guest', password='guest123'):
-    print("Username:", username)
-    print("Password:", password)
+    print(f'Username: {username}')
+    print(f'Password: {password}')
 
 login_data()
 login_data(username='Alice')
-login_data(password='bobypass')
+login_data(password='boby1990')
 {% endhighlight %}
 
-In this example, the `login_data()` function has default values assigned to the parameters `username` and `password`. If no arguments are provided when calling the function, it will use the default values. However, you can still customize the input by providing different arguments. For instance, the function call `login_data(username='Alice')` overrides the default value for `username` with 'Alice'.
+In this example, the `login_data()` function has default values assigned to the parameters `username` and `password`. If no arguments are provided, default values are used. However, arguments can still override these defaults.
 
-When using default values, it's important to note that any parameters with default values should be listed after the parameters without default values in the function definition. This allows Python to correctly interpret positional arguments.
+**Note**: When using default values, parameters without defaults should precede those with defaults in the function definition.
 
-##### Avoiding Argument Errors
+When calling a function, it's crucial to provide the correct number of arguments and match them to the corresponding parameters. Python raises errors when there are unmatched arguments.
 
-When calling a function, it's crucial to provide the correct number of arguments and match them to the corresponding parameters in the function definition. Python helps us by raising errors when there are unmatched arguments.
-
-For example, if we try to call the `login_data()` function without providing the required arguments, Python will raise a `TypeError`:
+Example:
 
 {% highlight python %}
-login_data()
+def hello(name, greeting='Hello'):
+    print(f'{greeting}, {name}!')
+
+hello('Alice')
+hello(''Bob, 'Hi')
+
 # Output
+Hello, Alice!
+Hi, Bob!
 {% endhighlight %}
 
-The error message will indicate that the function is missing the required positional arguments: 'username' and 'password'.<br>To avoid argument errors, make sure to provide the correct number of arguments and ensure they match the parameters defined in the function.
+The `hello()` function can be called with one or two arguments. If the number of arguments doesn't match the function definition, Python raises a `TypeError`.
 
-#### Passing an Arbitrary Number of Arguments
+##### Making an Argument Optional with Default Values
 
-Sometimes you won't know beforehand how many arguments a function needs to accept. In such cases, you can define a function with a variable number of arguments using `*args` and `**kwargs` notation.
+Default values for function parameters enable the creation of optional arguments. Users can choose whether or not to provide these arguments, enhancing the flexibility of function calls. Here's an example:
 
-##### `*args` - Arbitrary Positional Arguments
+{% highlight python %}
+def hello(first_name, last_name, middle_name=''):
+    if middle_name:
+        name = f'Hello, {first_name} {middle_name} {last_name}!'
+    else:
+        name = f'Hello, {first_name} {last_name}!'
 
-The `*args` parameter allows a function to accept an arbitrary number of positional arguments. It collects the arguments into a tuple, which can then be accessed within the function.
+    return name
+
+person_1 = hello('Alice', 'Lee')
+person_2 = hello('Bob', 'Junior', 'Marley')
+
+print(person_1)
+print(person_2)
+
+# Output
+Hello, Alice Lee!
+Hello, Bob Junior Marley!
+{% endhighlight %}
+
+In this example, the `hello()` function has an optional `middle_name` parameter with an empty string as its default value. This allows users to decide whether to include a middle name in the full name greeting.
+
+### Passing an Arbitrary Number of Arguments
+
+For situations where the number of arguments is unknown, Python allows defining functions with a variable number of arguments using `*args` and `**kwargs`.
+
+#### Arbitrary Positional Arguments - `*args`
+
+The `*args` notation allows the function to accept any number of positional arguments, collecting them into a tuple.
 
 Here's an example of a function that takes in an arbitrary number of numbers and calculates their average:
 
@@ -224,269 +284,243 @@ def calculate_average(*args):
     average = total / len(args)
     return average
 
-result = calculate_average(2, 4, 6, 8)
-print(result)
+print(calculate_average(1, 2, 3))
+print(calculate_average(2, 4, 6, 8))
 
 # Output
+2.0
+5.0
 {% endhighlight %}
 
-In this example, the `calculate_average()` function accepts any number of arguments and stores them in the `args` tuple. The function calculates the sum of the arguments and divides it by the number of arguments to find the average. Finally, the average is returned and printed.
+In this example, the `calculate_average()` function accepts any number of arguments and stores them in the `args` tuple.
 
-##### `**kwargs` - Arbitrary Keyword Arguments
+#### Arbitrary Keyword Arguments - `**kwargs`
 
-The `**kwargs` parameter allows a function to accept an arbitrary number of keyword arguments. It collects the arguments into a dictionary, which can then be accessed within the function.
+The `**kwargs` notation allows the function to accept any number of keyword arguments, collecting them into a dictionary.
 
 Here's an example of a function that takes in arbitrary keyword arguments representing key-value pairs:
 
 {% highlight python %}
 def display_info(**kwargs):
     for key, value in kwargs.items():
-        print(f"{key}: {value}")
+        print(f'{key}: {value}')
 
 display_info(name='Alice', age=25, city='London')
 
 # Output
+
+name: Alice
+age: 25
+city: London
 {% endhighlight %}
 
 In this example, the `display_info()` function accepts any number of keyword arguments and stores them in the `kwargs` dictionary. The function iterates over the dictionary and prints each key-value pair.
 
-### Returning Values from Functions: Communicating Results
+## Returning Values from Functions <hr>
 
-In Python, functions not only perform actions but can also produce results. This is achieved by using the `return` keyword. When a `return` statement is encountered inside a function, it causes the immediate termination of the function's execution and returns a value to the point of invocation. If a function is not intended to produce a result, the `return` statement is not mandatory, as it will be executed implicitly at the end of the function.
+In Python, functions not only execute actions but can also produce results through the use of the `return` keyword. When a `return` statement is encountered, it immediately terminates the function's execution and sends a value back to the point of invocation. While not mandatory, a function not intended to produce a result will implicitly return `None` at the end.
 
-The `return` statement in Python allows functions to explicitly specify a value to be returned. It consists of the `return` keyword followed by the value or expression that the function should return. The return value can be any valid Python object or expression.
+### The `return` Statement
 
-Here's an example that demonstrates the use of the `return` statement:
+The `return` statement allows functions to explicitly specify a value to be returned. It consists of the `return` keyword followed by the value or expression that the function should return. This return value can be any valid Python object or expression.
 
-Let’s look at a function that takes a first and last name, and returns a neatly formatted full name:
+Here's an example:
 
 {% highlight python %}
 def add_numbers(a, b):
-    sum = a + b
-    return sum
+    sum_nums = a + b
+    return sum_nums
 
 result = add_numbers(3, 5)
 print(result)
 
 # Output
+8
 {% endhighlight %}
 
-In this example, the `add_numbers()` function takes two parameters, `a` and `b`, and returns their sum using the `return` statement. When the function is called with arguments `3` and `5`, the return value is assigned to the variable `result` and then printed, which outputs `8`.
+In this example, the `add_numbers()` function returns the sum of two parameters using the `return` statement.
 
-#### Utilizing Returned Values
+Returned values can be assigned to variables or used directly in expressions, allowing for further utilization within the program. This enhances code modularity and reusability. In the above `add_numbers()` function, the function returns the sum of the two parameters, `a` and `b`, which is then assigned to the variable `result` and printed.
 
-When a function returns a value, it can be assigned to a variable or used directly in expressions. By capturing the return value, we can utilize it further within our program. Here's an updated example of a function that takes a first and last name, and returns a neatly formatted full name:
+### The `None` Value
 
-{% highlight python %}
-def get_formatted_name(first_name, last_name):
-    full_name = f"{first_name} {last_name}"
-    return full_name.title()
+In Python, `None` represents the absence of a value. It is the return value of functions that don't explicitly return anything. Functions like `print()` return `None`, signifying no specific output. The `None` value is a special constant and the only value of the `NoneType` data type.
 
-musician = get_formatted_name('Alice', 'Smith')
-print(musician)
-{% endhighlight %}
-
-In this example, the `get_formatted_name()` function concatenates the `first_name` and `last_name`, adds a space between them, and assigns the result to `full_name`. The `return` statement is used to communicate the formatted full name as the return value. When the function is called with the arguments `'Alice'` and `'Smith'`, the return value is assigned to the variable `musician` and then printed, resulting in the output: `Alice Smith`.
-
-By returning values from functions, we can encapsulate complex operations and calculations, making our code more modular and reusable.
-
-#### The None Value: Representing Absence of Value
-
-In Python, the `None` value represents the absence of a value. It is a special constant and the only value of the `NoneType` data type. The `None` value can be useful when we need to store something that won't be confused for a real value in a variable.
-One common use of `None` is as the return value of functions that don't explicitly return anything, such as the `print()` function. Although `print()` displays text on the screen, it doesn't need to return anything, so it returns `None`.
-
-Here's an example demonstrating the use of `None` as the return value of a function:
+Example:
 
 {% highlight python %}
-def greet(name):
-    print(f"Hello, {name}!")
+def hello(name):
+    print(f'Hello, {name}!')
 
-result = greet("Alice")
+result = hello('Alice')
 print(result)
-{% endhighlight %}
-
-In this example, the `greet()` function prints a greeting message to the console but doesn't return a value. When the function is called with the argument `"Alice"`, it prints `Hello, Alice!`. However, when we assign the return value of `greet("Alice")` to the variable `result` and print it, we get `None`.
-
-Behind the scenes, Python adds a `return None` statement to the end of any function definition without an explicit `return` statement. This ensures that all function calls have a return value.
-
-#### Making an Argument Optional with Default Values
-
-Sometimes it's useful to make an argument optional, allowing users of the function to choose whether or not to provide that argument. Python allows us to do this by using default values for function parameters.
-
-Here's an example that demonstrates how to make an argument optional using default values:
-
-{% highlight python %}
-def get_formatted_name(first_name, last_name, middle_name=''):
-    if middle_name:
-        full_name = f"{first_name} {middle_name} {last_name}"
-    else:
-        full_name = f"{first_name} {last_name}"
-    return full_name.title()
-
-musician1 = get_formatted_name('Alice', 'Smith')
-musician2 = get_formatted_name('Bob', 'Johnson', 'Lee')
-
-print(musician1)
-print(musician2)
-
 
 # Output
+Hello, Alice!
+None
 {% endhighlight %}
 
-In this example, the `get_formatted_name()` function accepts three parameters: `first_name`, `last_name`, and `middle_name`. The `middle_name` parameter is assigned an empty string as its default value, making it optional.
+In this example, the `hello()` function prints a greeting but returns `None`. Python automatically adds a `return None` statement to functions without an explicit return.
 
-Inside the function, an `if` statement checks whether a middle name was provided. If a middle name is present, the full name is formatted as `'first_name middle_name last_name'`. Otherwise, the full name is formatted as `'first_name last_name'`. The `title()` method is used to capitalize the names properly.
+## Variable Scope
 
-When the function is called with different arguments, it behaves accordingly. In the first function call, only the first name and last name are provided, resulting in `'Alice Smith'`. In the second function call, all three names are provided, resulting in `'Bob Lee Johnson'`.
+In programming, variable scope refers to the region of the code where a variable is defined, and its visibility or accessibility from different parts of the program. Understanding variable scope is crucial for writing reliable and maintainable code, as it determines where a variable can be accessed or modified.
 
-By making arguments optional, functions become more flexible and can handle a wider range of use cases while still allowing for simple function calls.
+### Levels of Scoping in Python
 
-### Organizing Code with Modules
+Python follows the LEGB rule for variable scoping, which stands for Local, Enclosing Function, Global, and Built-ins. These levels are searched in order to resolve the reference to a variable. Here's a brief overview:
 
-In addition to using functions to separate blocks of code, Python provides modules as a way to organize code even further. Modules are separate files ending in `.py` that contain code that can be imported and used in other programs. By storing related functions in modules, you can create reusable code, hide implementation details, and focus on higher-level program logic. In this article, we'll explore the benefits of using modules and how to create, import, and use them effectively.
+- **Local (L)**: Variables defined within a function are considered local. They are only accessible within the function and cease to exist after the function execution.
+- **Enclosing Function (E)**: This refers to the scope of an enclosing function if a function is nested within another function. The inner function has access to its variables as well as those of the outer function.
+- **Global (G)**: Variables defined at the top level of a script or module are global. They are accessible throughout the entire module or script.
+- **Built-ins (B)**: This is the outermost scope and includes Python's built-in names like `print`, `len`, and `str`. These names are always accessible from anywhere in the code.
 
-#### Introduction to Modules: Enhancing Code Organization and Reusability
+Here are examples of various scopes:
 
-Modules play a crucial role in organizing code and promoting code reusability. By separating functions into individual modules, you can easily manage and maintain your codebase. Here are some benefits of using modules:
-
-- **Code Organization**: Modules allow you to group related functions together, making it easier to locate and manage code.
-- **Code Reusability**: Functions stored in modules can be reused in multiple programs, saving time and effort.
-- **Encapsulation**: Modules hide implementation details and provide a clean interface to other programs, making code easier to understand and use.
-- **Collaboration**: Modules can be shared with other programmers, enabling collaborative development.
-
-#### Creating and Importing Modules: Making Code Available
-
-To create a module, you need to create a separate file with a `.py` extension that contains the code you want to import. Let's create an example module called `pizza.py` that defines a function `make_pizza()`:
+**Local** Variable:
 
 {% highlight python %}
-def make_pizza(size, *toppings):
-    """Summarize the pizza we are about to make."""
-    print(f"\nMaking a {size}-inch pizza with the following toppings:")
-    for topping in toppings:
-        print(f"- {topping}")
-{% endhighlight %}
+def example_function():
+    x = 10  # Local variable
+    print(x)
 
-Now, let's create another file called `making_pizzas.py` in the same directory as `pizza.py` to demonstrate how to import and use the module:
-
-{% highlight python %}
-import pizza
-
-pizza.make_pizza(16, 'pepperoni')
-pizza.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+example_function()
+print(x)
 
 # Output
+10
+NameError: name 'x' is not defined
 {% endhighlight %}
 
-In this example, we import the `pizza` module using the `import` statement. The `import` statement tells Python to open the `pizza.py` file and make all the functions defined in it available in the current program. We can then call the `make_pizza()` function using the dot notation (`pizza.make_pizza()`).
-
-#### Exploring the Structure of a Module: Accessing Functions and Attributes
-
-Once a module is imported, we can access its functions and attributes. Let's examine the structure of the `pizza` module and how to access its functions:
+**Global** Variable:
 
 {% highlight python %}
-import pizza
+global_variable = 20  # Global variable
 
-dir(pizza)
+def another_function():
+    print(global_variable)
+
+another_function()  
+
+# Output
+20
 {% endhighlight %}
 
-The `dir()` function allows us to explore the contents of a module. It returns a list of all functions, classes, and attributes defined in the module. Running `dir(pizza)` will show us all the available functions and attributes in the `pizza` module.
-We can access a specific function or attribute in the module using the dot notation. For example, to access the `make_pizza()` function, we use `pizza.make_pizza()`.
-
-#### Using the Main Module and Conditional Execution: Running Code selectively
-
-In Python, the special variable `__name__` is automatically set to `'__main__'` for the module that is executed as the main program. This allows us to distinguish between a module being imported by another program and the module being run directly.
-
-By utilizing the `__name__` variable, we can include code in the module that will only run when the module is executed as the main program. This is useful when we want certain code to run only when the module is run directly and not when it's imported.
-
-Let's modify the `pizza.py` module to include a conditional block:
+Changing Global Variable from Within a Function:
 
 {% highlight python %}
-def make_pizza(size, *toppings):
-    """Summarize the pizza we are about to make."""
-    print(f"\nMaking a {size}-inch pizza with the following toppings:")
-    for topping in toppings:
-        print(f"- {topping}")
+global_variable = 20  # Global variable
 
-if __name__ == "__main__":
-    make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+def modify_global():
+    global global_variable
+    global_variable = 30
+
+modify_global()
+print(global_variable) 
+
+# Output
+30
 {% endhighlight %}
 
-In this example, the `make_pizza()` function remains the same. However, we add a conditional block that checks if the `__name__` variable is set to `'__main__'`. If it is, it means the module is being run directly, so we call the `make_pizza()` function with some specific arguments.
-
-When running the `pizza.py` module directly, the code inside the conditional block will execute. However, if the module is imported into another program, the conditional block will not run. This allows us to selectively execute code based on whether the module is run directly or imported.
-
-#### Importing Specific Functions
-
-You can also import specific functions from a module. This approach allows you to selectively import only the functions you need. Here's the general syntax for importing specific functions:
-<pre>`from module_name import function_name`</pre>
-
-If you have multiple functions to import, you can separate their names with commas:
+**Enclosing Function** Scope:
 
 {% highlight python %}
-from module_name import function_0, function_1, function_2
+def outer_function():
+    outer_variable = 'I am from outer'
+
+    def inner_function():
+        print(outer_variable)
+
+    inner_function()
+
+outer_function()  
+
+# Output
+I am from outer
 {% endhighlight %}
 
-For example, if we want to import just the `make_pizza()` function from the `pizza` module, we can use the following code:
+**Nonlocal** Keyword:
 
 {% highlight python %}
-from pizza import make_pizza
-make_pizza(16, 'pepperoni')
-make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+def outer_function():
+    x = 10
+
+    def inner_function():
+        nonlocal x
+        x = 20
+
+    inner_function()
+    print(x)
+
+outer_function()
+
+# Output
+20
 {% endhighlight %}
 
-With this syntax, you don't need to use the dot notation when calling the function. Since we've explicitly imported the `make_pizza()` function in the import statement, we can call it by name (`make_pizza()`) when using the function.
+In the last example, the `nonlocal` keyword is used to indicate that the variable `x` being modified is in the enclosing scope, not a local variable in the inner function. This is particularly useful when dealing with nested functions and you want to modify a variable in an enclosing (but non-global) scope.
 
-#### Using `as` to Give a Module an Alias
+## Documenting Functions <hr>
 
-Sometimes, you may want to provide an alias for a function to avoid conflicts with existing names or to create a shorter name. You can use the `as` keyword to assign an alias to a function during the import process. Here's an example:
+In Python, documenting functions is a good practice to enhance code readability and provide valuable information about the purpose and usage of a function. This is commonly done using a docstring, which is a string literal placed as the first statement in a function.
+
+### Using Docstrings
+
+A docstring is delimited by three single or double quotes (''' or """) and is placed immediately after the function definition. It serves as a concise yet informative description of what the function does, what parameters it expects, and what it returns.
+
+Example:
 
 {% highlight python %}
-from pizza import make_pizza as mp
-mp(16, 'pepperoni')
-mp(12, 'mushrooms', 'green peppers', 'extra cheese')
+def hello(name):
+    '''Print a greeting to the user by name.'''
+    print(f'Hello, {name}!')
 {% endhighlight %}
 
-In this case, the import statement renames the `make_pizza()` function to `mp()` in the current program file. By using `mp()`, we can call the function instead of `make_pizza()`. This avoids confusion if there are other functions with similar names in the program file. The general syntax for providing an alias is:
-<pre>`from module_name import function_name as fn`</pre>
+In this example, the docstring for the `hello()` function provides a clear description: "Print a greeting to the user by name." This documentation is valuable for anyone reading or using the code, as it offers insights into the function's purpose.
 
-You can also assign an alias to a module name. Giving a module a short alias allows you to call its functions more quickly. Here's an example:
+### Accessing Docstrings
+
+Python provides a built-in function called `help()` that can be used to access the docstring of a function interactively. Simply pass the function name as an argument to `help()`.
+
+Here's an example for accessing the above `hello()` function:
 
 {% highlight python %}
-import pizza as p
-p.make_pizza(16, 'pepperoni')
-p.make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
+>>> help(hello)
+Help on function hello in module __main__:
+
+hello(name)
+    Print a greeting to the user by name.
 {% endhighlight %}
 
-In this case, the `pizza` module is imported with the alias `p`. All the functions in the module retain their original names, but we can use the shorter `p.make_pizza()` syntax to call the functions. This allows us to focus on the descriptive function names rather than the module name. The general syntax for aliasing a module is:
+Executing `help(greet)` in an interactive Python environment would display the docstring for the `hello()` function.
+
+### Writing Comprehensive Docstrings
+
+For more complex functions or functions with multiple parameters, it's beneficial to provide detailed information in the docstring. Include explanations of each parameter, their data types, and any default values. Additionally, specify the type of value the function returns.
+
+Example:
 
 {% highlight python %}
-import module_name as mn
+def calculate_average(*numbers):
+    '''
+    Calculate the average of a list of numbers.
+
+    Parameters:
+    * numbers (float): A variable number of numerical values.
+
+    Returns:
+    float: The average of the input numbers.
+    '''
+    total = sum_nums(numbers)
+    average = total / len(numbers)
+    return average
 {% endhighlight %}
 
-#### Importing All Functions in a Module
+In this example, the docstring for the `calculate_average()` function not only describes its purpose but also details the expected parameter and return types.
 
-If you want to import every function in a module, you can use the asterisk (`*`) operator. However, it's generally not recommended to use this approach with larger modules that you didn't write. Using `*` can lead to unexpected results if the module has function names that conflict with existing names in your project. To import all functions from a module, you can use the following syntax:
+By consistently documenting functions using docstrings, developers can create more maintainable and understandable code, facilitating collaboration and reducing the learning curve for others who interact with the codebase.
 
-{% highlight python %}
-from pizza import *
-make_pizza(16, 'pepperoni')
-make_pizza(12, 'mushrooms', 'green peppers', 'extra cheese')
-{% endhighlight %}
-
-The `*` in the import statement copies every function from the `pizza` module into the current program file. You can then call each function by name without using the dot notation. However, it's best practice to import the specific functions you need or import the entire module and use the dot notation. This approach ensures clear and readable code. It's important to be aware of the potential conflicts that may arise when using the `*` operator.
-<pre>`from module_name import *`</pre>
-
-### Future Topics: Exploring More Python Modules
-
-In future blog articles, we'll explore more Python modules, including an overview of commonly used modules in the Python Standard Library and an introduction to third-party modules. Stay tuned for these exciting topics that will further enhance your Python skills and expand the capabilities of your programs!
-
-In addition to the basics of organizing code with modules, there are several other aspects of Python modules that we haven't covered in this article. To delve deeper into the world of modules and expand your Python skills, consider exploring the following topics in future blog articles:
-
-#### Overview of commonly used modules in the Python Standard Library
-
-The Python Standard Library provides a vast collection of modules that offer a wide range of functionality. In a separate article, we'll provide an overview of some commonly used modules and demonstrate their capabilities. This will include exploring modules such as `math`, `datetime`, and `random`, which offer powerful features for mathematical computations, date and time manipulation, and generating random values.
-
-#### Third-Party Modules: Expanding Python's Capabilities
+### Third-Party Modules: Expanding Python's Capabilities
 
 While the Python Standard Library is extensive, there are countless third-party modules available that can further enhance the capabilities of Python. In another blog article, we'll introduce the concept of third-party modules and guide you through the process of installing them. We'll also explore popular third-party modules like `requests`, `BeautifulSoup`, and `numpy`, showcasing their unique functionalities and demonstrating how they can be utilized in your Python code.
 
@@ -495,6 +529,100 @@ By covering these additional topics, you'll gain a deeper understanding of modul
 In the meantime, if you have any specific questions or topics you'd like to explore further, feel free to let us know. Happy coding!
 
 
-### Summary
+## Practical Applications and Use Cases <hr>
 
-Well done! You've grasped the concept of Python functions. Functions are the building blocks of code, allowing you to break complex tasks into manageable pieces. You've learned how to create, call, and pass data to functions. This skill is vital for writing organized and reusable code. Your journey into Python continues with [Python File Handling](/workspace/python-101/file-handling), working with external data.
+Understanding Python functions is essential for writing flexible and maintainable code. Here are practical applications and use cases for mastering Python functions:
+
+- **Code Reusability and Modularity**: When building large-scale applications, you often need to encapsulate functionality within functions. Functions enable you to encapsulate a block of code that performs a specific task. This promotes code reuse and modularity, making it easier to maintain and update your codebase.
+
+{% highlight python %}
+def calculate_discount(price):
+    discount_rate = 0.1  # Local variable
+    discounted_price = price - (price * discount_rate)
+    return discounted_price
+
+print(calculate_discount(100))
+{% endhighlight %}
+
+Variable scoping allows you to create local variables within functions, preventing unintended interference with other parts of the program.
+
+- **Data Processing and Analysis**: Functions are crucial for processing and analyzing data. You can create functions to encapsulate algorithms, making data manipulation more readable and manageable.
+
+{% highlight python %}
+def average(numbers):
+    '''Calculate the average of a list of numbers.'''
+    return sum(numbers) / len(numbers)
+
+data = [10, 15, 20, 25, 30]
+print(average(data))
+{% endhighlight %}
+
+- **Web Development: Backend Logic**: In web development, functions handle backend logic, processing user requests, interacting with databases, and generating dynamic content.
+
+{% highlight python %}
+def get_user_data(user_id):
+    '''Retrieve user data from the database.'''
+    # Database query logic here
+    return user_data
+
+user_id = 123
+user_info = get_user_data(user_id)
+{% endhighlight %}
+
+- **Automation Scripts**: Functions are the building blocks of automation scripts. They allow you to structure your code to perform specific tasks, making automation more efficient.
+
+{% highlight python %}
+def backup_files(source_folder, destination):
+    '''Copy files from source to destination for backup.'''
+    # Copy files logic here
+
+source_folder = "/path/to/data"
+backup_location = "/path/to/backup"
+backup_files(source_folder, backup_location)
+{% endhighlight %}
+
+- **Machine Learning and Data Science**: Functions play a vital role in machine learning pipelines and data science workflows. They encapsulate data preprocessing steps, model training, and evaluation.
+
+{% highlight python %}
+def train_model(training_data):
+    '''Train a machine learning model.'''
+    # Model training logic here
+    return trained_model
+
+data = load_data('dataset.csv')
+model = train_model(data)
+{% endhighlight %}
+
+- **GUI Applications: Event Handling**: In graphical user interface (GUI) applications, functions handle events like button clicks or menu selections. They provide the logic for what should happen in response to user actions.
+
+{% highlight python %}
+def button_click_handler():
+    '''Handle button click event.'''
+    # Button click logic here
+
+create_button('Click me', on_click=button_click_handler)
+{% endhighlight %}
+
+- **Game Development: Game Logic**: Functions are employed to define game logic, such as character movement, collision detection, and scoring. They contribute to organizing complex game systems.
+
+{% highlight python %}
+def check_collision(player, obstacles):
+    '''Check for collisions between the player and obstacles.'''
+    # Collision detection logic here
+    return collided
+
+player_position = (x, y)
+obstacles = load_obstacles()
+if check_collision(player_position, obstacles):
+    game_over()
+{% endhighlight %}
+
+### More Examples
+
+Feel free to browse my <a href="https://github.com/joj-macho" target="_new">GitHub page</a> for more comprehensive programs.
+
+Discover more programs that use functions in my <a href="https://github.com/joj-macho/Pythological-Playground" target="_new">Python Playground</a> repository. For a broader range of programs, you can explore my <a href="https://github.com/joj-macho?tab=repositories" target="_new">GitHub Repositories</a>.
+
+## Summary <hr>
+
+Well done! You now have a solid understanding of Python functions, the fundamental units of code organization. Functions allow you to decompose intricate tasks into more manageable components. You've gained proficiency in creating, invoking, and passing data to functions, a crucial skill for crafting well-structured and reusable code. As you progress in your Python journey, the next step involves exploring [Python File Handling](/workspace/python-101/file-handling) to engage with external data seamlessly.
