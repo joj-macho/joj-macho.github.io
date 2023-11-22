@@ -38,7 +38,7 @@ Good variable names:
 
 {% highlight python %}
 num_students = 30
-student_name = "John"
+student_name = 'John'
 total_marks = 95.5
 is_passed = True
 {% endhighlight %}
@@ -49,7 +49,7 @@ Bad variable names:
 
 {% highlight python %}
 x = 30
-a = "John"
+a = 'John'
 y = 95.5
 z = True
 {% endhighlight %}
@@ -105,7 +105,7 @@ PLANCK_CONSTANT = 6.62607015 * 10**(-34)  # J·s
 GRAVITATIONAL_CONSTANT = 9.81 # m/s^2
 BOLTZMANN_CONSTANT = 1.380649 * 10**(-23) # J/K
 INTEREST_RATE = 0.05
-DOLLAR_SYMBOL = "$"
+DOLLAR_SYMBOL = '$'
 MEAN_VALUE = 10
 STANDARD_DEVIATION = 2.5
 {% endhighlight %}  
@@ -206,7 +206,7 @@ Control flow statements allow you to control the execution of your program based
 
 Using control flow statements gives you the power to make decisions, iterate over collections, and create more dynamic and interactive programs.
 
-Control Flow Statements will be discussed in detail in the tutorial "Python Control Flow" of this tutorial series.
+Control Flow Statements will be discussed in detail in [Python Control Flow](/workspace/python-101/control-flow) of this tutorial series.
 
 ## Data Types in Python <hr>
 
@@ -219,7 +219,7 @@ Python is a dynamically typed language, which means that variables can hold valu
 - Tuples: Similar to lists, but immutable (cannot be modified), enclosed in parentheses ().
 - Dictionaries: Key-value pairs, enclosed in curly braces ({}) with each pair separated by a colon (:).
 
-Data types will be described in detail in the next section of the series, "Understanding Python Data Structures"
+Data types will be described in detail in the next section of the series, "Understanding Python Data Structures" ([Numeric Data Types](/workspace/python-101/numbers), [Lists & Tuples Data Types](/workspace/python-101/lists-and-tuples), [String Data Types](/workspace/python-101/strings), and [Dictionary Data Types](/workspace/python-101/dictionaries),)
 
 ## Operators in Python <hr>
 
@@ -260,19 +260,19 @@ average_comments = total_comments / total_posts
 average_shares = total_shares / total_posts
 
 # Output the results
-print("User Engagement Metrics for the Week:")
-print(f"Total Likes: {total_likes}")
-print(f"Total Comments: {total_comments}")
-print(f"Total Shares: {total_shares}")
-print(f"Total Engagement: {total_engagement}")
-print(f"Average Likes Per Post: {average_likes:.2f}")
-print(f"Average Comments Per Post: {average_comments:.2f}")
-print(f"Average Shares Per Post: {average_shares:.2f}")
+print('User Engagement Metrics for the Week:')
+print(f'Total Likes: {total_likes}')
+print(f'Total Comments: {total_comments}')
+print(f'Total Shares: {total_shares}')
+print(f'Total Engagement: {total_engagement}')
+print(f'Average Likes Per Post: {average_likes:.2f}')
+print(f'Average Comments Per Post: {average_comments:.2f}')
+print(f'Average Shares Per Post: {average_shares:.2f}')
 {% endhighlight %}
 
 In this the example above, we have lists of likes, comments, and shares for each post for an entire week. We calculate the total likes, comments, and shares for the week and then calculate the average engagement metrics per post. This provides a practical illustration of how Python can be used to analyze user engagement data on a social media platform. 
 
-This is just one example of how Python can be used to solve real-world problems.
+This is just one example of how Python can be used to solve real-world problems. You can find more programs that implement variables, constants, statements, and expressions in my <a href="https://github.com/joj-macho/Pythological-Playground" target="_new">Python Playground Repository</a> on GitHub.
 
 ## Summary <hr>
 
