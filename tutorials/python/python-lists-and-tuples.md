@@ -745,6 +745,15 @@ Square and Cube: (16, 64)
 config_settings = ('debug_mode', 'log_level', 'timeout', 'max_attempts')
 {% endhighlight %}
 
+### More Examples
+
+Feel free to browse my <a href="https://github.com/joj-macho" target="_new">GitHub page</a> for more comprehensive programs:
+
+- <a href="https://github.com/joj-macho/Pythological-Playground/blob/main/dna-animation/" target="_new">DNA Animation</a>: A practical example using lists to represent nucleotides in a DNA strand.
+
+- <a href="https://github.com/joj-macho/Pythological-Playground/blob/main/bank-manager/" target="_new">ATM Simulation</a>: This program utilizes lists to store banking records for a user, providing a simulated banking experience.
+
+Discover additional programs that handle sequence data types in my <a href="https://github.com/joj-macho/Pythological-Playground" target="_new">Python Playground</a> repository. For a broader range of programs, you can explore my <a href="https://github.com/joj-macho?tab=repositories" target="_new">GitHub Repositories</a>.
 
 ## Summary <hr>
 
