@@ -4,7 +4,7 @@ title: "Columna Transposition Cipher"
 sub-title: "A Brief Overview of the Columna Transposition Cipher"
 tags: ["cryptography", "basics", "algorithm"]
 category: "python-cryptography"
-permalink: /workspace/cryptography-101/col-transposition-cipher
+permalink: /workspace/cryptography/col-transposition-cipher
 ---
 
 The Columnar Transposition Cipher is a classic encryption technique known for its transposition of characters within a matrix. In this guide, we will cover the history of the Columnar Transposition Cipher, how it works, implementation in Python, and more.

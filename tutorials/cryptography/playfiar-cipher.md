@@ -4,7 +4,7 @@ title: "Playfair Cipher"
 sub-title: "A Brief Overview of the Playfair Cipher"
 tags: ["cryptography", "basics", "algorithm"]
 category: "python-cryptography"
-permalink: /workspace/cryptography-101/playfair-cipher
+permalink: /workspace/cryptography/playfair-cipher
 ---
 
 The Playfair Cipher is a digraph-based substitution cipher known for its use of a 5x5 matrix and specific rules for encrypting and decrypting messages. In this guide, we will cover the history of the Playfair Cipher, how it works, implementation in Python, and more.

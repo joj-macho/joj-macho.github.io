@@ -4,7 +4,7 @@ title: "Caesar Cipher"
 sub-title: "A Brief Overview of the Caesar Cipher"
 tags: ["cryptography", "basics", "algorithm"]
 category: "python-cryptography"
-permalink: /workspace/cryptography-101/caesar-cipher
+permalink: /workspace/cryptography/caesar-cipher
 ---
 
 The Caesar Cipher is a historical encryption technique that involves shifting the letters of the alphabet a certain number of positions to the right or left. This simple encryption method is easy to understand and implement, making it one of the most widely known historical encryption methods. In this guide, we will cover the history of the Caesar Cipher, how it works, implementation in Python, and more.

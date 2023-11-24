@@ -4,7 +4,7 @@ title: "Hill Cipher"
 sub-title: "A Brief Overview of the Hill Cipher"
 tags: ["cryptography", "basics", "algorithm"]
 category: "python-cryptography"
-permalink: /workspace/cryptography-101/hill-cipher
+permalink: /workspace/cryptography/hill-cipher
 ---
 
 The Hill Cipher is a matrix-based encryption technique known for its mathematical foundation and ability to encrypt messages using linear algebra. In this guide, we will cover the history of the Hill Cipher, how it works, implementation in Python, and more.

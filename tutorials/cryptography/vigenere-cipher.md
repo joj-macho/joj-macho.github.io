@@ -4,7 +4,7 @@ title: "Vigenere Cipher"
 sub-title: "A Brief Overview of the Vigenere Cipher"
 tags: ["cryptography", "basics", "algorithm"]
 category: "python-cryptography"
-permalink: /workspace/cryptography-101/vigenere-cipher
+permalink: /workspace/cryptography/vigenere-cipher
 ---
 
 The Vigenere Cipher is a polyalphabetic substitution cipher known for its use of a keyword to encrypt and decrypt messages. In this guide, we will cover the history of the Vigenere Cipher, how it works, implementation in Python, and more.

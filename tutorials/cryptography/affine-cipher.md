@@ -4,7 +4,7 @@ title: "Affine Cipher"
 sub-title: "A Brief Overview of the Affine Cipher"
 tags: ["cryptography", "basics", "algorithm"]
 category: "python-cryptography"
-permalink: /workspace/cryptography-101/affine-cipher
+permalink: /workspace/cryptography/affine-cipher
 ---
 
 The Affine Cipher is a historical encryption technique that involves using a combination of modular arithmetic and linear algebra to encrypt messages. In this guide, we will cover the history of the Affine Cipher, how it works, implementation in Python, and more.

@@ -4,7 +4,7 @@ title: "Atbash Cipher"
 sub-title: "A Brief Overview of the Atbash Cipher"
 tags: ["cryptography", "basics", "algorithm"]
 category: "python-cryptography"
-permalink: /workspace/cryptography-101/atbash-cipher
+permalink: /workspace/cryptography/atbash-cipher
 ---
 
 The Atbash Cipher is a classic encryption technique known for its simplicity and historical use. In this guide, we will cover the history of Atbash, how it works, implementation in Python, and more.

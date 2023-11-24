@@ -4,7 +4,7 @@ title: "Rail Fence Cipher"
 sub-title: "A Brief Overview of the Rail Fence Cipher"
 tags: ["cryptography", "basics", "algorithm"]
 category: "python-cryptography"
-permalink: /workspace/cryptography-101/rail-fence-cipher
+permalink: /workspace/cryptography/rail-fence-cipher
 ---
 
 The Rail Fence Cipher, also known as the Zigzag Cipher, is a transposition cipher known for its simplicity and historical use in secure communications. In this guide, we will cover the history of the Rail Fence Cipher, how it works, implementation in Python, and more.

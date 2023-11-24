@@ -4,7 +4,7 @@ title: "ROT-13 Cipher"
 sub-title: "A Brief Overview of the Rot-13 Cipher"
 tags: ["cryptography", "basics", "algorithm"]
 category: "python-cryptography"
-permalink: /workspace/cryptography-101/rot-13-cipher
+permalink: /workspace/cryptography/rot-13-cipher
 ---
 
 The ROT-13 Cipher is a unique encryption technique known for its simplicity and was first used in the early days of the internet to hide spoilers and other sensitive information from readers. In this guide, we will cover the history of ROT-13, how it works, implementation in Python, and more.

@@ -4,8 +4,10 @@ title: "Types of Ciphers and How They Work"
 sub-title: "A Brief Overview of Various Ciphers"
 tags: ["cryptography", "basics"]
 category: "python-cryptography"
-permalink: /workspace/cryptography-101/types-of-ciphers
+permalink: /workspace/cryptography/types-of-ciphers
 ---
+
+Understanding the various types of ciphers is crucial for anyone involved in the field of cryptography. This tutorial provides an in-depth exploration of symmetric and asymmetric key ciphers, substitution ciphers, transposition ciphers, polyalphabetic ciphers, and modern cryptographic techniques. Additionally, it touches on implementing cryptographic techniques in Python and explores real-world use cases and security considerations.
 
 Cryptography is a fascinating field that deals with securing information by converting it into an unreadable format. Ciphers, in particular, play a crucial role in encryption and decryption processes. Ciphers can be categorized into several major groups based on their characteristics and properties. In this section, we will explore the various types of ciphers and how they work.
 

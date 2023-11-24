@@ -4,7 +4,7 @@ title: "Route Cipher"
 sub-title: "A Brief Overview of the Route Cipher"
 tags: ["cryptography", "basics", "algorithm"]
 category: "python-cryptography"
-permalink: /workspace/cryptography-101/route-cipher
+permalink: /workspace/cryptography/route-cipher
 ---
 
 The Route Cipher is a transposition cipher known for its use of a route grid to encode and decode messages. In this guide, we will cover the history of the Route Cipher, how it works, implementation in Python, and more.

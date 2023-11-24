@@ -4,7 +4,7 @@ title: "Fundamental Concepts in Cryptography"
 sub-title: "Understanding the Key Concepts and Definitions"
 tags: ["cryptography", "basics"]
 category: "python-cryptography"
-permalink: /workspace/cryptography-101/cryptography-fundamentals
+permalink: /workspace/cryptography/cryptography-fundamentals
 ---
 
 Have you ever wondered how you can protect your confidential information when you share it with someone over the internet? The answer lies in cryptography — a field that addresses this very concern. Cryptography, derived from the Greek words "kryptos" (meaning "hidden") and "graphein" (meaning "writing"), involves transforming a message from its original form (plaintext) into an indecipherable format (ciphertext) using various cryptographic techniques. This tutorial delves into the fundamental concepts of cryptography, such as plaintext, ciphertext, encryption, decryption, keys, and algorithms. Additionally, it introduces essential cryptography terms like key length, block size, and padding, while also discussing prevalent attacks on cryptography like brute force and dictionary attacks.

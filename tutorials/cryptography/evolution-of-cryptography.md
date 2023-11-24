@@ -4,7 +4,7 @@ title: "The Evolution of Cryptography"
 sub-title: "A Brief Overview of the Evolution of Cryptography"
 tags: ["cryptography", "basics"]
 category: "python-cryptography"
-permalink: /workspace/cryptography-101/evolution-of-cryptography
+permalink: /workspace/cryptography/evolution-of-cryptography
 ---
 
 Cryptography is the art of keeping information secure and has a long and rich history that dates back to ancient times. From the simplest substitution ciphers to complex algorithms, cryptography has been used to safeguard sensitive information, especially during wartime. In this introductory text, we will explore the evolution of cryptography from its earliest beginnings to its modern-day applications.
