@@ -3,8 +3,8 @@ layout: post
 title: "Python File Handling"
 sub-title: "Working with External Data in Python"
 tags: ["python", "basics"]
-category: "python-101"
-permalink: /workspace/python-101/file-handling
+category: "python"
+permalink: /workspace/python/file-handling
 ---
 
 File handling is a crucial aspect of programming, enabling the interaction with external data sources. In Python, file handling allows you to read from and write to files, making it possible to store and retrieve information persistently. This tutorial will guide you through the essential concepts of file handling in Python, covering file modes, reading and writing files, and best practices.
@@ -195,4 +195,4 @@ except Exception as e:
 
 ## Summary
 
-Congratulations on completing the tutorial on Python file handling. You've gained a crucial skill for interacting with external data, enabling you to read from and write to files seamlessly. This proficiency enhances your capabilities for diverse data processing tasks, making Python an invaluable tool in your programming arsenal. To further elevate your Python expertise, the next step involves [Error Handling and Exception in Python](/workspace/python-101/python-error-handling) where you will learn to fortify your code against unforeseen challenges and ensure robust program execution.
+Congratulations on completing the tutorial on Python file handling. You've gained a crucial skill for interacting with external data, enabling you to read from and write to files seamlessly. This proficiency enhances your capabilities for diverse data processing tasks, making Python an invaluable tool in your programming arsenal. To further elevate your Python expertise, the next step involves [Error Handling and Exception in Python](/workspace/python/python-error-handling) where you will learn to fortify your code against unforeseen challenges and ensure robust program execution.

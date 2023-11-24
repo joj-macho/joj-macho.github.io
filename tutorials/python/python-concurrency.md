@@ -3,8 +3,8 @@ layout: post
 title: "Concurrency in Python"
 sub-title: "Parallelizing and Accelerating Python Programs"
 tags: ["python", "basics"]
-category: "python-101"
-permalink: /workspace/python-101/python-concurrency
+category: "python"
+permalink: /workspace/python/python-concurrency
 ---
 
 Concurrency is a crucial concept in modern programming, enabling the execution of multiple tasks simultaneously. In this tutorial, you'll delve into the realm of concurrency in Python. Learn how to efficiently manage concurrent tasks, enhance performance, and harness the power of parallelism.
@@ -41,4 +41,4 @@ Concurrency is a crucial concept in modern programming, enabling the execution o
 
 ## Summary <hr>
 
-Fantastic job! You've gained valuable insights into concurrent programming in Python. To further advance your skills, the next tutorial explores [Introduction to Web Scraping with Python](/workspace/python-101/python-web-scraping) — a powerful technique for extracting data from websites.
+Fantastic job! You've gained valuable insights into concurrent programming in Python. To further advance your skills, the next tutorial explores [Introduction to Web Scraping with Python](/workspace/python/python-web-scraping) — a powerful technique for extracting data from websites.

@@ -3,8 +3,8 @@ layout: post
 title: "Lists & Tuples Data Types"
 sub-title: "Understanding Python Data Structures: A Guide, Examples and Best Practices"
 tags: ["python", "basics", "lists", "tuples"]
-category: "python-101"
-permalink: /workspace/python-101/lists-and-tuples
+category: "python"
+permalink: /workspace/python/lists-and-tuples
 ---
 
 In Python, lists and tuples are fundamental data types that allow you to store collections of values. In this section, I'll provide you with a comprehensive understanding of lists and tuples in Python, covering how to create them, access their elements, and manipulate their contents.
@@ -759,4 +759,4 @@ Discover additional programs that handle sequence data types in my <a href="http
 
 Congratulations on completing the tutorial on Python lists and tuples. You've gained a profound understanding of these fundamental data structures. Lists offer versatility for storing and manipulating data, while tuples provide immutability.
 
-With this knowledge, you'll be equipped to organize and manage collections of data effectively. Your journey into Python continues with [Understanding Python Data Structures: String Data Types](/workspace/python-101/strings), the building blocks of text manipulation in Python.
+With this knowledge, you'll be equipped to organize and manage collections of data effectively. Your journey into Python continues with [Understanding Python Data Structures: String Data Types](/workspace/python/strings), the building blocks of text manipulation in Python.

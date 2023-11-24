@@ -3,8 +3,8 @@ layout: post
 title: "Python Definitions and Concepts"
 sub-title: "A Beginner's Guide to Python Variables, Constants, Statements, and Expressions"
 tags: ["python", "basics"]
-category: "python-101"
-permalink: /workspace/python-101/definitions-and-concepts
+category: "python"
+permalink: /workspace/python/definitions-and-concepts
 ---
 
 Now that you have set up your programming environment and taken your first step into the world of programming, it's time to dive deeper into the fundamental concepts of Python. Understanding variables, constants, statements, and expressions is crucial for any beginner learning Python programming. Variables and constants are like the building blocks for storing and manipulating data, while statements and expressions are essential for controlling the flow of a program. With a solid grasp of these fundamental concepts, you can start building more complex programs and write efficient code that brings your ideas to life.
@@ -206,7 +206,7 @@ Control flow statements allow you to control the execution of your program based
 
 Using control flow statements gives you the power to make decisions, iterate over collections, and create more dynamic and interactive programs.
 
-Control Flow Statements will be discussed in detail in [Python Control Flow](/workspace/python-101/control-flow) of this tutorial series.
+Control Flow Statements will be discussed in detail in [Python Control Flow](/workspace/python/control-flow) of this tutorial series.
 
 ## Data Types in Python <hr>
 
@@ -219,7 +219,7 @@ Python is a dynamically typed language, which means that variables can hold valu
 - Tuples: Similar to lists, but immutable (cannot be modified), enclosed in parentheses ().
 - Dictionaries: Key-value pairs, enclosed in curly braces ({}) with each pair separated by a colon (:).
 
-Data types will be described in detail in the next section of the series, "Understanding Python Data Structures" ([Numeric Data Types](/workspace/python-101/numbers), [Lists & Tuples Data Types](/workspace/python-101/lists-and-tuples), [String Data Types](/workspace/python-101/strings), and [Dictionary Data Types](/workspace/python-101/dictionaries),)
+Data types will be described in detail in the next section of the series, "Understanding Python Data Structures" ([Numeric Data Types](/workspace/python/numbers), [Lists & Tuples Data Types](/workspace/python/lists-and-tuples), [String Data Types](/workspace/python/strings), and [Dictionary Data Types](/workspace/python/dictionaries),)
 
 ## Operators in Python <hr>
 
@@ -278,4 +278,4 @@ This is just one example of how Python can be used to solve real-world problems.
 
 Variables, constants, statements, and expressions, and comments are fundamental concepts in Python that every programmer must understand. By using these concepts effectively, you can write better code and solve real-world problems. These definitions and concepts will equip you with the tools to write dynamic and engaging Python code, by mastering these concepts, you can breathe life into your programs, making them vibrant, expressive, and effective.
 
-Next in the Python Programming 101 series is [Understanding Python Data Structures: Numeric Data Types](/workspace/python-101/numbers) where we'll dive into understanding the characteristics and functionalities of numeric data types in Python.
+Next in the Python Programming 101 series is [Understanding Python Data Structures: Numeric Data Types](/workspace/python/numbers) where we'll dive into understanding the characteristics and functionalities of numeric data types in Python.

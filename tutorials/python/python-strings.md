@@ -3,8 +3,8 @@ layout: post
 title: "String Data Types"
 sub-title: "Understanding Python Data Structures: A Guide, Examples and Best Practices"
 tags: ["python", "basics", "strings"]
-category: "python-101"
-permalink: /workspace/python-101/strings
+category: "python"
+permalink: /workspace/python/strings
 ---
 
 In Python, strings are fundamental data types that allow you to store sequences of characters. In this tutorial, I'll provide you with a comprehensive understanding of strings in Python, covering how to create them, access their characters, and manipulate their contents. You can extract partial strings from string values, add or remove spacing, convert letters to lowercase or uppercase, and check that strings are formatted correctly. You can even write Python code to access the clipboard for copying and pasting text.
@@ -821,4 +821,4 @@ Discover additional programs that handle string data types in my <a href="https:
 
 ## Summary <hr>
 
-Well done! You're are one step closer to mastering working with Python strings. You've learned how to manipulate and format text, which is a crucial skill for any programmer. Strings play a pivotal role in everything from data processing to user interface development. As you proceed with your Python journey, you'll encounter strings in various applications, and now you have the skills to handle them adeptly. Up next, [Understanding Python Data Structures: Dictionary Data Types](/workspace/python-101/dictionaries) where you will learn about storing and manipulating structured data.
+Well done! You're are one step closer to mastering working with Python strings. You've learned how to manipulate and format text, which is a crucial skill for any programmer. Strings play a pivotal role in everything from data processing to user interface development. As you proceed with your Python journey, you'll encounter strings in various applications, and now you have the skills to handle them adeptly. Up next, [Understanding Python Data Structures: Dictionary Data Types](/workspace/python/dictionaries) where you will learn about storing and manipulating structured data.

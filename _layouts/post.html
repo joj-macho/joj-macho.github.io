@@ -5,7 +5,7 @@ layout: works
 <!-- ======= Breadcrumbs ======= -->
 <div class="breadcrumbs">
     
-    {% if page.category == "python-101" %}
+    {% if page.category == "python" %}
     <div class="page-header d-flex align-items-center" style="background-image: url('/assets/images/workspace/python_background.png');">
     {% elsif page.category == "python-cryptography" %}
     <div class="page-header d-flex align-items-center" style="background-image: url('/assets/images/workspace/cryptography_background.png');">
@@ -32,8 +32,8 @@ layout: works
             <ol>
                 <li><a href="/workspace/">Workspace</a></li>
 
-                {% if page.category == "python-101" %}
-                <li><a href="/workspace/python_101">Python 101</a></li>
+                {% if page.category == "python" %}
+                <li><a href="/workspace/python">Python 101</a></li>
                 {% elsif page.category == "python-cryptography" %}
                 <li><a href="/workspace/cryptography">Cryptography 101</a></li>
                 {% elsif page.category == "computational-python" %}

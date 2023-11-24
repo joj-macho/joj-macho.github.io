@@ -3,8 +3,8 @@ layout: post
 title: "Introduction to GUI Programming with Tkinter"
 sub-title: "Building Graphical User Interfaces in Python"
 tags: ["python", "basics"]
-category: "python-101"
-permalink: /workspace/python-101/python-tkinter
+category: "python"
+permalink: /workspace/python/python-tkinter
 ---
 
 Embark on the journey of creating graphical user interfaces (GUIs) in Python with Tkinter. This tutorial provides a hands-on approach to GUI programming, enabling you to design interactive and user-friendly applications. Learn the basics of Tkinter, create windows, design widgets, and enhance your Python programming skills with this essential GUI toolkit.
@@ -46,4 +46,4 @@ Embark on the journey of creating graphical user interfaces (GUIs) in Python wit
 
 ## Summary <hr>
 
-Congratulations on mastering the basics of GUI programming with Tkinter! Your Python journey continues with [Introduction to Game Development with Pygame](/workspace/python-101/python-pygame) — an exciting exploration into game programming.
+Congratulations on mastering the basics of GUI programming with Tkinter! Your Python journey continues with [Introduction to Game Development with Pygame](/workspace/python/python-pygame) — an exciting exploration into game programming.

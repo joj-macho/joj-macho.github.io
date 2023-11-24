@@ -3,8 +3,8 @@ layout: post
 title: "Dictionary Data Types"
 sub-title: "Understanding Python Data Structures: A Guide, Examples and Best Practices"
 tags: ["python", "basics", "dict"]
-category: "python-101"
-permalink: /workspace/python-101/dictionaries
+category: "python"
+permalink: /workspace/python/dictionaries
 ---
 
 Welcome to another chapter in our tutorial series on Python data structures. In this tutorial, we will delve into the dictionary data type, a powerful tool for storing and manipulating data. Dictionaries play a vital role in Python programming, offering a versatile way to map unique keys to corresponding values, enabling efficient data access and modification.
@@ -606,4 +606,4 @@ Discover additional programs that handle dictionary data types in my <a href="ht
 
 Congratulations! You've completed the tutorial on Python dictionaries. Dictionaries are essential for organizing data efficiently, and you've gained a deep understanding of their functionality. With this knowledge, you can tackle more complex data structures and address a wide range of real-world problems.
 
-Next, you will learn how to autonomously program what actions a program can take based on specific results obtained during calculations with [Python Control Flow](/workspace/python-101/control-flow)
+Next, you will learn how to autonomously program what actions a program can take based on specific results obtained during calculations with [Python Control Flow](/workspace/python/control-flow)

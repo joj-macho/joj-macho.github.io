@@ -3,7 +3,7 @@ layout: post
 title: "Getting Started with Python Programming"
 sub-title: "What You Need to Know"
 tags: ["python", "basics"]
-category: "python-101"
+category: "python"
 ---
 
 Hello! If you're reading this, it means you're interested in programming or maybe just curious about what it is. Either way, I'm here to tell you that programming is not as scary as it seems.
@@ -232,7 +232,7 @@ Python's versatility and wide range of applications make it a powerful language 
 
 Congratulations! You've reached the end of this introduction to Python programming. You now have a solid grasp of the world of programming and the practical applications of Python. Python's simplicity, readability, and extensive libraries make it an ideal choice for beginners. You've also learned the significance of programming, from problem-solving and automation to promising job prospects. The Python community is always welcoming to new learners, offering support and guidance. As you continue on your coding journey, remember that programming is a limitless realm of possibilities, and it can be an incredibly rewarding experience.
 
-With this foundation, you're now ready to move on to the next section, [Setting Up Your Python Programming Environment](/workspace/python-101/setting-up). Where you will learn how to install Python, choose an Integrated Development Environment (IDE), and get started with the basics of Python programming.
+With this foundation, you're now ready to move on to the next section, [Setting Up Your Python Programming Environment](/workspace/python/setting-up). Where you will learn how to install Python, choose an Integrated Development Environment (IDE), and get started with the basics of Python programming.
 
 
 

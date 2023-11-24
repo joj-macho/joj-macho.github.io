@@ -3,8 +3,8 @@ layout: post
 title: "Numeric Data Types"
 sub-title: "Understanding Python Data Structures: A Guide, Examples and Best Practices"
 tags: ["python", "basics", "numbers"]
-category: "python-101"
-permalink: /workspace/python-101/numbers
+category: "python"
+permalink: /workspace/python/numbers
 ---
 
 Numeric data types are essential in Python programming as they allow us to work with numbers and perform mathematical operations. Whether you're calculating salaries, analyzing data, or implementing web applications, numbers play a fundamental role in programming. This section will explore the importance of numeric data types in Python and provide practical examples and use cases for each data type. I will also discuss the potential limitations and challenges associated with numeric data types and provide best practices for handling type errors and exceptions.
@@ -425,4 +425,4 @@ You can find more programs that handle numerical data types on my <a href="https
 
 Nice! You've explored Python's numeric data types in-depth. From integers to complex numbers, you've uncovered their characteristics, learned about type conversions, and understood how to perform various mathematical operations. These numeric data types have wide-ranging practical applications across diverse domains.
 
-Armed with this knowledge, you now have a strong foundation for efficiently handling numeric data in Python. But that's not enough, next up is [Understanding Python Data Structures: Lists & Tuples Data Types](/workspace/python-101/lists-and-tuples).
+Armed with this knowledge, you now have a strong foundation for efficiently handling numeric data in Python. But that's not enough, next up is [Understanding Python Data Structures: Lists & Tuples Data Types](/workspace/python/lists-and-tuples).

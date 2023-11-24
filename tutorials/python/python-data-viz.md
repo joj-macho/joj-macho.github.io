@@ -3,8 +3,8 @@ layout: post
 title: "Introduction to Data Visualization with Matplotlib"
 sub-title: "Creating Informative and Engaging Visuals with Python"
 tags: ["python", "basics"]
-category: "python-101"
-permalink: /workspace/python-101/python-matplotlib
+category: "python"
+permalink: /workspace/python/python-matplotlib
 ---
 
 Welcome to the world of data visualization with Matplotlib! In this tutorial, you'll discover the power of Matplotlib, a versatile and widely-used library for creating captivating visualizations in Python. Whether you're exploring data for insights or presenting findings to others, Matplotlib provides a rich set of tools for turning raw data into informative visuals. Let's dive in and unleash the potential of data visualization.
@@ -50,4 +50,4 @@ Welcome to the world of data visualization with Matplotlib! In this tutorial, yo
 
 ## Summary <hr>
 
-Congratulations on mastering the basics of data visualization with Matplotlib! As you continue your Python journey, consider exploring more advanced visualization techniques in [Introduction to Web Development with Flask](/workspace/python-101/python-flask).
+Congratulations on mastering the basics of data visualization with Matplotlib! As you continue your Python journey, consider exploring more advanced visualization techniques in [Introduction to Web Development with Flask](/workspace/python/python-flask).

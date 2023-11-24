@@ -3,8 +3,8 @@ layout: post
 title: "Python Control Flow"
 sub-title: "Making Decisions and Repeating Actions"
 tags: ["python", "basics", "loops"]
-category: "python-101"
-permalink: /workspace/python-101/control-flow
+category: "python"
+permalink: /workspace/python/control-flow
 ---
 
 In the preceding tutorials, we have focused on executing statements sequentially. However, in both programming and everyday scenarios, we often encounter situations requiring decisions based on specific conditions or the repetitive execution of statements for various objects. Control flow in programming determines the order of statement execution within a code, and it primarily consists of two structures: branching statements (conditional statements) and looping structures (iterating statements).
@@ -548,4 +548,4 @@ You can find more programs that implement branching statements and looping struc
 
 ## Summary <hr>
 
-Great job! You've completed the tutorial on Python flow control. You now know how to make decisions, create loops, and structure your code for various scenarios. Understanding control structures is a critical skill for developing sophisticated Python programs. With this knowledge, you're well-prepared to move on to [Python Functions](/workspace/python-101/functions), the building blocks of code.
+Great job! You've completed the tutorial on Python flow control. You now know how to make decisions, create loops, and structure your code for various scenarios. Understanding control structures is a critical skill for developing sophisticated Python programs. With this knowledge, you're well-prepared to move on to [Python Functions](/workspace/python/functions), the building blocks of code.

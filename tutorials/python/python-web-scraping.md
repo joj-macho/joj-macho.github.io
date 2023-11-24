@@ -3,8 +3,8 @@ layout: post
 title: "Introduction to Web Scraping with Python"
 sub-title: "Extracting Valuable Data from the Web"
 tags: ["python", "basics"]
-category: "python-101"
-permalink: /workspace/python-101/python-web-scraping
+category: "python"
+permalink: /workspace/python/python-web-scraping
 ---
 
 Unlock the potential of data extraction from websites with this comprehensive tutorial on web scraping in Python. Web scraping is a powerful technique that allows you to gather data from websites for various purposes, from data analysis to building datasets. Learn the basics of web scraping, ethical considerations, and practical applications in Python.
@@ -45,4 +45,4 @@ Unlock the potential of data extraction from websites with this comprehensive tu
 
 ## Summary <hr>
 
-Congratulations on exploring the fundamentals of web scraping in Python! As you progress, the next tutorial dives into [Introduction to GUI Programming with Tkinter](/workspace/python-101/python-tkinter) — a valuable skill for building graphical user interfaces.
+Congratulations on exploring the fundamentals of web scraping in Python! As you progress, the next tutorial dives into [Introduction to GUI Programming with Tkinter](/workspace/python/python-tkinter) — a valuable skill for building graphical user interfaces.

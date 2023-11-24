@@ -3,8 +3,8 @@ layout: post
 title: "Setting Up Your Python Programming Environment"
 sub-title: "A Step-by-Step Guide to Configuring Your Coding Workspace"
 tags: ["python", "basics"]
-category: "python-101"
-permalink: /workspace/python-101/setting-up
+category: "python"
+permalink: /workspace/python/setting-up
 ---
 
 When starting with programming, one of the first things you need to do is set up your programming environment. This involves installing the necessary tools and software to write and run your code. In this section, I'll walk you through how to install Python and set it up on both Linux and Windows operating systems. I'll also provide tips on running Python code in a terminal session.
@@ -213,5 +213,5 @@ For beginners looking to dive deeper into Python programming, there are several 
 
 You've successfully taken your first step into the world of programming by setting up your development environment. This guide has walked you through installing Python on Linux and Windows and executing Python code in a terminal. Your environment is now configured correctly, and you're well-prepared to start writing and running Python code. As you continue your journey, you'll find that having a working programming environment is the foundation upon which you'll build your coding skills.
 
-In the next section, [Python Definitions and Concepts](/workspace/python-101/definitions-and-concepts), you'll delve into Python's fundamental structure, covering variables, data types, and syntax. This knowledge will serve as the cornerstone for more advanced Python concepts.
+In the next section, [Python Definitions and Concepts](/workspace/python/definitions-and-concepts), you'll delve into Python's fundamental structure, covering variables, data types, and syntax. This knowledge will serve as the cornerstone for more advanced Python concepts.
 

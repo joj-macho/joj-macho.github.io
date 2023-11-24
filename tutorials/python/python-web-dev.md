@@ -3,8 +3,8 @@ layout: post
 title: "Web Development with Flask"
 sub-title: "Creating Web Applications with Python's Microframework"
 tags: ["python", "basics"]
-category: "python-101"
-permalink: /workspace/python-101/python-flask
+category: "python"
+permalink: /workspace/python/python-flask
 ---
 
 Welcome to the world of web development with Flask! This tutorial is your gateway to creating dynamic and interactive web applications using Python. Flask, a lightweight and versatile web framework, empowers you to build web solutions with ease. Whether you're a beginner or an experienced developer, Flask offers a straightforward approach to web development. Let's embark on this exciting journey together.
@@ -50,4 +50,4 @@ Welcome to the world of web development with Flask! This tutorial is your gatewa
 
 ## Summary <hr>
 
-Congratulations on exploring web development with Flask! As you continue your Python journey, consider diving into [Introduction to Data Visualization with Matplotlib](/workspace/python-101/python-matplotlib) to enhance your skills in presenting data visually.
+Congratulations on exploring web development with Flask! As you continue your Python journey, consider diving into [Introduction to Data Visualization with Matplotlib](/workspace/python/python-matplotlib) to enhance your skills in presenting data visually.

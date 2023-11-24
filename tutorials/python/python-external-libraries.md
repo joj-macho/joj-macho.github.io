@@ -3,8 +3,8 @@ layout: post
 title: "Working with External Libraries"
 sub-title: "Leveraging Third-Party Tools for Efficient Python Development"
 tags: ["python", "basics"]
-category: "python-101"
-permalink: /workspace/python-101/python-libraries
+category: "python"
+permalink: /workspace/python/python-libraries
 ---
 
 Python's strength lies not only in its core features but also in the vast ecosystem of external libraries. This tutorial delves into the process of integrating and utilizing external libraries in your Python projects. Discover how to enhance your capabilities by tapping into the rich collection of libraries available in the Python ecosystem.
@@ -41,4 +41,4 @@ Python's strength lies not only in its core features but also in the vast ecosys
 
 ## Summary <hr>
 
-Congratulations! You've unlocked the potential of external libraries in Python, broadening your capabilities. To further enhance your Python journey, the next step involves exploring [Concurrency in Python](/workspace/python-101/python-concurrency) to manage multiple tasks concurrently and improve performance.
+Congratulations! You've unlocked the potential of external libraries in Python, broadening your capabilities. To further enhance your Python journey, the next step involves exploring [Concurrency in Python](/workspace/python/python-concurrency) to manage multiple tasks concurrently and improve performance.

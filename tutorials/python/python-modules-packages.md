@@ -3,8 +3,8 @@ layout: post
 title: "Python Modules and Packages"
 sub-title: "Organizing and Extending Your Python Projects"
 tags: ["python", "basics"]
-category: "python-101"
-permalink: /workspace/python-101/python-modules
+category: "python"
+permalink: /workspace/python/python-modules
 ---
 
 Modules and packages are fundamental concepts in Python that facilitate code organization, reusability, and maintainability. This tutorial will guide you through understanding, creating, and utilizing modules and packages in Python. Learn how to structure your code for better organization and how to share code efficiently between different parts of your project.
@@ -41,7 +41,7 @@ Modules and packages are fundamental concepts in Python that facilitate code org
 
 ## Summary <hr>
 
-Congratulations on mastering the essentials of modules and packages in Python! This knowledge is crucial for effective Python development. As you progress in your Python journey, the next step involves exploring [Working with External Libraries](/workspace/python-101/python-libraries) to leverage external tools and functionalities seamlessly.
+Congratulations on mastering the essentials of modules and packages in Python! This knowledge is crucial for effective Python development. As you progress in your Python journey, the next step involves exploring [Working with External Libraries](/workspace/python/python-libraries) to leverage external tools and functionalities seamlessly.
 
 
 

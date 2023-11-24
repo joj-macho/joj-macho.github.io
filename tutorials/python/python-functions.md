@@ -3,8 +3,8 @@ layout: post
 title: "Python Functions"
 sub-title: "Organizing Code with Python Functions and Modules"
 tags: ["python", "basics", "functions"]
-category: "python-101"
-permalink: /workspace/python-101/functions
+category: "python"
+permalink: /workspace/python/functions
 ---
 
 In programming, functions play a crucial role in making our code more organized, efficient, and reusable. These named blocks of code serve as mini-programs, enabling the division of code into smaller, manageable units. This tutorial delves into the concept of functions in Python, illustrating how they contribute to creating modular and reusable code.
@@ -61,7 +61,7 @@ In this example, we define a function named `hello()` that simply prints "Hello!
 In a function, notice that:
 
 - It starts with the keyword `def`.
-- The function name follows the same rules as variable names (see [Python Definitions and Concepts](/workspace/python-101/definitions-and-concepts)).
+- The function name follows the same rules as variable names (see [Python Definitions and Concepts](/workspace/python/definitions-and-concepts)).
 - Parameters, if any, are specified within parentheses, separated by commas.
 - A colon (`:`) at the end of the line is always required.
 - The function body consists of indented statements.
@@ -625,4 +625,4 @@ Discover more programs that use functions in my <a href="https://github.com/joj-
 
 ## Summary <hr>
 
-Well done! You now have a solid understanding of Python functions, the fundamental units of code organization. Functions allow you to decompose intricate tasks into more manageable components. You've gained proficiency in creating, invoking, and passing data to functions, a crucial skill for crafting well-structured and reusable code. As you progress in your Python journey, the next step involves exploring [Python File Handling](/workspace/python-101/file-handling) to engage with external data seamlessly.
+Well done! You now have a solid understanding of Python functions, the fundamental units of code organization. Functions allow you to decompose intricate tasks into more manageable components. You've gained proficiency in creating, invoking, and passing data to functions, a crucial skill for crafting well-structured and reusable code. As you progress in your Python journey, the next step involves exploring [Python File Handling](/workspace/python/file-handling) to engage with external data seamlessly.

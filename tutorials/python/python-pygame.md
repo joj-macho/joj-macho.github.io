@@ -3,8 +3,8 @@ layout: post
 title: "Introduction to Game Development with Pygame"
 sub-title: "Building Simple Games Using Python"
 tags: ["python", "basics"]
-category: "python-101"
-permalink: /workspace/python-101/python-pygame
+category: "python"
+permalink: /workspace/python/python-pygame
 ---
 
 Welcome to the world of game development in Python with Pygame! This tutorial is your gateway to creating engaging and interactive games. Whether you're a beginner or an experienced developer, Pygame offers a versatile and accessible framework for turning your game ideas into reality. Let's embark on this exciting journey together.
@@ -50,4 +50,4 @@ Welcome to the world of game development in Python with Pygame! This tutorial is
 
 ## Summary <hr>
 
-Congratulations on delving into the exciting realm of game development with Pygame! As you continue your Python journey, consider exploring [Introduction to Web Development with Flask](/workspace/python-101/python-flask) for another dimension of programming.
+Congratulations on delving into the exciting realm of game development with Pygame! As you continue your Python journey, consider exploring [Introduction to Web Development with Flask](/workspace/python/python-flask) for another dimension of programming.
