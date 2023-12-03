@@ -460,6 +460,47 @@ outer_function()
 
 In the last example, the `nonlocal` keyword is used to indicate that the variable `x` being modified is in the enclosing scope, not a local variable in the inner function. This is particularly useful when dealing with nested functions and you want to modify a variable in an enclosing (but non-global) scope.
 
+### Using a `main()` Function
+
+Encapsulating the main code of a program into a function called `main()` is a common practice, especially for more extensive programs. This approach enhances code organization and readability by removing the main logic from the global scope.
+
+The `main()` function can be defined anywhere in the program, but it's often placed near the start or end for clarity. When both your code and function names are readable, having `main()` at the beginning serves as a concise summary of the program's functionality.
+
+Let's explore a program that utilizes a `main()` function:
+
+{% highlight python %}
+# Define the main function
+def main():
+    print('Welcome to the Python Program!')
+    user_name = input('Enter your name: ')
+    greet_user(user_name)
+    perform_calculation(5, 7)
+    print('Program execution complete.')
+
+# Additional functions used in the main function
+def greet_user(name):
+    print(f'Hello, {name}!')
+
+def perform_calculation(a, b):
+    result = a + b
+    print(f'The result of the calculation is: {result}')
+
+if __name__ == '__main__':
+    main()
+{% endhighlight %}
+
+In this example, the `main()` function serves as the entry point for the program. It orchestrates various tasks by calling other functions. The structure not only enhances readability but also allows for clear modularization of different aspects of the program.
+
+#### Benefits of Using `main()`
+
+1. **Code Organization:** The main logic is confined within the `main()` function, providing a clear structure to the program.
+
+2. **Readability:** By isolating the main code, the overall readability of the script is improved, making it easier for developers to understand the program's flow.
+
+3. **Modularization:** Functions like `greet_user()` and `perform_calculation()` can be developed and tested independently, promoting modular code design.
+
+4. **Testability:** The `main()` function becomes a natural entry point for testing since it orchestrates the program's execution.
+
 ## Documenting Functions <hr>
 
 In Python, documenting functions is a good practice to enhance code readability and provide valuable information about the purpose and usage of a function. This is commonly done using a docstring, which is a string literal placed as the first statement in a function.
@@ -520,14 +561,85 @@ In this example, the docstring for the `calculate_average()` function not only d
 
 By consistently documenting functions using docstrings, developers can create more maintainable and understandable code, facilitating collaboration and reducing the learning curve for others who interact with the codebase.
 
-### Third-Party Modules: Expanding Python's Capabilities
+## Built-in Functions <hr>
 
-While the Python Standard Library is extensive, there are countless third-party modules available that can further enhance the capabilities of Python. In another blog article, we'll introduce the concept of third-party modules and guide you through the process of installing them. We'll also explore popular third-party modules like `requests`, `BeautifulSoup`, and `numpy`, showcasing their unique functionalities and demonstrating how they can be utilized in your Python code.
+Python provides a wealth of built-in functions that streamline various tasks in your code. You might already be familiar with some, such as `print()`, `len()`, `type()`, `list()`, `input()`, `round()`, and many others.
 
-By covering these additional topics, you'll gain a deeper understanding of modules in Python and how they can be leveraged to create more robust and feature-rich applications. Stay tuned for the upcoming articles where we'll delve into these exciting topics!
+Let's explore a selection of frequently used built-in functions along with examples. For a comprehensive list and detailed descriptions, you can refer to the [official Python documentation](https://docs.python.org/3/library/functions.xhtml).
 
-In the meantime, if you have any specific questions or topics you'd like to explore further, feel free to let us know. Happy coding!
+### Commonly Used Built-in Functions
 
+Here are some frequently used built-in functions:
+
+| Function       | Description                                       | Example                       |
+| -------------- | ------------------------------------------------- | ----------------------------- |
+| `print()`      | Displays output to the console                    | `print('Hello, Python!')`     |
+| `len()`        | Returns the length of an object                   | `length = len([1, 2, 3])`      |
+| `type()`       | Returns the type of an object                     | `data_type = type(10)`        |
+| `input()`      | Accepts user input from the console               | `user_input = input('Enter something: ')` |
+| `round()`      | Rounds a floating-point number to the nearest integer or a specified number of decimals | `rounded_num = round(3.14159, 2)` |
+| `max()`        | Returns the largest item in an iterable or the largest of two or more arguments | `maximum = max(4, 7, 2)`      |
+| `min()`        | Returns the smallest item in an iterable or the smallest of two or more arguments | `minimum = min(4, 7, 2)`      |
+| `sum()`        | Returns the sum of all items in an iterable       | `total = sum([1, 2, 3, 4, 5])` |
+
+### Examples
+
+#### Using `print()`
+
+{% highlight python %}
+message = 'Python is amazing!'
+print(message)
+{% endhighlight %}
+
+#### Using `len()`
+
+{% highlight python %}
+numbers = [10, 20, 30, 40, 50]
+length = len(numbers)
+print(f'The length of the list is: {length}')
+{% endhighlight %}
+
+#### Using `type()`
+
+{% highlight python %}
+value = 42.5
+data_type = type(value)
+print(f'The type of the value is: {data_type}')
+{% endhighlight %}
+
+#### Using `input()`
+
+{% highlight python %}
+user_name = input('Enter your name: ')
+print(f'Hello, {user_name}!')
+{% endhighlight %}
+
+#### Using `round()`
+
+{% highlight python %}
+pi_value = 3.14159
+rounded_pi = round(pi_value, 2)
+print(f'Rounded value of pi: {rounded_pi}')
+{% endhighlight %}
+
+#### Using `max()` and `min()`
+
+{% highlight python %}
+numbers = [12, 45, 78, 23, 56]
+maximum = max(numbers)
+minimum = min(numbers)
+print(f'Maximum value: {maximum}, Minimum value: {minimum}')
+{% endhighlight %}
+
+#### Using `sum()`
+
+{% highlight python %}
+values = [1, 2, 3, 4, 5]
+total = sum(values)
+print(f'The sum of the values is: {total}')
+{% endhighlight %}
+
+These examples showcase the versatility of Python's built-in functions. Feel free to explore and experiment with these functions to enhance your coding experience.
 
 ## Practical Applications and Use Cases <hr>
 
@@ -576,8 +688,8 @@ def backup_files(source_folder, destination):
     '''Copy files from source to destination for backup.'''
     # Copy files logic here
 
-source_folder = "/path/to/data"
-backup_location = "/path/to/backup"
+source_folder = '/path/to/data'
+backup_location = '/path/to/backup'
 backup_files(source_folder, backup_location)
 {% endhighlight %}
 
@@ -625,4 +737,6 @@ Discover more programs that use functions in my <a href="https://github.com/joj-
 
 ## Summary <hr>
 
-Well done! You now have a solid understanding of Python functions, the fundamental units of code organization. Functions allow you to decompose intricate tasks into more manageable components. You've gained proficiency in creating, invoking, and passing data to functions, a crucial skill for crafting well-structured and reusable code. As you progress in your Python journey, the next step involves exploring [Python File Handling](/workspace/python/file-handling) to engage with external data seamlessly.
+Great job! You've successfully grasped the essentials of Python functions, the building blocks of code organization. Functions allow you to break down complex tasks into more manageable units. Through this tutorial, you've acquired the skills to create, call, and pass data to functions, a key capability for developing structured and reusable code.
+
+As you continue your exploration of Python, the next logical step is to dive into [Python Modules and Packages](/workspace/python/python-modules). This will enable you to organize and manage your code on a larger scale, fostering modular and collaborative development practices.
