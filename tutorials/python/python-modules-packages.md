@@ -268,39 +268,37 @@ Python's Standard Library is a rich collection of modules that provide a wide ra
 
 Here are some frequently used built-in modules, each offering distinct capabilities:
 
-#### 1. **`math` Module**
+#### `math` Module
 
 The `math` module provides mathematical functions for basic and advanced operations. Some commonly used functions include `sqrt()` for square root, `sin()` for sine, `cos()` for cosine, and `log()` for logarithms.
 
-#### 2. **`random` Module**
+#### `random` Module
 
 The `random` module is employed for generating pseudo-random numbers. You've already encountered functions like `random.choice()` for making random selections and `random.randint()` for generating random integers.
 
-#### 3. **`logging` Module**
+#### `logging` Module
 
 For logging messages with different severity levels, the `logging` module is indispensable. It enables you to manage the verbosity of your program and record events for debugging.
 
-#### 4. **`inspect` Module**
+#### `inspect` Module
 
 The `inspect` module offers tools for examining live objects in the program. You can use it to retrieve information about classes, methods, and modules.
 
-#### 5. **`os` Module**
+#### `os` Module
 
 The `os` module provides a way to interact with the operating system. It includes functions for file and directory manipulation, environment variables, and more.
 
-#### 6. **`sys` Module**
+#### `sys` Module
 
 Working closely with the Python interpreter, the `sys` module provides access to some variables used or maintained by the interpreter. It's particularly useful for interacting with the Python runtime environment.
 
-#### 7. **`datetime` Module**
+#### `datetime` Module
 
 For working with dates and times, the `datetime` module is essential. It allows you to create, manipulate, and format dates and times.
 
-#### 8. **`json` Module**
+#### `json` Module
 
 When dealing with JSON data, the `json` module is invaluable. It provides methods for encoding Python objects into JSON format and decoding JSON data into Python objects.
-
-### Exploring Built-in Modules: A Quick Reference
 
 Here's a quick reference table summarizing some of the commonly used built-in modules:
 
