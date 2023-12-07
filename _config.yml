@@ -30,10 +30,10 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Text and Highlighting
-markdown: GFM
-highlighter: rouge
-# kramdown:
-#   input: GFM
+# markdown: GFM
+# highlighter: rouge
+kramdown:
+  input: GFM
 
 # Build settings
 theme: minima
