@@ -165,7 +165,7 @@ In traditional programming, you might encounter various complex punctuation char
 
 Python's code structure reflects its philosophy of emphasizing code readability. This design choice makes Python ideal for beginners who are learning to program. Now, let's dive into a simple example to showcase Python's user-friendliness:
 
-{% highlight python linenos %}
+{% highlight python %}
 # Simulating robot movements using Python
 class Robot:
     def __init__(self, name):
