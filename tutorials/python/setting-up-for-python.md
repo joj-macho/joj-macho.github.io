@@ -313,7 +313,7 @@ Select a location on your computer to store your project. Create a new folder wi
 With your programming environment and project folder set up, create a new file within the folder. Open your text editor or IDE, start a new file, and save it as `hello.py` (the `.py` extension denotes a Python file). Write a simple "Hello World" program:
 
 {% highlight python %}
-print("Hello Python!")
+print('Hello Python!')
 {% endhighlight %}
 
 ### Running Your Python Program

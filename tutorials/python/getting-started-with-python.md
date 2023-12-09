@@ -175,16 +175,16 @@ class Robot:
     def move_forward(self, distance):
         x, y = self.position
         self.position = (x, y + distance)
-        print(f"{self.name} moved forward by {distance} units.")
+        print(f'{self.name} moved forward by {distance} units.')
 
     def turn_left(self):
-        print(f"{self.name} turned left.")
+        print(f'{self.name} turned left.')
 
     def turn_right(self):
-        print(f"{self.name} turned right.")
+        print(f'{self.name} turned right.')
 
- # Creating a robot named "RoboBot"
- robot1 = Robot("RoboBot")
+ # Creating a robot named 'RoboBot'
+ robot1 = Robot('RoboBot')
 
  # Controlling robot movements
  robot1.move_forward(5)
