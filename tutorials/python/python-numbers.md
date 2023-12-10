@@ -7,294 +7,553 @@ category: "python"
 permalink: /workspace/python/numbers
 ---
 
-Numeric data types are essential in Python programming as they allow us to work with numbers and perform mathematical operations. Whether you're calculating salaries, analyzing data, or implementing web applications, numbers play a fundamental role in programming. This section will explore the importance of numeric data types in Python and provide practical examples and use cases for each data type. I will also discuss the potential limitations and challenges associated with numeric data types and provide best practices for handling type errors and exceptions.
+Numbers are the backbone of programming, facilitating various tasks such as keeping score in games, representing data in visualizations, or handling financial calculations in web applications. Python, being a versatile language, provides several ways to handle numeric data. This tutorial will explore numeric data types in Python and provide practical examples and use cases for each data type. This tutorial will also discuss the potential limitations and challenges associated with numeric data types and provide best practices for handling type errors and exceptions.
 
-## Integers (int) <hr>
+## Integers (int)
 
-Integers are whole numbers, including the negatives, without any decimal points. They should be used when working with data that represents counts or discrete values. In Python, integers are typically represented by 4 or 8 bytes of computer memory, allowing for a certain range of values to be stored.
+---
 
-To create an integer variable in Python, you can use the following syntax: `variable_name = integer_value`. Here's an example of initializing integers:
+Integers are whole numbers, including the negatives, without any decimal points. They are ideal for representing counts, quantities, or any discrete values in Python. Internally, Python represents integers using either 4 or 8 bytes of computer memory, allowing for a specific range of values to be stored efficiently.
+
+To declare an integer variable in Python, use the following syntax: `variable_name = integer_value`. Here's an example illustrating integer initialization:
 
 {% highlight python %}
-x = 5
-y = -3
+>>> x = 42
+>>> y = -1
+>>> z = 0
+>>> print(type(x), type(y), type(z))
+<class 'int'> <class 'int'> <class 'int'>
 {% endhighlight %}
 
 ### Arithmetic Operations with Integers
 
-Integers support various arithmetic operations, including addition (+), subtraction (-), multiplication (*), and division (/). These operations can be performed on integer variables, resulting in integer values.
+Integers support various arithmetic operations, including addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`). These operations can be performed on integer variables, resulting in integer values.
 
 {% highlight python %}
-# Addition
->>> print(2 + 3)
+>>> 2 + 3
 5
-
-# Subtraction
->>> print(3 - 2)
+>>> 3 - 2
 1
-
-# Multiplication
->>> print(2 * 3)
+>>> 2 * 3
 6
-
-# Division
->>> print(3 / 2)
+>>> 3 / 2
 1.5
 {% endhighlight %}
 
-Python offers two types of division for integers: regular division (/) and floor division (//). Regular division produces a floating-point result, while floor division returns the largest integer that is less than or equal to the regular division result.
+Exponents, represented by `**`, are used for raising integers to a specific power:
 
 {% highlight python %}
-# Regular Division
->>> print(7 / 3)
-2.3333333333333335
+>>> 2 ** 3
+8
+>>> 2 ** 4
+16
+{% endhighlight %}
 
-# Floor Division
->>> print(7 // 3)
+Python provides two types of division for integers: regular division (`/`) and floor division (`//`). Regular division yields a floating-point result, while floor division returns the largest integer less than or equal to the regular division result.
+
+{% highlight python %}
+>>> 7 / 3
+2.3333333333333335
+>>> 7 // 3
 2
 {% endhighlight %}
 
-The modulo operator (%) returns the remainder of the division between two integers. It finds utility in tasks such as checking for even or odd numbers or cycling through value sequences.
+The modulo operator (`%`) calculates the remainder of the division between two integers, and it finds utility in various tasks, such as checking for even or odd numbers or cycling through value sequences.
 
 {% highlight python %}
-# Modulo operation
->>> print(7 % 3)
+>>> 7 % 2
+1
+>>> 148 % 2
+0
+>>> 15 % 7
 1
 {% endhighlight %}
 
-### Integer-Specific Functions and Methods
+When 7 is divided by 2, the remainder is 1, therefore, the number 7 is odd. When 148 is divided by 2, there is no remainder (even number). 
 
-Python provides several built-in functions and methods specifically designed for working with integers. These functions and methods can be used to perform common operations or obtain useful information about integer values.
+Mathematical expressions in Python use familiar rules of precedence table below. Expressions bounded by parentheses are always performed first, and operations within the same precedence level are evaluated left to right.
 
-Examples of integer-specific functions:
+Mathematical expressions in Python follow a set of precedence rules, and operations within the same precedence level are evaluated from left to right. Expressions enclosed in parentheses are always performed first. Below is a table illustrating the precedence of various mathematical operations:
+
+<table class="table table-dark table-responsive table-sm table-striped table-hover caption-top">
+    <caption>Table: Mathematical Operator Precedence in Python</caption>
+    <thead>
+        <tr>
+            <th scope="col">Precedence</th>
+            <th scope="col">Operator</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr>
+            <th scope="row">1</th>
+            <td><code>( )</code></td>
+            <td>Grouping with Parentheses</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td><code>**</code></td>
+            <td>Exponentiation </td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td><code>-x, +x</code></td>
+            <td>Negation (Unary)</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td><code>*, /, //, %</code></td>
+            <td>Multiplication, Division, Floor Division, Modulus</td>
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td><code>+, -</code></td>
+            <td>Addition, Subtraction</td>
+        </tr>
+    </tbody>
+</table>
+
+Here's an example of precedence in action:
 
 {% highlight python %}
-# Absolute value
->>> print(abs(-5))
-5
-
-# Maximum value
->>> print(max(4, 7, 2))
-7
-
-# Minimum value
->>> print(min(4, 7, 2))
-2
-
-# Exponential Power
->>> print(pow(2, 3))
-8
+>>> (2 + 3) * (4 - 1)
+15
+>>> 4 ** 2 + (9 - 5) / 4 * 5
+21.0
 {% endhighlight %}
 
-These functions come in handy when you need to manipulate integers with precision. The `abs()` function calculates the absolute value, ensuring negativity doesn't disrupt your calculations. The `max()` and `min()` functions effortlessly identify the highest and lowest values among a set, streamlining your data analysis tasks. The `pow()` function allows you to calculate the power of an integer with a specified exponent, offering a quick way to perform exponentiation operations.
+- `(2 + 3) * (4 - 1)`: The expression inside the parentheses is evaluated first, resulting in `5 * 3`, which equals 15.
+- `4 ** 2 + (9 - 5) / 4 * 5`: Following the precedence, the expression starts with the exponentiation operation, `4 ** 2`, which equals `16`. Then, the subtraction inside the parentheses `(9 - 5)` is calculated, resulting in `4`. After that, division is performed on the result of the subtraction, `4 / 4`, yielding `1.0`. Finally, the multiplication by `5` is carried out, resulting in `5.0`. The last step involves adding the initial exponentiation result `16` to the final multiplication result `5.0`, which gives the overall answer of `21.0`.
+
+In Python, spacing in expressions does not affect evaluation but enhances readability, helping developers quickly discern the operations' priority.
+
+### Integer-Specific Methods
+
+Python's `int` type comes with several methods that allow you to perform various operations and retrieve information about integers. Here are some common methods:
+
+#### `int.bit_length()`
+
+Returns the number of bits required to represent the integer in binary, excluding the sign and leading zeros.
+
+{% highlight python %}
+>>> number = 42
+>>> number.bit_length()
+6
+{% endhighlight %}
+
+#### `int.to_bytes(length, byteorder, signed=False)`
+
+Returns an array of bytes representing an integer. The length parameter specifies the number of bytes in the resulting array, and byteorder specifies the byte order.
+
+{% highlight python %}
+>>> number = 42
+>>> byte_array = number.to_bytes(2, byteorder='big')
+>>> byte_array
+b'\x00*'
+{% endhighlight %}
+
+### `int.from_bytes(bytes, byteorder, signed=False)`
+
+Creates an integer from a given array of bytes. The byteorder parameter specifies the byte order.
+
+{% highlight python %}
+>>> byte_array = b'\x00*'
+>>> new_number = int.from_bytes(byte_array, byteorder='big')
+>>> new_number
+42
+{% endhighlight %}
+
+### `int.conjugate()`
+
+Returns the complex conjugate of the integer. This method is useful when dealing with complex numbers.
+
+{% highlight python %}
+>>> number = 42
+>>> complex_number = complex(number, 3)
+>>> complex_number
+(42+3j)
+>>> complex_number.conjugate()
+(42-3j)
+{% endhighlight %}
+
+These are just a few examples of the methods available for integers in Python. Depending on your needs, you may find other methods provided by the `int` type in the Python documentation.
 
 Integers are versatile and commonly used for various purposes, such as counting occurrences, representing indices in data structures, or measuring quantities in discrete units.
 
-## Floating-Point Numbers (float) <hr>
+## Floating-Point Numbers (float)
+
+---
 
 Floating-point numbers, commonly referred to as floats, are another essential numeric data type in Python. Unlike integers, floats can represent both whole numbers and fractions, including numbers with decimal points. Floats are used when more precision is required, and they are particularly suitable for tasks involving scientific calculations, financial modeling, and graphical representations.
 
-To create a floating-point variable in Python, simply assign a value with a decimal point to a variable name using the syntax `variable_name = value`. Here's an example:
+Creating a floating-point variable in Python is straightforward. You can use the following syntax: `variable_name = float_value`. Here's an example:
 
 {% highlight python %}
-# Initializing float variables
-temperature = 25.5
 pi = 3.14159
-distance = 2.5e-3
+radius = 2.5
 {% endhighlight %}
 
 ### Arithmetic Operations with Floating-Point Numbers
 
-Floating-point numbers support various arithmetic operations, such as addition (+), subtraction (-), multiplication (*), and division (/). You can perform these operations on float variables, resulting in float values. It's important to note that when operations involve both integers and floats, Python automatically converts integers to floats to ensure consistent precision.
+Floating-point numbers support standard arithmetic operations, similar to integers. These operations include addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`). Additionally, floating-point numbers allow for exponentiation (`**`) and modulus (`%`) operations.
 
 {% highlight python %}
-# Addition
->>> print(0.1 + 0.1)
-7
-
-# Difference
->>> print(0.2 - 0.1)
-0.1
-
-# Product
->>> print(2 * 0.1)
+>>> 0.1 + 0.1
 0.2
-
-# Quotient
->>> print(0.3 / 0.1)
+>>> 0.2 - 0.1
+0.1
+>>> 2 * 0.1
+0.2
+>>> 0.3 / 0.1
 2.9999999999999996
 {% endhighlight %}
 
-Note in the example above on the quotient, the output is approximately "2.9999999999999996" due to Python's handling of floating-point division.
+With floats, you get 15 to 17 digits of precision. However, small rounding errors may occur due to the universal CPU need to store digits in the binary number system, making floats not always perfectly accurate. For example, the following addition results in an extra "2.9999999999999996" due to Python's handling of floating-point division.
 
-While floats provide greater precision than integers, they can sometimes encounter precision and rounding issues due to the way they are stored in memory. This can lead to unexpected results in certain calculations. To mitigate these issues, Python provides functions for rounding and formatting float values.
+#### Precision Challenges
 
-It's important to be cautious when working with floats, as precision and rounding issues can arise. Computers have finite memory to represent floating-point numbers, which can lead to unexpected results. For instance:
+One challenge with floating-point numbers is precision. Due to the way computers represent real numbers in binary, certain values cannot be precisely represented, leading to unexpected results in calculations. Precision and rounding issues can arise when working with floats, as computers have finite memory to represent these numbers. For instance:
 
 {% highlight python %}
-# Precision and rounding issues with floats
->>> print (0.1 + 0.2)
+>>> 0.1 + 0.2
 0.30000000000000004
-
->>> print (3 * 0.1)
+>>> 3 * 0.1
 0.30000000000000004
 {% endhighlight %}
 
 This occurs because Python aims to represent the result as precisely as possible, which can be challenging given how computers internally store numbers.
 
-### Floating-Point-Specific Functions and Methods
+##### Avoiding Precision Issues
+
+Floating-point numbers have limited precision, and arithmetic operations may result in rounding errors. Consider using the `decimal` module for more precise decimal arithmetic, especially in financial or critical applications.
+
+{% highlight python %}
+>>> from decimal import Decimal
+>>> 
+>>> x = Decimal('0.1')
+>>> y = Decimal('0.2')
+>>> sum_result = x + y
+>>> sum_result
+Decimal('0.3')
+{% endhighlight %}
+
+The `decimal` module provides the `Decimal` type, offering higher precision. In this example, adding "0.1" and "0.2" results in the accurate value of "0.3". Using the `decimal` module is particularly crucial when precision is essential, such as in financial calculations.
+
+For more information on floating-point accuracy, you can refer to the official Python documentation <a href="https://docs.python.org/3/tutorial/floatingpoint.html?highlight=floating%20point%20numbers" target="_blank">here</a>. Additionally, details about the decimal module can be found <a href="https://docs.python.org/3/library/decimal.html?highlight=floating%20point%20numbers" target="_blank">here</a>.
+
+### Floating-Point-Specific Methods and Functions
 
 Python provides useful functions and methods specifically designed for working with floating-point numbers. These can assist in rounding, formatting, and other operations. Here are a few examples:
 
+#### `float.as_integer_ratio()`
+
+Returns a pair of integers whose ratio is equal to the original floating-point number. This is useful for obtaining a rational representation of a floating-point value.
+
 {% highlight python %}
-# Rounding to a specified number of decimal places
->>> rounded_value = round(3.14159, 2) 
->>> print(rounded_value)
-3.14
->>> formatted_value = "{:.2f}".format(3.14159)
->>> print(formatted_value)
-3.14
-
-# Converting a float to an integer (truncating the decimal part)
->>> integer_value = int(5.8)
->>> print(integer_value)
-5
-
-# Getting the absolute value
->>> abs_value = abs(-10.5)
->>> print(abs_value)
-10.5
+>>> my_float = 3.75
+>>> ratio = my_float.as_integer_ratio()
+>>> ratio
+(15, 4)
 {% endhighlight %}
+
+`as_integer_ratio()` is used to obtain a pair of integers representing the ratio of the original floating-point number (3.75). The result (15, 4) indicates that the ratio is 15:4, which is equivalent to 3.75.
+
+#### `float.is_integer()`
+
+Checks if the floating-point number represents an integer. Returns `True` if the number is an integer, otherwise `False`.
+
+{% highlight python %}
+>>> integer_check = 5.0
+>>> result = integer_check.is_integer()
+>>> result
+True
+{% endhighlight %}
+
+The `is_integer()` method checks if the floating-point number (5.0 in this case) represents an integer. Since it does, the result is `True`.
+
+#### `float.hex()`
+
+Returns a string representation of the hexadecimal value of the floating-point number. This can be useful for serialization and unique identification.
+
+{% highlight python %}
+>>> hex_representation = 3.14159.hex()
+>>> hex_representation
+'0x1.921f9f01b866ep+1'
+{% endhighlight %}
+
+The `hex()` method converts the floating-point number (3.14159) to its hexadecimal representation. The result is a string that uniquely identifies the floating-point value.
+
+#### `float.fromhex(s)`
+
+Converts a string representing a hexadecimal floating-point number back to its float equivalent.
+
+{% highlight python %}
+>>> hex_string = '0x1.921f9f01b866ep+1'
+>>> converted_float = float.fromhex(hex_string)
+>>> converted_float
+3.14159
+{% endhighlight %}
+
+Using `fromhex()`, the hexadecimal string ('0x1.921f9f01b866ep+1') is converted back to its float equivalent (3.14159).
+
+#### `round()`
+
+Rounds a floating-point number to the nearest integer or to a specified number of decimal places.
+
+{% highlight python %}
+>>> rounded_value = round(3.14159)
+>>> rounded_value
+3
+
+>>> precise_rounding = round(3.14159, 2)
+>>> precise_rounding
+3.14
+{% endhighlight %}
+
+The `round()` function is applied to round 3.14159 to the nearest integer (resulting in 3) and to two decimal places (resulting in 3.14).
+
+#### `abs()`
+
+Returns the absolute value of a floating-point number.
+
+{% highlight python %}
+>>> absolute_value = abs(-5.678)
+>>> absolute_value
+5.678
+{% endhighlight %}
+
+The `abs()` function calculates the absolute value, ensuring that the result is always non-negative (5.678 in this case).
 
 Understanding the characteristics and functionalities of floating-point numbers is essential for accurate and reliable numerical computations in Python.
 
+These methods and functions enhance the capabilities of working with floating-point numbers in Python, providing functionalities for representation, identification, and validation. Understanding these tools is crucial for precise and reliable handling of real numbers in various applications.
+
 Floating-point numbers are a powerful tool for handling a wide range of calculations, from complex mathematical modeling to representing real-world quantities accurately.
 
-## Complex Numbers <hr>
+## Complex Numbers
+
+---
 
 In addition to integers and floating-point numbers, Python also supports complex numbers, which are used to represent quantities involving both real and imaginary parts. Complex numbers are often encountered in mathematics, physics, engineering, and signal processing.
 
-A complex number is represented as `a + bj`, where `a` is the real part and `b` is the imaginary part. Python recognizes complex numbers when they are created with the imaginary unit `j` and typically surrounds them in parentheses when printing. Here's an example:
+In Python, complex numbers are expressed as `a + bj`, where `a` is the real part, `b` is the imaginary part, and `j` represents the imaginary unit.
+
+Creating a complex variable is straightforward. You can use the following syntax: `variable_name = complex(real_part, imaginary_part)`. Here's an example:
 
 {% highlight python %}
-# Initializing complex variables
-z1 = 2 + 3j
-z2 = -1j
-z3 = complex(4, -5)
+>>> z = complex(2, 3)
+>>> z
+(2+3j)
+{% endhighlight %}
+
+Python also recognizes complex numbers when they are created with the imaginary unit `j` and typically surrounds them in parentheses when printing. Here's an example:
+
+{% highlight python %}
+>>> z = 2 + 3j
+>>> z
+(2+3j)
 {% endhighlight %}
 
 ### Arithmetic Operations with Complex Numbers
 
-Complex numbers support various arithmetic operations, similar to integers and floating-point numbers. These operations can be performed on complex variables, resulting in complex values. Here are some examples:
+Complex numbers support standard arithmetic operations, similar to integers and floats. These operations include addition (`+`), subtraction (`-`), multiplication (`*`), and division (`/`). Additionally, complex numbers allow for exponentiation (`**`) and modulus (`%`) operations.
 
 {% highlight python %}
-# Arithmetic operations with complex numbers
->>> z1 = 2 + 3j
->>> z2 = -1j
-
->>> print(z1 + z2)
-(2+2j)
->>> print(z1 - z3)
-(2+4j)
->>> print(z2 * z3)
-(3-2j)
->>> print(z1 / z2)
-(-3+2j)
+>>> z = complex(2, 3)
+>>> w = 1 + 2j
+>>> z + w
+(3+5j)
+>>> z - w
+(1+1j)
+>>> z * w
+(-4+7j)
+>>> z / w
+(1.6-0.2j)
+>>> z ** 2
+(-5+12j)
 {% endhighlight %}
 
 Additionally, complex numbers have specific operations such as calculating the complex conjugate and finding the absolute value.
 
 ### Complex-Specific Functions and Methods
 
-Python provides functions and methods specifically designed for working with complex numbers. These include obtaining the real and imaginary parts, finding the conjugate, calculating the absolute value, and more. To access these functions, you need to import the `cmath` module. Here are a few examples:
+Python provides functions and methods specifically designed for working with complex numbers, allowing you to manipulate both their real and imaginary parts, find the conjugate, calculate the absolute value, and more. These functionalities are accessible by importing the `cmath` module. Here are some common ones:
+
+#### `real` and `imag`
+
+The `real` attribute returns the real part of the complex number, while the `imag` attribute returns the imaginary part.
+
+{% highlight python %}
+>>> z = complex(2, 3)
+>>> z.real
+2.0
+>>> z.imag
+3.0
+{% endhighlight %}
+
+#### `conjugate`
+
+Returns the complex conjugate of a complex number.
+
+{% highlight python %}
+>>> z = complex(2, 3)
+>>> z.conjugate()
+(2-3j)
+{% endhighlight %}
+
+The `conjugate()` method flips the sign of the imaginary part.
+
+#### `cmath.phase()`
+
+Returns the phase (angle) of a complex number in radians.
 
 {% highlight python %}
 >>> import cmath
+>>> z = complex(2, 3)
+>>> cmath.phase(z)
+0.982793723247329
+{% endhighlight %}
 
->>> z1 = 2 + 3j
->>> z2 = -1j
->>> z3 = complex(4, -5)
+The `phase()` function calculates the angle formed by the complex number in the complex plane.
 
-# Getting the real and imaginary parts
->>> print(z1.real)
-2.0
->>> print(z1.imag)
-3.0
+#### `cmath.polar()`
 
-# Finding the conjugate
->>> conjugate_result = z1.conjugate()
->>> print(conjugate_result)
-(2-3j)
+Returns the polar coordinates (r, phi) of a complex number, where `r` is the magnitude and `phi` is the phase angle in radians.
 
-# Calculating the absolute value (magnitude)
->>> abs_value = abs(z1)
->>> print(abs_value)
+{% highlight python %}
+>>> import cmath
+>>> z = complex(2, 3)
+>>> cmath.polar(z)
+(3.605551275463989, 0.982793723247329)
+{% endhighlight %}
+
+The `polar()` function provides the magnitude and angle of the complex number in polar form.
+
+#### `cmath.rect()`
+
+Converts polar coordinates (magnitude, phase) to a complex number.
+
+{% highlight python %}
+>>> import cmath
+>>> z = complex(2, 3)
+>>> cmath.rect(3.605551275463989, 0.982793723247329)
+(2+3j)
+{% endhighlight %}
+
+The `rect()` function creates a complex number from its polar coordinates.
+
+Other available functions include trigonometric functions, square root, and exponential functions:
+
+#### `abs()`
+
+Calculates the absolute value (magnitude) of a complex number.
+
+{% highlight python %}
+>>> import cmath
+>>> z = complex(2, 3)
+>>> abs(z)
 3.605551275463989
+{% endhighlight %}
 
-# Calculate square root of a complex number
->>> sqrt_result = cmath.sqrt(z1)
->>> print(sqrt_result)
+#### `sqrt()`
+
+Calculates the square root of a complex number.
+
+{% highlight python %}
+>>> import cmath
+>>> z = complex(2, 3)
+>>> cmath.sqrt(z)
 (1.6741492280355401+0.8959774761298381j)
+{% endhighlight %}
 
-# Calculate exponential of a complex number
->>> exp_result = cmath.exp(z2)
->>> print(exp_result)
-(0.5403023058681398-0.8414709848078965j)
+#### `exp()`
 
-# Compute trigonometric functions of a complex number
->>> sin_result = cmath.sin(z3)
->>> print(sin_result)
-(-56.16227422023235+48.50245524177091j)
+Calculates the exponential of a complex number.
+
+{% highlight python %}
+>>> import cmath
+>>> z = complex(2, 3)
+>>> cmath.exp(z) 
+(-7.315110094901103+1.0427436562359045j)
+{% endhighlight %}
+
+#### Trigonometric Functions
+
+{% highlight python %}
+>>> import cmath
+>>> z = complex(2, 3)
 >>> 
->>> cos_result = cmath.cos(z3)
->>> print(cos_result)
-(-48.506859457844584-56.15717492513018j)
+>>> cmath.sin(z)
+(9.15449914691143-4.168906959966565j)
+>>> cmath.cos(z)
+(-4.189625690968807-9.109227893755337j)
+>>> cmath.atan(z)
+(1.4099210495965755+0.22907268296853878j)
 {% endhighlight %}
 
 By using these complex-specific functions and methods, you can perform various calculations and manipulations on complex numbers.
 
-Understanding the definition, characteristics, and functionalities of complex numbers is crucial for handling mathematical operations involving real and imaginary parts in Python.
+## Working with Numeric Data in Python
 
-## Numeric Data Type Conversion and Type Checking <hr>
+---
 
-### Converting Between Numeric Data Types
+### Type Casting
 
 In Python, you can convert between different numeric data types using implicit or explicit type conversion. Implicit type conversion occurs automatically when Python converts a value from one type to another without any explicit instructions. Explicit type conversion, also known as type casting, involves manually converting a value from one type to another using specific functions or methods.
 
 Here are a few examples of converting between different numeric types:
-{% highlight python %}
-# Implicit type conversion
-x = 5
-y = 2.5
-result = x + y  # int + float = float
 
-# Explicit type conversion (type casting)
-a = 10
-b = float(a)  # int to float
-c = str(a)    # int to string
-d = complex(a)  # int to complex
+{% highlight python %}
+>>> # Implicit type conversion
+>>> x = 5
+>>> y = 2.5
+>>> x + y # int + float = float
+7.5
+>>> 
+>>> # Type casting to float
+>>> integer_value = 42
+>>> float(integer_value)
+42.0
+>>> 
+>>> # Type casting to integer
+>>> float_number = 3.14
+>>> int(float_number)
+3
+>>> 
+>>> # Type casting to complex
+>>> real_part = 2
+>>> imaginary_part = 3
+>>> complex(real_part, imaginary_part)
+(2+3j)
 {% endhighlight %}
 
-### Checking the Type of a Numeric Value
+### Working with Long Numbers
 
-To determine the type of a numeric value in Python, you can use the `type()` function. This function returns the type of the specified value.
+Python allows you to enhance the readability of long numbers using underscores and provides a convenient way to commify large numbers.
 
-Here's an example of using the `type()` function for type checking:
+#### Underscores in Numbers
+
+When working with long numbers, you can enhance their readability by grouping digits using underscores. Python allows you to use underscores as visual separators in numbers without affecting their values. Let's see this feature below:
+
 {% highlight python %}
-# Type checking using the type() function
->>> x = 10
->>> y = 3.14
->>> z = complex(2, 3)
-
->>> print(type(x))
-<class 'int'>
->>> print(type(y))
-<class 'float'>
->>> print(type(z))
-<class 'complex'>
+>>> speed_of_light = 299_792_458
+>>> print(speed_of_light)
+299792458
 {% endhighlight %}
 
-The `type()` function is useful for verifying the data type of a value, especially in practical scenarios where you need to handle different types of numeric data.
+In the example above, we defined the variable `speed_of_light` with underscores to group the digits. When we print the value, Python ignores the underscores and displays only the digits. This feature works for both integers and floats. Regardless of whether you group digits in threes or not, the value remains unchanged. For Python, "1000", "1_000", and "10_00" are all equivalent.
+
+#### Commifying Numbers
+
+In addition to using underscores to improve the readability of long numbers, you can further enhance their legibility by adding commas. This practice, often referred to as "commifying" numbers, makes large numerical values easier to interpret at a glance. <br>
+Python provides a straightforward way to add commas to numbers without altering their values. You can use the f-string formatting or the locale module, depending on your needs. Let's look at an example:
+
+{% highlight python %}
+>>> population = 7_900_000_000
+>>> formatted_population = f'{population:,}'
+>>> print(formatted_population)
+7,900,000,000
+{% endhighlight %}
 
 ### Handling Type Errors and Exceptions
 
@@ -310,45 +569,13 @@ By applying these best practices, you can prevent and address type-related error
 
 Understanding the concepts of type conversion, type checking, and handling type errors is essential for robust programming and accurate numeric calculations in Python.
 
-## Working with Long Numbers <hr>
-
-### Underscores in Numbers
-
-When working with long numbers, you can enhance their readability by grouping digits using underscores. Python allows you to use underscores as visual separators in numbers without affecting their values. Let's see this feature below:
-
-{% highlight python %}
-# Example: Using underscores in numbers
->>> speed_of_light = 299_792_458
->>> print(speed_of_light)
-299792458
-{% endhighlight %}
-
-In the example above, we defined the variable `speed_of_light` with underscores to group the digits. When we print the value, Python ignores the underscores and displays only the digits. This feature works for both integers and floats. Regardless of whether you group digits in threes or not, the value remains unchanged. For Python, 1000, 1_000, and 10_00 are all equivalent.
-
-### Commifying Numbers
-
-In addition to using underscores to improve the readability of long numbers, you can further enhance their legibility by adding commas. This practice, often referred to as "commifying" numbers, makes large numerical values easier to interpret at a glance. <br>
-Python provides a straightforward way to add commas to numbers without altering their values. You can use the f-string formatting or the locale module, depending on your needs. Let's look at an example:
-
-{% highlight python %}
-# Example: Commifying numbers with f-string formatting
->>> population = 7_900_000_000
-
-# Using f-string formatting to add commas
->>> formatted_population = f"{population:,}"
->>> print(formatted_population)
-7,900,000,000
-{% endhighlight %}
-
-## Leveraging Numeric Data Types in Programming <hr>
+### Considerations and Challenges
 
 Working with numeric data types offers several advantages in programming:
 
 - **Efficient Computations:** Numeric data types enable fast and efficient calculations, making them ideal for complex mathematical operations and simulations.
 - **Precision and Accuracy:** Numeric data types provide different levels of precision, allowing you to handle decimal values and perform calculations with high accuracy.
 - **Interoperability:** Numeric data types are widely used and compatible with various libraries and frameworks, facilitating seamless integration into different programming environments.
-
-### Considerations and Challenges
 
 However, it's essential to consider some considerations and challenges when working with numeric data types:
 
@@ -358,7 +585,9 @@ However, it's essential to consider some considerations and challenges when work
 
 By being aware of these considerations and following best practices, you can effectively leverage the benefits of numeric data types while mitigating potential challenges.
 
-## Practical Applications and Use Cases <hr>
+## Practical Applications and Use Cases
+
+---
 
 Numbers have widespread applications in programming, whether it's keeping score in games, visualizing data, storing information in web applications, or tackling numerous other tasks. Python represents numbers as decimals, but source code also allows the usage of hexadecimal, octal, or binary notations. This flexibility proves especially useful when working in domains where specific number systems like hexadecimal are prevalent. By leveraging these alternative notations, programmers can seamlessly work with numbers without the need for constant translation between different representations.
 
@@ -405,24 +634,24 @@ These examples demonstrate how numeric data types are used to solve specific pro
 
 ### More Examples
 
-Feel free to browse my <a href="https://github.com/joj-macho" target="_new">GitHub page</a> for more comprehensive programs:
+Feel free to browse my <a href="https://github.com/joj-macho" target="_blank">GitHub page</a> for more comprehensive programs:
 
-- **BMI Calculator Program** <a href="https://github.com/joj-macho/Pythological-Playground/tree/main/bmi-calculator" target="_new">Link to Program</a>
+- **BMI Calculator Program** <a href="https://github.com/joj-macho/Pythological-Playground/tree/main/bmi-calculator" target="_blank">Link to Program</a>
     - This is a simple program to calculate Body Mass Index (BMI) based on the provided height and weight using a formula.
     - This program uses integers and floats and demonstrates how they can be converted vice versa.
 
-- **Unit Converter Program:** <a href="https://github.com/joj-macho/Pythological-Playground/tree/main/converter" target="_new">Link to Program</a>
+- **Unit Converter Program:** <a href="https://github.com/joj-macho/Pythological-Playground/tree/main/converter" target="_blank">Link to Program</a>
     - Converts lengths, masses, or temperatures based on user input using a formula.
     - This program demonstrates how you can use different types of numbers run calculations.
 
-- **Number Guessing Game:** <a href="https://github.com/joj-macho/Pythological-Playground/tree/main/pico-fermi-bagels" target="_new">Link to Program</a>
+- **Number Guessing Game:** <a href="https://github.com/joj-macho/Pythological-Playground/tree/main/pico-fermi-bagels" target="_blank">Link to Program</a>
     - A number guessing game, Bagels, which generates a random secret number and challenges the player to guess it within a limited number of attempts.
     - Demonstrates using integer numbers and random numbers from the `random()` module.
 
-You can find more programs that handle numerical data types on my <a href="https://github.com/joj-macho/Math-Science-Playground" target="_new">Math & Science Playground</a> and <a href="https://github.com/joj-macho/Computational-Programming-Playground" target="_new">Computational Programming Playground</a> repositories. These repositories contain a collection of Python programs covering a wide array of mathematical and scientific concepts, including topics in numerical methods, linear algebra, differential equations, and more. So, numbers are right.
+You can find more programs that handle numerical data types on my <a href="https://github.com/joj-macho/Math-Science-Playground" target="_blank">Math & Science Playground</a> and <a href="https://github.com/joj-macho/Computational-Programming-Playground" target="_blank">Computational Programming Playground</a> repositories. These repositories contain a collection of Python programs covering a wide array of mathematical and scientific concepts, including topics in numerical methods, linear algebra, differential equations, and more. So, numbers are right.
 
-## Summary <hr>
+## Summary
 
-Nice! You've explored Python's numeric data types in-depth. From integers to complex numbers, you've uncovered their characteristics, learned about type conversions, and understood how to perform various mathematical operations. These numeric data types have wide-ranging practical applications across diverse domains.
+---
 
-Armed with this knowledge, you now have a strong foundation for efficiently handling numeric data in Python. But that's not enough, next up is [Understanding Python Data Structures: Lists & Tuples Data Types](/workspace/python/lists-and-tuples).
+Great job! You've covered Python's numeric types thoroughly, exploring integers, floats, and complex numbers. You now understand how to perform various operations, handle precision challenges, and convert between types. These skills lay a solid foundation for working with numbers in Python. Ready for more? Check out [Understanding Python Data Structures: Lists & Tuples Data Types](/workspace/python/lists-and-tuples) for the next step in your Python journey.
