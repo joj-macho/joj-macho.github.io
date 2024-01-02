@@ -501,6 +501,31 @@ section {
 
   }
 
+
+#markdown-toc::before {
+    content: "Contents";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#markdown-toc {
+    // background-color: red;
+
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 1.5em;
+    // list-style: decimal;
+    display: inline-block;
+    // position: sticky;
+    // top: 20px;
+    // left: 10px;
+}
+
+// Using numbers instead of bullets for listing
+// #markdown-toc ul {
+//     list-style: decimal;
+// }
+
 /* ====================== WORKSPACE PAGE STYLES ====================== */
 
 .workspace .post-card {
