@@ -1,15 +1,20 @@
 ---
 layout: post
 title: "Getting Started with Python Programming"
-sub-title: "What You Need to Know"
+sub-title: "Python Programming 101: Starting with Python Basics"
 tags: ["python", "basics"]
 category: "python"
 permalink: /workspace/python/getting-started
 ---
 
+
+
 Hello! If you're reading this, it means you're interested in programming or maybe just curious about what it is. Either way, I'm here to tell you that programming is not as scary as it seems.
 
 As someone who's passionate about science, programming has been a game-changer in the way I approach problem-solving. Python's adaptability and simplicity make it the perfect language to start with. Allow me to share my insights on why programming is an incredible resource and why Python is the ideal language to begin with.
+
+* toc
+{:toc}
 
 ## Getting Started: Understanding Computer Science Term
 
@@ -56,7 +61,7 @@ Let's start with the basics. As you begin your programming journey, it's importa
 - **Cloud Computing:** Using remote servers on the internet to store, manage, and process data on demand.
 - **Internet of Things (IoT):** Interconnecting devices via software, electronics, and network connectivity to collect and exchange data.
 
-Whew, that's quite a collection to commit to memory, but don't worry! Learning these terms will give you a solid foundation as you delve deeper into the world of programming. Moving on ...
+Whew, that's quite a collection to commit to memory, but don't worry! Learning these terms will give you a solid foundation as you delve deeper into the world of programming. Moving on;
 
 ## Understanding Programming
 
@@ -78,30 +83,29 @@ To create a program, you will need an editor that enables writing in a specific 
 
 ### Popular Programming Languages and Their Uses
 
-Programming languages act as bridges between human logic and machine understanding. Each language has its strengths, catering to different domains and purposes. Here are a few popular programming languages, based on the [TIOBE Index](https://www.tiobe.com/tiobe-index/) rankings:
+Programming languages act as bridges between human logic and machine understanding. Each language has its strengths, catering to different domains and purposes. Here are the top 5 popular programming languages, based on the [TIOBE Index](https://www.tiobe.com/tiobe-index/){:target='_blank'} rankings:
 
-1. **[Python](https://www.python.org/)**:
+1. **[Python](https://www.python.org/){:target='_blank'}**:
    - Renowned for its simplicity and versatility.
    - Ideal for data analysis, web development, and automation.
 
-2. **[C](https://en.wikipedia.org/wiki/C_(programming_language))**:
+2. **[C](https://en.wikipedia.org/wiki/C_(programming_language)){:target='_blank'}**:
    - A foundational language with a strong influence on other languages.
    - Widely used in system programming and operating systems.
 
-3. **[C++](http://www.cplusplus.com/)**:
+3. **[C++](http://www.cplusplus.com/){:target='_blank'}**:
    - Resilient and powerful.
    - Shines in system programming, game development, and creating high-performance applications.
 
-4. **[Java](https://www.oracle.com/java/)**:
+4. **[Java](https://www.oracle.com/java/){:target='_blank'}**:
    - Known for its portability and platform independence.
    - Used in various domains, including enterprise applications and Android app development.
 
-5. **[C#](https://docs.microsoft.com/en-us/dotnet/csharp/)**:
+5. **[C#](https://docs.microsoft.com/en-us/dotnet/csharp/){:target='_blank'}**:
    - A staple in Windows application development.
    - Empowers software engineers to craft desktop and web applications.
 
 **Note**: The TIOBE index is one of the popular programming language popularity indices, and the rankings mentioned here are based on its latest data. Keep in mind that popularity can vary based on different indices and criteria.
-
 
 ## The Benefits of Learning Programming
 
@@ -116,31 +120,23 @@ Now that you understand what programming is and how to instruct a computer, let'
     </div>
 </figure>
 
-#### Breaking Down Complex Problems
+- **Breaking Down Complex Problems**: Programming teaches you how to solve complex problems by breaking them down into smaller, more manageable parts. This skill is valuable not only in computer science but also in many other aspects of life.
 
-Programming teaches you how to solve complex problems by breaking them down into smaller, more manageable parts. This skill is valuable not only in computer science but also in many other aspects of life.
+- **Automation**: Programming enables you to automate repetitive or time-consuming tasks, saving you time and effort. For example, imagine having to sort through hundreds of files to find a specific piece of information. With programming, you can write a script that will do that task for you in a matter of seconds.
 
-#### Automation
+- **Understanding Technology**: Learning to program can help you understand how computers and software work, which is essential in our technology-driven world. Understanding how these devices work and how to interact with them is becoming increasingly important.
 
-Programming enables you to automate repetitive or time-consuming tasks, saving you time and effort. For example, imagine having to sort through hundreds of files to find a specific piece of information. With programming, you can write a script that will do that task for you in a matter of seconds.
+- **Creativity**: Programming allows you to express your creativity by building projects and applications that solve real-world problems or provide new and innovative solutions. Whether it's developing a new mobile app or designing a website, programming gives you the tools to turn your ideas into reality.
 
-#### Understanding Technology
-
-Learning to program can help you understand how computers and software work, which is essential in our technology-driven world. Understanding how these devices work and how to interact with them is becoming increasingly important.
-
-#### Creativity
-
-Programming allows you to express your creativity by building projects and applications that solve real-world problems or provide new and innovative solutions. Whether it's developing a new mobile app or designing a website, programming gives you the tools to turn your ideas into reality.
-
-#### Increased Career Opportunities
-
-Programming skills are in high demand across many industries. By learning to program, you can open up many career opportunities and increase your earning potential.
+- **Increased Career Opportunities**: Programming skills are in high demand across many industries. By learning to program, you can open up many career opportunities and increase your earning potential.
 
 ## Introduction to Python Programming
 
 ---
 
-First of all, let me clear up a common misconception. Python is not just a large snake! It's actually a programming language that's named after an old BBC comedy sketch series called Monty Python's Flying Circus. But today, Python has become one of the most popular programming languages in the world. In fact, according to the Stack Overflow Developer Survey of 2021, Python has been the most wanted programming language for five years in a row. Impressive, right?
+Python, created in 1991 by Guido van Rossum, is a versatile and widely-used programming language. Contrary to a common misconception, it's not named after a snake but after the British comedy sketch series, Monty Python's Flying Circus. Python has gained immense popularity due to its readability, simplicity, and support for various programming paradigms, including procedural, object-oriented, and functional programming.
+
+While Python's readability may give the impression of simplicity, it is a unique language, influenced by various others but standing distinctively on its own. Often described as "magic", Python has become a favorite among developers for its elegance and expressiveness. However, mastering Python requires approaching it on its terms rather than comparing it strictly with other languages.
 
 <figure>
     <div style="display: flex; align-items: center;">
@@ -150,7 +146,11 @@ First of all, let me clear up a common misconception. Python is not just a large
     <figcaption style="text-align: right; margin-right: 290px;"><a href="https://blogthinkbig.com/wp-content/uploads/sites/4/2019/04/Tools-Table-Python-Logo.jpg" target="_blank">Image source</a></figcaption>
 </figure>
 
-#### Python 2 vs Python 3: What's the Difference?
+Over the years, Python underwent significant version changes, with Python 2 being the standard for many years. However, since the official retirement of Python 2 on January 1, 2020, Python 3 has become the definitive standard. While the transition brought challenges, Python 3 offers enhanced features, and most projects have migrated to this version.
+
+### Python 2 vs. Python 3
+
+For many years, Python 2 was the norm, but since Python 3's release in 2008, it became the recommended version. Python 2 reached its end of life on January 1, 2020, and Python 3 is the ongoing standard. While you may still encounter Python 2 code, especially in older projects, it's crucial to focus on Python 3 for new developments. Tools like `2to3` aid in transitioning codebases, but manual updates may be necessary to leverage Python 3's advancements.
 
 Python has two major lines: version 2.x and version 3.x. It's important to know the difference between the two. Python 2.x is old and considered legacy code at companies, and it retired on January 1, 2020. Python 3.x, on the other hand, is the one that you should use. It has been available since December 3, 2008, and it's not fully backward compatible with Python 2.x. Unfortunately, you may still encounter many companies and projects that are stuck on Python 2.x, so you'll need to learn both versions. When searching for solutions on the Internet, you'll also encounter many examples written for Python 2.x. However, converting these examples to work on Python 3.x is usually simple and straightforward.
 
@@ -212,7 +212,7 @@ Python is a versatile and popular programming language used for a wide range of 
 
 #### Slower Speed
 
-Python is an interpreted language, which means it can run slower than compiled languages like C and C++. In fact, some applications that require lightning-fast performance, such as high-frequency trading or gaming, may not be the best fit for Python. It's worth noting, though, that Python has improved over time, and with optimization, it can be made to run much faster.
+One common concern is the perceived slower speed of Python, especially when compared to compiled languages like C. The default implementation, CPython, is indeed written in C, but its interpreted nature may introduce some performance overhead. It's crucial to recognize that Python's speed is often sufficient for a wide range of applications, including web development, data analysis, and scientific computing. To address speed concerns, alternative implementations like PyPy and optimization techniques can significantly enhance Python's performance. While there are scenarios where Python might face challenges in ultra-high-performance tasks, for the majority of projects, its baseline performance is more than satisfactory.
 
 #### Memory Consumption
 
@@ -246,11 +246,11 @@ Python is a versatile language that can be used for almost anything, from script
 
 #### Web Development
 
-Python is widely used in web development, particularly in the back-end. In fact, <a href="https://www.djangoproject.com/" target="_blank">Django</a>, a popular Python web framework, powers over <a href="https://webtechsurvey.com/technology/django" target="_blank">83,872 websites</a> worldwide, according to Web Tech Survey. Python's ease of use, flexibility, and scalability make it a popular choice for developing web applications. Additionally, front-end web development is possible with libraries like Beautiful Soup, Requests, and Selenium, which enable web scraping, automated testing, and web automation.
+Python is widely used in web development, particularly in the back-end. In fact, [Django](https://www.djangoproject.com/){:target='_blank'}, a popular Python web framework, powers over [80,000 websites](https://webtechsurvey.com/technology/django){:target='_blank'} worldwide, according to Web Tech Survey. Python's ease of use, flexibility, and scalability make it a popular choice for developing web applications. Additionally, front-end web development is possible with libraries like Beautiful Soup, Requests, and Selenium, which enable web scraping, automated testing, and web automation.
 
 #### Data Science and Machine Learning
 
-Python's dominance in the field of data science and machine learning is well-supported by industry surveys. According to the <a href="https://www.kaggle.com/kaggle-survey-2022" target="_blank">2019 Kaggle Machine Learning and Data Science Survey</a>, which included responses from 19,717 data professionals, Python stands out as the language of choice among data scientists. Key statistics from the survey are as follows:
+Python's dominance in the field of data science and machine learning is well-supported by industry surveys. According to the [2019 Kaggle Machine Learning and Data Science Survey](https://www.kaggle.com/kaggle-survey-2022){:target='_blank'}, which included responses from 19,717 data professionals, Python stands out as the language of choice among data scientists. Key statistics from the survey are as follows:
 
 - **Usage Among Data Scientists:**
   - Of the data professionals who identified as data scientists, 93% reported using Python.
@@ -267,23 +267,23 @@ Python's popularity is underscored by its extensive libraries and tools tailored
 
 Python is a cornerstone in scientific computing, driving numerical simulations and analysis across various fields. Its dominance is evidenced by the following:
 
-- Python has emerged as a preferred language in scientific computing, surpassing traditional tools like Matlab and Mathematica according to  <a href="https://www.slant.co/topics/16647/~languages-for-scientific-computation" target="_blank">a few sources</a>.
-- The language's powerful numerical computing capabilities, coupled with renowned scientific libraries such as _NumPy_, _SciPy_, and _Pandas_, make it the go-to choice for applications demanding heavy computational workloads.
+- Python has emerged as a preferred language in scientific computing, surpassing traditional tools like Matlab and Mathematica according to [Slant](https://www.slant.co/topics/16647/~languages-for-scientific-computation){:target='_blank'}.
+- The language's powerful numerical computing capabilities, coupled with renowned scientific libraries such as [_NumPy_](https://numpy.org/){:target='_blank'}, [_SciPy_](https://scipy.org/){:target='_blank'}, and [_Pandas_](https://pandas.pydata.org/){:target='_blank'}, make it the go-to choice for applications demanding heavy computational workloads.
 
 #### Scripting and Automation
 
 Python's role in scripting and automation is well-established, supported by industry recognition:
 
 - Python's simplicity, readability, and ease of use position it as an excellent language for scripting tasks, automation, and batch processing.
-- It holds a prominent place as one of the most commonly used languages for automation in diverse industries, ranked 1 on <a href="https://www.tiobe.com/tiobe-index/" target="_blank">TIOBE Index Rankings</a>.
+- It holds a prominent place as one of the most commonly used languages for automation in diverse industries, ranked 1 on [TIOBE Index Rankings](https://www.tiobe.com/tiobe-index/){:target='_blank'}.
 
 #### Game Development
 
-While Python may not be the first language that comes to mind when it comes to game development, it's entirely possible to develop games using Python. Libraries like <a href="https://www.pygame.org/news" target="_blank">Pygame</a>, <a href="https://pyopengl.sourceforge.net/" target="_blank">PyOpenGL</a>, and <a href="https://www.panda3d.org/" target="_blank">Panda3D</a> provide game development capabilities. While Python may not be the most performant language for game development, it's useful for rapid prototyping and developing simple games.
+While Python may not be the first language that comes to mind when it comes to game development, it's entirely possible to develop games using Python. Libraries like [Pygame](https://www.pygame.org/news){:target='_blank'}, [PyOpenGL](https://pyopengl.sourceforge.net/){:target='_blank'}, and [Panda3D](https://www.panda3d.org/){:target='_blank'} provide game development capabilities. While Python may not be the most performant language for game development, it's useful for rapid prototyping and developing simple games.
 
 #### Desktop Applications
 
-Python is also useful for developing desktop applications. Libraries like <a href="https://wiki.python.org/moin/PyQt" target="_blank">PyQt</ and <a href="https://tkdocs.com/" target="_blank">Tkinter</a> enable developers to create graphical user interfaces (GUIs) with relative ease. Additionally, Python can be used for cross-platform development, enabling developers to create applications that run on Windows, Linux, and macOS.
+Python is also useful for developing desktop applications. Libraries like [PyQt](https://wiki.python.org/moin/PyQt){:target='_blank'} and [Tkinter](https://tkdocs.com/){:target='_blank'} enable developers to create graphical user interfaces (GUIs) with relative ease. Additionally, Python can be used for cross-platform development, enabling developers to create applications that run on Windows, Linux, and macOS.
 
 ## Summary
 
