@@ -9,9 +9,18 @@ permalink: /workspace/python/functions
 
 In programming, functions play a crucial role in making our code more organized, efficient, and reusable. These named blocks of code serve as mini-programs, enabling the division of code into smaller, manageable units. This tutorial delves into the concept of functions in Python, illustrating how they contribute to creating modular and reusable code.
 
-## Functions as Equations <hr>
+* toc
+{:toc}
+
+## Functions as Equations
+
+---
 
 In the scientific context, equations are essential for representing various phenomena and establishing connections between variables. Similarly, functions in programming act as equations, enabling us to define relationships between inputs and outputs.
+
+<div style="margin-left: auto; margin-right: auto; width: 50%; margin-bottom: 1rem;">
+  <img src="../../assets/images/python-images/input-output.jpg" alt="Input Output" width="750" height="400">
+</div>
 
 #### Declaring and Syntax: Defining the Equation
 
@@ -27,7 +36,9 @@ Just as equations yield results, functions in programming can generate outputs o
 
 By treating functions as equations, a scientific mindset can be adopted in code development, with each function representing a distinct relationship or transformation.
 
-## Function Declaration and Syntax <hr>
+## Function Declaration and Syntax
+
+---
 
 In Python, functions are defined using the `def` keyword, followed by the function name and a set of parentheses `()`. This section outlines the syntax and provides examples to illustrate the process.
 
@@ -51,7 +62,7 @@ def hello():
 hello()
 
 # Output:
-Hello!
+# Hello!
 {% endhighlight %}
 
 In this example, we define a function named `hello()` that simply prints "Hello!". When we call the function using `hello()`, it executes the code inside the function's body, resulting in the output "Hello!".
@@ -67,7 +78,13 @@ In a function, notice that:
 - The function body consists of indented statements.
 - An optional return statement can be used to return values.
 
-#### Function Execution Flow
+Functions in a program can come from three different sources:
+
+- **From Python itself**: Numerous functions, like `print()` or `len()`, are integral parts of Python and are always available as built-in functions.
+- **From Python's pre-installed modules**: Many useful functions, though used less often, are available in modules installed with Python. Using these functions requires additional steps.
+- **Directly from our code**: We can write our functions, known as user-defined functions, freely within our code.
+
+### Function Execution Flow
 
 When a function is called, Python follows a specific flow: it jumps into the invoked function, executes its body, and then returns to the point after the invocation. It's crucial to have functions defined before calling them because Python reads code from top to bottom. Let's explore this with examples.
 
@@ -79,10 +96,10 @@ def my_function():
 my_function()
 print('Bye!')
 
-# Output
-Hello!
-This is my function.
-Bye!
+# Output:
+# Hello!
+# This is my function.
+# Bye!
 {% endhighlight %}
 
 In this example, the function `my_function()` is defined and then called. When called, it executes the body of the function, i.e. prints "Hello!" and "This is my function.". After the function execution, Python moves to the next line, printing "Bye!". The flow is linear, starting from the top.
@@ -98,8 +115,8 @@ def my_function():
 my_function = 1
 my_function()
 
-# Output
-TypeError: 'int' object is not callable
+# Output:
+# TypeError: 'int' object is not callable
 {% endhighlight %}
 
 Observe that a function named `my_function` is defined, but then its name is assigned the value `1`. When attempting to call `my_function()`, Python raises a `TypeError` because the function name now refers to an integer, not a callable function. This can be resolved by using distinct names for functions and variables to prevent confusion and errors.
@@ -117,24 +134,17 @@ def my_function():
 
 main_function()
 
-# Output
-This is the main function
-This is my function
-Bye
+# Output:
+# This is the main function
+# This is my function
+# Bye
 {% endhighlight %}
 
 In this example, `main_function()` calls `my_function()`, and both functions are defined before use, allowing error-free execution.
 
-#### Sources of Functions
+## Parameters and Arguments
 
-Functions in a program can come from three different sources:
-
-- **From Python itself**: Numerous functions, like `print()` or `len()`, are integral parts of Python and are always available as built-in functions.
-- **From Python's pre-installed modules**: Many useful functions, though used less often, are available in modules installed with Python. Using these functions requires additional steps.
-- **Directly from our code**: We can write our functions, known as user-defined functions, freely within our code.
-
-
-## Parameters and Arguments <hr>
+---
 
 Functions are powerful tools for performing tasks and operations. To make these functions flexible and adaptable, we use parameters and arguments to control their behavior and input.
 
@@ -149,9 +159,9 @@ def hello(name):
 hello('Alice')
 hello('Bob')
 
-# Output
-Hello, Alice!
-Hello, Bob!
+# Output:
+# Hello, Alice!
+# Hello, Bob!
 {% endhighlight %}
 
 In this case, the function `hello()` has a parameter `name`, and we customize its behavior by providing different arguments ('Alice' and 'Bob') during function calls.
@@ -177,12 +187,12 @@ login_data('Alice', 'alice123')
 print()
 login_data('Bob', 'boby1990')
 
-# Output
-Username: Alice
-Password: alice123
+# Output:
+# Username: Alice
+# Password: alice123
 
-Username: Bob
-Password: boby1990
+# Username: Bob
+# Password: boby1990
 {% endhighlight %}
 
 In this example, we define a function named `login_data()` that takes two parameters: `username` and `password`. When we call the function `login_data()`, we provide a username and a password as arguments, in that order. For example, in the function call `login_data('Alice', 'alice123')`, the argument 'Alice' is assigned to the parameter `username`, and the argument 'alice123' is assigned to the parameter `password`. In the function body, these two parameters are used to display information about the login data being described.
@@ -190,8 +200,6 @@ In this example, we define a function named `login_data()` that takes two parame
 #### Keyword Arguments
 
 Keyword arguments allow passing arguments in any order by associating names with values.
-
-Example:
 
 {% highlight python %}
 def login_data(username, password):
@@ -208,7 +216,7 @@ In this case, the order of the arguments doesn't matter because Python knows whi
 
 Default values for parameters make certain arguments optional. They provide a way to reduce complexity by assigning a default value if an argument is not provided.
 
-We specify a default argument in the def statement, following the parameter name and an equal (`=`) sign. Here's an example:
+We specify a default argument in the `def` statement, following the parameter name and an equal (`=`) sign. Here's an example:
 
 {% highlight python %}
 def login_data(username='guest', password='guest123'):
@@ -218,6 +226,16 @@ def login_data(username='guest', password='guest123'):
 login_data()
 login_data(username='Alice')
 login_data(password='boby1990')
+
+# Output:
+# Username: guest
+# Password: guest123
+
+# Username: Alice
+# Password: guest123
+
+# Username: guest
+# Password: boby1990
 {% endhighlight %}
 
 In this example, the `login_data()` function has default values assigned to the parameters `username` and `password`. If no arguments are provided, default values are used. However, arguments can still override these defaults.
@@ -226,18 +244,21 @@ In this example, the `login_data()` function has default values assigned to the 
 
 When calling a function, it's crucial to provide the correct number of arguments and match them to the corresponding parameters. Python raises errors when there are unmatched arguments.
 
-Example:
-
 {% highlight python %}
 def hello(name, greeting='Hello'):
     print(f'{greeting}, {name}!')
 
 hello('Alice')
-hello(''Bob, 'Hi')
+hello('Bob', 'Hi')
+hello('Charlie', 'Hi', 'charlie321')
 
-# Output
-Hello, Alice!
-Hi, Bob!
+# Output:
+# Hello, Alice!
+# Hi, Bob!
+# Traceback (most recent call last):
+#   File "/home/joj-macho/Documents/python_examples/function_examples.py", line 6, in <module>
+#     hello('Charlie', 'Hi', 'charlie321')
+# TypeError: hello() takes from 1 to 2 positional arguments but 3 were given
 {% endhighlight %}
 
 The `hello()` function can be called with one or two arguments. If the number of arguments doesn't match the function definition, Python raises a `TypeError`.
@@ -261,9 +282,9 @@ person_2 = hello('Bob', 'Junior', 'Marley')
 print(person_1)
 print(person_2)
 
-# Output
-Hello, Alice Lee!
-Hello, Bob Junior Marley!
+# Output:
+# Hello, Alice Lee!
+# Hello, Bob Junior Marley!
 {% endhighlight %}
 
 In this example, the `hello()` function has an optional `middle_name` parameter with an empty string as its default value. This allows users to decide whether to include a middle name in the full name greeting.
@@ -287,9 +308,9 @@ def calculate_average(*args):
 print(calculate_average(1, 2, 3))
 print(calculate_average(2, 4, 6, 8))
 
-# Output
-2.0
-5.0
+# Output:
+# 2.0
+# 5.0
 {% endhighlight %}
 
 In this example, the `calculate_average()` function accepts any number of arguments and stores them in the `args` tuple.
@@ -307,16 +328,17 @@ def display_info(**kwargs):
 
 display_info(name='Alice', age=25, city='London')
 
-# Output
-
-name: Alice
-age: 25
-city: London
+# Output:
+# name: Alice
+# age: 25
+# city: London
 {% endhighlight %}
 
 In this example, the `display_info()` function accepts any number of keyword arguments and stores them in the `kwargs` dictionary. The function iterates over the dictionary and prints each key-value pair.
 
-## Returning Values from Functions <hr>
+## Returning Values from Functions
+
+---
 
 In Python, functions not only execute actions but can also produce results through the use of the `return` keyword. When a `return` statement is encountered, it immediately terminates the function's execution and sends a value back to the point of invocation. While not mandatory, a function not intended to produce a result will implicitly return `None` at the end.
 
@@ -334,8 +356,8 @@ def add_numbers(a, b):
 result = add_numbers(3, 5)
 print(result)
 
-# Output
-8
+# Output:
+# 8
 {% endhighlight %}
 
 In this example, the `add_numbers()` function returns the sum of two parameters using the `return` statement.
@@ -346,8 +368,6 @@ Returned values can be assigned to variables or used directly in expressions, al
 
 In Python, `None` represents the absence of a value. It is the return value of functions that don't explicitly return anything. Functions like `print()` return `None`, signifying no specific output. The `None` value is a special constant and the only value of the `NoneType` data type.
 
-Example:
-
 {% highlight python %}
 def hello(name):
     print(f'Hello, {name}!')
@@ -355,29 +375,28 @@ def hello(name):
 result = hello('Alice')
 print(result)
 
-# Output
-Hello, Alice!
-None
+# Output:
+# Hello, Alice!
+# None
 {% endhighlight %}
 
 In this example, the `hello()` function prints a greeting but returns `None`. Python automatically adds a `return None` statement to functions without an explicit return.
 
 ## Variable Scope
 
-In programming, variable scope refers to the region of the code where a variable is defined, and its visibility or accessibility from different parts of the program. Understanding variable scope is crucial for writing reliable and maintainable code, as it determines where a variable can be accessed or modified.
+---
+
+In Python, functions (including lambdas) and comprehensions uniquely define their own scope, distinguishing them as the only structures in the language with this feature. On the other hand, modules and classes do not have a scope in the strictest sense; rather, they possess their own namespace. When a scope concludes, all names defined within it are automatically deleted.
+
+Variable scope in programming denotes the specific region of the code where a variable is defined and dictates its visibility or accessibility from different parts of the program.
 
 ### Levels of Scoping in Python
 
-Python follows the LEGB rule for variable scoping, which stands for Local, Enclosing Function, Global, and Built-ins. These levels are searched in order to resolve the reference to a variable. Here's a brief overview:
+Python follows the LEGB rule (Local, Enclosing Function, Global, and Built-ins) to determine the scope resolution order for variables. This order defines where Python looks for a variable reference. Let's delve into each level of scoping:
 
-- **Local (L)**: Variables defined within a function are considered local. They are only accessible within the function and cease to exist after the function execution.
-- **Enclosing Function (E)**: This refers to the scope of an enclosing function if a function is nested within another function. The inner function has access to its variables as well as those of the outer function.
-- **Global (G)**: Variables defined at the top level of a script or module are global. They are accessible throughout the entire module or script.
-- **Built-ins (B)**: This is the outermost scope and includes Python's built-in names like `print`, `len`, and `str`. These names are always accessible from anywhere in the code.
+#### Local (L) Scope
 
-Here are examples of various scopes:
-
-**Local** Variable:
+Variables defined within a function are considered local. They exist only within the function's block and are inaccessible outside it. After the function execution, local variables cease to exist.
 
 {% highlight python %}
 def example_function():
@@ -387,42 +406,16 @@ def example_function():
 example_function()
 print(x)
 
-# Output
-10
-NameError: name 'x' is not defined
+# Output:
+# 10
+# NameError: name 'x' is not defined
 {% endhighlight %}
 
-**Global** Variable:
+The function `example_function` defines a local variable `x`. The `print(x)` statement outside the function raises an error because `x` is not defined in the global scope.
 
-{% highlight python %}
-global_variable = 20  # Global variable
+#### Enclosing Function (E) Scope
 
-def another_function():
-    print(global_variable)
-
-another_function()  
-
-# Output
-20
-{% endhighlight %}
-
-Changing Global Variable from Within a Function:
-
-{% highlight python %}
-global_variable = 20  # Global variable
-
-def modify_global():
-    global global_variable
-    global_variable = 30
-
-modify_global()
-print(global_variable) 
-
-# Output
-30
-{% endhighlight %}
-
-**Enclosing Function** Scope:
+This scope refers to the outer function's scope if a function is nested within another function. The inner function has access to its variables as well as those of the outer function.
 
 {% highlight python %}
 def outer_function():
@@ -435,11 +428,15 @@ def outer_function():
 
 outer_function()  
 
-# Output
-I am from outer
+# Output:
+# I am from outer
 {% endhighlight %}
 
-**Nonlocal** Keyword:
+In the above example, the function `inner_function` has access to the variable `outer_variable` from its enclosing function (`outer_function`). When `outer_function` is called, it executes `inner_function`, resulting in the output "I am from outer".
+
+##### Utilizing `nonlocal` Keyword:
+
+In situations involving nested functions, the `nonlocal` keyword is useful when you want to modify a variable in an enclosing (but non-global) scope.
 
 {% highlight python %}
 def outer_function():
@@ -454,13 +451,94 @@ def outer_function():
 
 outer_function()
 
-# Output
-20
+# Output:
+# 20
 {% endhighlight %}
 
-In the last example, the `nonlocal` keyword is used to indicate that the variable `x` being modified is in the enclosing scope, not a local variable in the inner function. This is particularly useful when dealing with nested functions and you want to modify a variable in an enclosing (but non-global) scope.
+The `nonlocal` keyword indicates that the variable `x` being modified is in the enclosing scope, not a local variable in the inner function. This distinction is valuable for managing variables in nested functions.
 
-### Using a `main()` Function
+#### Global (G) Scope
+
+Variables defined at the top level of a script or module are global. They are accessible throughout the entire module or script. While global variables are permissible, it's advised to use them sparingly to maintain code readability and maintainability.
+
+{% highlight python %}
+global_variable = 20  # Global variable
+
+def another_function():
+    print(global_variable)
+
+another_function()  
+
+# Output:
+# 20
+{% endhighlight %}
+
+Here, the `global_variable` is defined globally and accessible within the function `another_function`.
+
+Modifying a Global Variable from Within a Function:
+
+{% highlight python %}
+global_variable = 20  # Global variable
+
+def modify_global():
+    global global_variable
+    global_variable = 30
+
+modify_global()
+print(global_variable) 
+
+# Output:
+# 30
+{% endhighlight %}
+
+The function `modify_global` uses the `global` keyword to modify the global variable, resulting in the output `30` when `print(global_variable)` is called.
+
+#### Built-ins (B) Scope
+
+The outermost scope includes Python's built-in names like `print`, `len`, and `str`. These names are universally accessible from any part of the code. Python provides a rich set of built-in functions that cover a wide range of tasks, from basic input/output to complex data manipulations.
+
+{% highlight python %}
+# The len() function calculates the length of a sequence
+numbers = [1, 2, 3, 4, 5]
+length = len(numbers)
+print('Length of numbers:', length) 
+
+# Output:
+# Length of numbers: 5
+
+# The str() function converts a number to a string
+integer_value = 42
+string_value = str(integer_value)
+print('Converted String:', string_value) 
+
+# Output:
+# Converted String: 42
+
+# Combining Built-ins with Local and Global Scopes
+global_variable = 100
+
+def example_function():
+    # Using a built-in function within a function
+    local_variable = 50
+    result = max(global_variable, local_variable)  # max() is a built-in function
+    print('Maximum value:', result)
+
+example_function() 
+
+# Output:
+# Maximum value: 100
+
+# Built-in functions can be used in conjunction with variables from different scopes
+combined_string = str(global_variable) + str(length)
+print('Combined String:', combined_string)  
+
+# Output:
+# Combined String: 1005
+{% endhighlight %}
+
+The above demonstrates the direct use of built-in functions like `len()`, and `str()` without the need for explicit imports. These functions operate seamlessly within the Built-ins (B) scope. The second part of the example above illustrates how built-in functions can be combined with variables from different scopes. The `max()` function, a built-in function, is used within the `example_function()`. Additionally, the `str()` function is used to concatenate the global variable and the length variable, showcasing the interplay between local, global, and built-in scopes.
+
+### Using the `main()` Function
 
 Encapsulating the main code of a program into a function called `main()` is a common practice, especially for more extensive programs. This approach enhances code organization and readability by removing the main logic from the global scope.
 
@@ -487,9 +565,16 @@ def perform_calculation(a, b):
 
 if __name__ == '__main__':
     main()
+
+# Output:
+# Welcome to the Python Program!
+# Enter your name: Joj
+# Hello, Joj!
+# The result of the calculation is: 12
+# Program execution complete.
 {% endhighlight %}
 
-In this example, the `main()` function serves as the entry point for the program. It orchestrates various tasks by calling other functions. The structure not only enhances readability but also allows for clear modularization of different aspects of the program.
+In this example, the `main()` function handles the logic of the program. It orchestrates various tasks by calling other functions. The structure not only enhances readability but also allows for clear modularization of different aspects of the program.
 
 #### Benefits of Using `main()`
 
@@ -499,17 +584,17 @@ In this example, the `main()` function serves as the entry point for the program
 
 3. **Modularization:** Functions like `greet_user()` and `perform_calculation()` can be developed and tested independently, promoting modular code design.
 
-4. **Testability:** The `main()` function becomes a natural entry point for testing since it orchestrates the program's execution.
+4. **Testability:** The `main()` function becomes a natural logic for testing since it orchestrates the program's execution.
 
-## Documenting Functions <hr>
+## Documenting Functions
+
+---
 
 In Python, documenting functions is a good practice to enhance code readability and provide valuable information about the purpose and usage of a function. This is commonly done using a docstring, which is a string literal placed as the first statement in a function.
 
 ### Using Docstrings
 
-A docstring is delimited by three single or double quotes (''' or """) and is placed immediately after the function definition. It serves as a concise yet informative description of what the function does, what parameters it expects, and what it returns.
-
-Example:
+A docstring is delimited by three single or double quotes (`'''` or `"""`) and is placed immediately after the function definition. It serves as a concise yet informative description of what the function does, what parameters it expects, and what it returns.
 
 {% highlight python %}
 def hello(name):
@@ -517,7 +602,7 @@ def hello(name):
     print(f'Hello, {name}!')
 {% endhighlight %}
 
-In this example, the docstring for the `hello()` function provides a clear description: "Print a greeting to the user by name." This documentation is valuable for anyone reading or using the code, as it offers insights into the function's purpose.
+In this example, the docstring for the `hello()` function provides a clear description: "Print a greeting to the user by name.". This documentation is valuable for anyone reading or using the code, as it offers insights into the function's purpose.
 
 ### Accessing Docstrings
 
@@ -525,7 +610,7 @@ Python provides a built-in function called `help()` that can be used to access t
 
 Here's an example for accessing the above `hello()` function:
 
-{% highlight python %}
+{% highlight bash %}
 >>> help(hello)
 Help on function hello in module __main__:
 
@@ -538,8 +623,6 @@ Executing `help(greet)` in an interactive Python environment would display the d
 ### Writing Comprehensive Docstrings
 
 For more complex functions or functions with multiple parameters, it's beneficial to provide detailed information in the docstring. Include explanations of each parameter, their data types, and any default values. Additionally, specify the type of value the function returns.
-
-Example:
 
 {% highlight python %}
 def calculate_average(*numbers):
@@ -561,7 +644,9 @@ In this example, the docstring for the `calculate_average()` function not only d
 
 By consistently documenting functions using docstrings, developers can create more maintainable and understandable code, facilitating collaboration and reducing the learning curve for others who interact with the codebase.
 
-## Built-in Functions <hr>
+## Built-in Functions
+
+---
 
 Python provides a wealth of built-in functions that streamline various tasks in your code. You might already be familiar with some, such as `print()`, `len()`, `type()`, `list()`, `input()`, `round()`, and many others.
 
@@ -569,79 +654,249 @@ Let's explore a selection of frequently used built-in functions along with examp
 
 ### Commonly Used Built-in Functions
 
-Here are some frequently used built-in functions:
+<style>
+    table {
+        border-collapse: collapse;
+        max-width: 80%;
+        margin: 20px auto;
+    }
 
-| Function       | Description                                       | Example                       |
-| -------------- | ------------------------------------------------- | ----------------------------- |
-| `print()`      | Displays output to the console                    | `print('Hello, Python!')`     |
-| `len()`        | Returns the length of an object                   | `length = len([1, 2, 3])`      |
-| `type()`       | Returns the type of an object                     | `data_type = type(10)`        |
-| `input()`      | Accepts user input from the console               | `user_input = input('Enter something: ')` |
-| `round()`      | Rounds a floating-point number to the nearest integer or a specified number of decimals | `rounded_num = round(3.14159, 2)` |
-| `max()`        | Returns the largest item in an iterable or the largest of two or more arguments | `maximum = max(4, 7, 2)`      |
-| `min()`        | Returns the smallest item in an iterable or the smallest of two or more arguments | `minimum = min(4, 7, 2)`      |
-| `sum()`        | Returns the sum of all items in an iterable       | `total = sum([1, 2, 3, 4, 5])` |
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
 
-### Examples
+    th {
+        text-align: center;
+    }
+    
+    caption {
+    caption-side: top;
+    color: #adb5bd;
+    font-style: italic;
+</style>
 
-#### Using `print()`
+<table class="table table-dark table-responsive table-sm table-striped table-hover caption-top">
+    <caption>Table: Frequently Used Built-in Functions in Python</caption>
+    <thead>
+        <tr>
+            <th scope="col">Function</th>
+            <th scope="col">Description</th>
+            <th scope="col">Example</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr>
+            <th scope="row"><code>print()</code></th>
+            <td>Outputs a message or value to the console.</td>
+            <td><code>print('Hello, World!')</code></td>
+        </tr>
+        <tr>
+            <th scope="row"><code>len()</code></th>
+            <td>Returns the length (number of items) of an object.</td>
+            <td><code>length = len([1, 2, 3, 4])</code></td>
+        </tr>
+        <tr>
+            <th scope="row"><code>type()</code></th>
+            <td>Returns the type of an object.</td>
+            <td><code>data_type = type(42)</code></td>
+        </tr>
+        <tr>
+            <th scope="row"><code>range()</code></th>
+            <td>Generates a sequence of numbers within a specified range.</td>
+            <td><code>numbers = list(range(1, 6))</code></td>
+        </tr>
+        <tr>
+            <th scope="row"><code>input()</code></th>
+            <td>Reads a line from the console.</td>
+            <td><code>name = input('Enter your name: ')</code></td>
+        </tr>
+        <tr>
+            <th scope="row"><code>int()</code></th>
+            <td>Converts a value to an integer.</td>
+            <td><code>integer_value = int('42')</code></td>
+        </tr>
+        <tr>
+            <th scope="row"><code>str()</code></th>
+            <td>Converts a value to a string.</td>
+            <td><code>text = str(3.14)</code></td>
+        </tr>
+        <tr>
+            <th scope="row"><code>list()</code></th>
+            <td>Converts an iterable to a list.</td>
+            <td><code>my_list = list((1, 2, 3))</code></td>
+        </tr>
+        <tr>
+            <th scope="row"><code>max()</code></th>
+            <td>Returns the largest item in an iterable or the largest of two or more arguments.</td>
+            <td><code>maximum = max(4, 7, 1, 9)</code></td>
+        </tr>
+        <tr>
+            <th scope="row"><code>min()</code></th>
+            <td>Returns the smallest item in an iterable or the smallest of two or more arguments.</td>
+            <td><code>minimum = min(5, 2, 8, 1)</code></td>
+        </tr>
+    </tbody>
+</table>
 
-{% highlight python %}
-message = 'Python is amazing!'
-print(message)
-{% endhighlight %}
+Here are examples of Frequently Used Built-in Functions
 
-#### Using `len()`
-
-{% highlight python %}
-numbers = [10, 20, 30, 40, 50]
-length = len(numbers)
-print(f'The length of the list is: {length}')
-{% endhighlight %}
-
-#### Using `type()`
-
-{% highlight python %}
-value = 42.5
-data_type = type(value)
-print(f'The type of the value is: {data_type}')
-{% endhighlight %}
-
-#### Using `input()`
-
-{% highlight python %}
-user_name = input('Enter your name: ')
-print(f'Hello, {user_name}!')
-{% endhighlight %}
-
-#### Using `round()`
-
-{% highlight python %}
-pi_value = 3.14159
-rounded_pi = round(pi_value, 2)
-print(f'Rounded value of pi: {rounded_pi}')
-{% endhighlight %}
-
-#### Using `max()` and `min()`
-
-{% highlight python %}
-numbers = [12, 45, 78, 23, 56]
-maximum = max(numbers)
-minimum = min(numbers)
-print(f'Maximum value: {maximum}, Minimum value: {minimum}')
-{% endhighlight %}
-
-#### Using `sum()`
-
-{% highlight python %}
-values = [1, 2, 3, 4, 5]
-total = sum(values)
-print(f'The sum of the values is: {total}')
+{% highlight bash %}
+>>> # 1. print()
+>>> message = 'Python is amazing!'
+>>> print(message)
+Python is amazing!
+>>> 
+>>> # 2. len()
+>>> numbers = [1, 2, 3, 4, 5]
+>>> length = len(numbers)
+>>> print(length)
+5
+>>> 
+>>> # 3. range()
+>>> numbers_range = range(5)
+>>> print(list(numbers_range))
+[0, 1, 2, 3, 4]
+>>> 
+>>> # 4. type()
+>>> value = 42
+>>> data_type = type(value)
+>>> print(data_type)
+<class 'int'>
+>>> 
+>>> # 5. max()
+>>> numbers = [10, 5, 8, 20, 15]
+>>> max_value = max(numbers)
+>>> print(max_value)
+20
+>>> 
+>>> # 6. min()
+>>> min_value = min(numbers)
+>>> print(min_value)
+5
+>>> 
+>>> # 7. sum()
+>>> sum_value = sum(numbers)
+>>> print(sum_value)
+58
+>>> 
+>>> # 8. sorted()
+>>> sorted_numbers = sorted(numbers)
+>>> print(sorted_numbers)
+[5, 8, 10, 15, 20]
+>>> 
+>>> # 9. input()
+>>> user_input = input('Enter something: ')
+Enter something: Hello!
+>>> print(user_input)
+Hello!
+>>> 
+>>> # 10. format()
+>>> name = 'John'
+>>> age = 30
+>>> message = 'My name is {}, and I am {} years old.'.format(name, age)
+>>> print(message)
+My name is John, and I am 30 years old.
 {% endhighlight %}
 
 These examples showcase the versatility of Python's built-in functions. Feel free to explore and experiment with these functions to enhance your coding experience.
 
-## Practical Applications and Use Cases <hr>
+## Advanced Python Functions
+
+*Note: A comprehensive tutorial covering the following content is available. Check out the [Advanced Python Functions tutorial](/workspace/python/advanced-functions) for an in-depth exploration.*
+
+### Recursion
+
+Recursion occurs when a function calls itself. This technique is beneficial when you need to repeat the entire logic of a function, offering an alternative to loops. Consider the following example:
+
+{% highlight python %}
+def countdown(n):
+    if n <= 0:
+        print('Lift off!')
+    else:
+        print(n)
+        countdown(n - 1)
+
+countdown(5)
+
+# Output:
+# 5
+# 4
+# 3
+# 2
+# 1
+# Lift off!
+{% endhighlight %}
+
+In this example, the `countdown` function calls itself recursively to achieve the countdown effect. Keep in mind that the effective maximum recursion depth in CPython is typically 997. 
+
+### Closures
+
+Closures involve creating a function that builds and returns another function, known as a closure. These closures enclose one or more nonlocal names, essentially acting as a "function factory". Consider the following example:
+
+{% highlight python %}
+def outer_function(x):
+    def inner_function(y):
+        return x + y
+    return inner_function
+
+closure_instance = outer_function(10)
+result = closure_instance(5)
+
+# Output:
+# <function outer_function.<locals>.inner_function at 0x71471684bf60>
+# 15
+{% endhighlight %}
+
+Here, `outer_function` returns `inner_function`, creating a closure. The closure retains access to the nonlocal variable `x`, showcasing the power of closures.
+
+### Lambdas
+
+Lambdas are anonymous functions composed of a single expression. The structure includes a parameter list on the left side of the colon and a return expression on the right. Here's an example below:
+
+{% highlight python %}
+multiply = lambda x, y: x * y
+result = multiply(3, 4)
+print(result)
+
+# Output:
+# 12
+{% endhighlight %}
+
+In this instance, the lambda function `multiply` takes two arguments and returns their product. Lambdas are particularly useful for short, on-the-fly operations.
+
+### Decorators
+
+Decorators enable you to modify the behavior of a function by wrapping it in an additional layer of logic. This offers a powerful way to extend functionality without rewriting the original function. Consider the following decorator example:
+
+{% highlight python %}
+def my_decorator(func):
+    def wrapper():
+        print('Something is happening before the function is called.')
+        func()
+        print('Something is happening after the function is called.')
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print('Hello!')
+
+say_hello()
+
+# Output:
+# Something is happening before the function is called.
+# Hello!
+# Something is happening after the function is called.
+{% endhighlight %}
+
+In this example, the `my_decorator` function wraps the `say_hello` function, providing additional functionality before and after its execution.
+
+Ready to delve deeper? Check out the [Advanced Python Functions tutorial](/workspace/python/advanced-functions) for an in-depth exploration of recursion, closures, lambdas, and decorators, and take your Python programming skills to the next level.
+
+## Practical Applications and Use Cases
+
+---
 
 Understanding Python functions is essential for writing flexible and maintainable code. Here are practical applications and use cases for mastering Python functions:
 
@@ -731,11 +986,13 @@ if check_collision(player_position, obstacles):
 
 ### More Examples
 
-Feel free to browse my <a href="https://github.com/joj-macho" target="_new">GitHub page</a> for more comprehensive programs.
+Feel free to browse my [GitHub page](https://github.com/joj-macho){:target='_blank'} for more comprehensive programs.
 
-Discover more programs that use functions in my <a href="https://github.com/joj-macho/Pythological-Playground" target="_new">Python Playground</a> repository. For a broader range of programs, you can explore my <a href="https://github.com/joj-macho?tab=repositories" target="_new">GitHub Repositories</a>.
+Discover more programs that use functions in my [Python Playground](https://github.com/joj-macho/Pythological-Playground){:target='_blank'} repository. For a broader range of programs, you can explore my [GitHub Repositories](https://github.com/joj-macho?tab=repositories){:target='_blank'}.
 
-## Summary <hr>
+## Summary
+
+---
 
 Great job! You've successfully grasped the essentials of Python functions, the building blocks of code organization. Functions allow you to break down complex tasks into more manageable units. Through this tutorial, you've acquired the skills to create, call, and pass data to functions, a key capability for developing structured and reusable code.
 

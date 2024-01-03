@@ -9,19 +9,28 @@ permalink: /workspace/python/control-flow
 
 In the preceding tutorials, we have focused on executing statements sequentially. However, in both programming and everyday scenarios, we often encounter situations requiring decisions based on specific conditions or the repetitive execution of statements for various objects. Control flow in programming determines the order of statement execution within a code, and it primarily consists of two structures: branching statements (conditional statements) and looping structures (iterating statements).
 
-## Understanding Branching Statements and Looping Structures <hr>
+* toc
+{:toc}
+
+## Understanding Branching Statements and Looping Structures
+
+---
 
 Branching statements in Python enable the execution of specific blocks of instructions when certain conditions are satisfied. These blocks are identified by indentation, following the off-side notation for coding. The commonly used branching statements are:
 
 - `if-else` statement
 - `if-elif-else` statement
 
-{% highlight markdown %}
+{% highlight python %}
 if condition:
     # Block for True condition
 else:
     # Block for False condition
 {% endhighlight %}
+
+<div style="margin-left: auto; margin-right: auto; width: 50%; margin-bottom: 1rem;">
+  <img src="../../assets/images/python-images/branching.png" alt="Branching">
+</div>
 
 During branching, when conditions are met, designated blocks of instructions are executed. It is crucial to maintain consistent indentation, using four spaces, to ensure correct code execution.
 
@@ -30,7 +39,7 @@ On the other hand, looping structures facilitate the repeated execution of code 
 - `for` loop
 - `while` loop
 
-{% highlight markdown %}
+{% highlight python %}
 for item in iterable:
     # Block of code to be repeated for each item in the iterable
 
@@ -48,9 +57,11 @@ Ensure proper editor configuration, differentiating between the tab character ('
 
 In the upcoming sections, we will delve into conditional statements and looping structures, providing insights into creating dynamic and efficient programs.
 
-## Making Decisions in Python: Conditional Statements <hr>
+## Making Decisions in Python: Conditional Statements
 
-Conditional statements in Python empower programs to make decisions based on specific conditions, allowing for the execution of different actions depending on whether a condition evaluates to true or false. Python provides several conditional statements for this purpose.
+---
+
+Conditional statements in Python allow programs to make decisions based on specific conditions, allowing for the execution of different actions depending on whether a condition evaluates to true or false. Python provides several conditional statements for this purpose.
 
 ### Flow Control and Blocks
 
@@ -71,7 +82,7 @@ The `if` statement is one of the fundamental flow control statements. It execute
 
 The syntax for an `if` statement is as follows:
 
-{% highlight markdown %}
+{% highlight python %}
 if condition:
     # Code to execute if the condition is true
 {% endhighlight %}
@@ -84,12 +95,12 @@ if name == 'Admin':
     print('Hello, Admin.')
 print('Done.')
 
-# Output
-Hello, Admin.
-Done.
+# Output:
+# Hello, Admin.
+# Done.
 {% endhighlight %}
 
-The above code checks if the variable `name` is equal to 'Admin'. If the condition is true, the indented code block following the if statement is executed.
+The above code checks if the variable `name` is equal to 'Admin'. If the condition is true, the indented code block following the `if` statement is executed.
 
 ### Conditional `if-else` Statements
 
@@ -105,7 +116,7 @@ An `if` statement can be followed by an `else` statement, allowing us to specify
 
 The syntax for an `if-else` statement is as follows:
 
-{% highlight markdown %}
+{% highlight python %}
 if condition:
     # Code to execute if the condition is true
 else:
@@ -124,12 +135,12 @@ else:
     print('You are not the Admin. Who the hell are you?!')
 print('Done.')
 
-# Output
-You are not the Admin. Who the hell are you?!
-Done.
+# Output:
+# You are not the Admin. Who the hell are you?!
+# Done.
 {% endhighlight %}
 
-In the above code, if the condition `name == 'Admin'` evaluates to true, the if clause is executed. Otherwise, the else clause is executed.
+In the above code, if the condition `name == 'Admin'` evaluates to true, the `if` clause is executed. Otherwise, the `else` clause is executed.
 
 ### Conditional `if-elif-else` Statements
 
@@ -150,14 +161,13 @@ For scenarios where we have multiple conditions to evaluate, we can use `if-elif
 
 The syntax for an `if-elif-else` statement is as follows:
 
-{% highlight markdown %}
+{% highlight python %}
 if condition_1:
     # Code to execute if condition_1 is true
 elif condition_2:
     # Code to execute if condition_1 is false and condition_2 is true
 elif condition_3:
     # Code to execute if condition_1 and condition_2 are false, and condition_3 is true
-...
 else:
     # Code to execute if all conditions are false
 {% endhighlight %}
@@ -180,11 +190,11 @@ else:
 
 print(f'Your grade is {grade}.')
 
-# Output
-Your grade is C.
+# Output:
+# Your grade is C.
 {% endhighlight %}
 
-In this example, the program evaluates the value of the variable score and assigns a corresponding grade based on the conditions specified. If the score is 75, the output will be "Your grade is C."
+In this example, the program evaluates the value of the variable score and assigns a corresponding grade based on the conditions specified. If the score is 75, the output will be "Your grade is C".
 
 It is important to note the order of the `elif` statements. The conditions are evaluated in order, and the first true condition will trigger its corresponding block of code.
 
@@ -203,13 +213,13 @@ if value > 7:
 if value > 9:
     print('Value is greater than 9')
 
-# Output
-Value is greater than 5
-Value is greater than 7
-Value is greater than 9
+# Output:
+# Value is greater than 5
+# Value is greater than 7
+# Value is greater than 9
 {% endhighlight %}
 
-In the above example, each if statement is evaluated independently, and the corresponding block of code is executed if the condition is true.
+In the above example, each `if` statement is evaluated independently, and the corresponding block of code is executed if the condition is true.
 
 ### Nested if-elif-else Statements
 
@@ -228,10 +238,10 @@ else:
     print('You will reach the teenage years soon')
 
 # Output
-You are in the teenage years
+# You are in the teenage years
 {% endhighlight %}
 
-In the above example, the outer if statement checks if the age is greater than 12. If true, it enters the nested `if` statement to check if the age is less than 20. If both conditions are true, the corresponding block of code is executed.
+In the above example, the outer `if` statement checks if the `age` is greater than 12. If true, it enters the nested `if` statement to check if the `age` is less than 20. If both conditions are true, the corresponding block of code is executed.
 
 It's important to note that nested `if-elif-else` statements can lead to code complexity and reduced readability. Whenever possible, it's advisable to use logical operators instead of deep nesting to improve code maintainability.
 
@@ -239,7 +249,7 @@ It's important to note that nested `if-elif-else` statements can lead to code co
 
 The ternary operator provides a concise way to write conditional expressions in a single line of code. It allows us to make a decision and choose between two expressions based on a condition. The syntax for the ternary operator is as follows:
 
-{% highlight markdown %}
+{% highlight python %}
 expression_1 if condition else expression_2
 {% endhighlight %}
 
@@ -247,7 +257,7 @@ The conditional expression should always evaluate to either true or false. If th
 
 Here's an example that demonstrates the ternary operator:
 
-{% highlight python %}
+{% highlight bash %}
 >>> a = 10
 >>> b = 5
 >>> result = 'a is greater' if a > b else 'b is greater'
@@ -259,7 +269,7 @@ In this example, we compare the values of variables `a` and `b`. If `a` is great
 
 The ternary operator can also be used to assign a variable to the result of the expression:
 
-{% highlight python %}
+{% highlight bash %}
 >>> a = 10
 >>> b = 5
 >>> max_value = a if a > b else b
@@ -271,7 +281,7 @@ In this example, we use the ternary operator to assign the maximum value between
 
 Additionally, tuples can be used to implement a ternary operator:
 
-{% highlight python %}
+{% highlight bash %}
 >>> condition = True
 >>> result = (1, 2)[condition]
 >>> print(result)
@@ -282,7 +292,9 @@ In this example, we use a tuple to implement the ternary operator. The tuple `(1
 
 The ternary operator provides a compact and readable way to make decisions and assign values based on conditions, reducing the need for lengthy `if-else` statements. It is especially useful in situations where the decision-making logic is straightforward and can be expressed concisely.
 
-## Repeating Actions: Loops in Python <hr>
+## Repeating Actions: Loops in Python
+
+---
 
 Loops are fundamental to programming, enabling the repetition of actions and iteration over data collections. Python provides two primary looping structures: the `for` loop and the `while` loop. In this section, we'll delve into these loops, exploring their syntax, applications, and control flow.
 
@@ -304,10 +316,10 @@ fruits = ['apple', 'banana', 'cherry']
 for fruit in fruits:
     print(f'Fruit: {fruit}')
 
-# Output
-Fruit: apple
-Fruit: banana
-Fruit: cherry
+# Output:
+# Fruit: apple
+# Fruit: banana
+# Fruit: cherry
 {% endhighlight %}
 
 In the above code, the `for` loop iterates over each item in the `fruits` list. The variable `fruit` stores each item, and the indented block of code is executed for each iteration.
@@ -316,23 +328,23 @@ The `for` loop is a powerful tool for iterating over collections and performing 
 
 #### Iterating with `range()` and `enumerate()`
 
-To perform an action a specific number of times, we can use the r`ange()` function in conjunction with a `for` loop. The `range()` function generates a sequence of numbers for iteration. It takes up to three arguments: start, stop, and step values. Here's an example:
+To perform an action a specific number of times, we can use the `range()` function in conjunction with a `for` loop. The `range()` function generates a sequence of numbers for iteration. It takes up to three arguments: start, stop, and step values. Here's an example:
 
 {% highlight python %}
 for num in range(1, 11):
     print(num)
 
-# Output
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
+# Output:
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
 {% endhighlight %}
 
 In this example, `range(1, 11)` generates a sequence from 1 to 10 (inclusive). The output displays numbers from 1 to 10.
@@ -346,9 +358,9 @@ for index, fruit in enumerate(fruits):
     print(f'Fruit #{index}: {fruit}')
 
 # Output
-Fruit #0: apple
-Fruit #1: banana
-Fruit #2: cherry
+# Fruit #0: apple
+# Fruit #1: banana
+# Fruit #2: cherry
 {% endhighlight %}
 
 In this code, the `enumerate()` function is used to iterate over the `fruits` list and provide both the index and the fruit name.
@@ -372,12 +384,12 @@ while count < 5:
     print(f'Count: {count}')
     count += 1
 
-# Output
-Count: 0
-Count: 1
-Count: 2
-Count: 3
-Count: 4
+# Output:
+# Count: 0
+# Count: 1
+# Count: 2
+# Count: 3
+# Count: 4
 {% endhighlight %}
 
 In the above code, the `while` loop iterates as long as the condition `count &lt; 5` remains true. The block of code inside the loop is executed repeatedly, incrementing the value of `count` until the condition is false.
@@ -397,10 +409,10 @@ for fruit in fruits:
         break
     print(f'Fruit: {fruit}')
 
-# Output
-Fruit: apple
-Fruit: banana
-Fruit: cherry
+# Output:
+# Fruit: apple
+# Fruit: banana
+# Fruit: cherry
 {% endhighlight %}
 
 In the above code, the loop iterates over the `fruits` list. When the condition `fruit == 'date'` is met, the `break` statement is executed, and the loop is terminated.
@@ -414,10 +426,10 @@ for num in numbers:
         continue
     print(f'Number: {num}')
 
-# Output
-Number: 1
-Number: 3
-Number: 5
+# Output:
+# Number: 1
+# Number: 3
+# Number: 5
 {% endhighlight %}
 
 In the above code, the loop iterates over the `numbers` list. When encountering an even number (i.e., `num % 2 == 0`), the `continue` statement is executed, and the remaining code inside the loop for that iteration is skipped.
@@ -426,7 +438,8 @@ By using `break` and `continue`, we can have more control over the flow of the l
 
 #### Avoiding Infinite Loops and Ensuring Loop Termination
 
-Infinite loops are loops that do not have a termination condition or have a condition that never becomes false. They can cause a program to hang or consume excessive resources, leading to undesirable outcomes. It's crucial to avoid infinite loops and ensure that our loops eventually terminate. <br>
+Infinite loops are loops that do not have a termination condition or have a condition that never becomes false. They can cause a program to hang or consume excessive resources, leading to undesirable outcomes. It's crucial to avoid infinite loops and ensure that our loops eventually terminate.
+
 To prevent infinite loops, we should carefully design the loop's condition to become false at some point. It's essential to consider all possible scenarios and ensure that the loop terminates in each case.
 
 Here's an example of a well-structured `while` loop with a termination condition:
@@ -437,12 +450,12 @@ while x <= 5:
     print(x)
     x += 1
 
-# Output
-1
-2
-3
-4
-5
+# Output:
+# 1
+# 2
+# 3
+# 4
+# 5
 {% endhighlight %}
 
 In this example, the loop iterates as long as the value of `x` is less than or equal to 5. The value of `x` is incremented by 1 with each iteration, ensuring that the condition will eventually become false, terminating the loop.
@@ -453,7 +466,8 @@ It's important to be cautious and thoroughly test your loops to ensure that they
 
 #### Nested Loops: Iterating Within Iterations
 
-Nested loops are loops that are placed inside another loop. They allow us to iterate within iterations, performing more complex operations or accessing nested data structures. Any type of loop can be nested under any other loop, such as a `for` loop inside a `for` loop, a `for` loop inside a `while` loop, or a `while` loop nested inside a `for` loop. <br>
+Nested loops are loops that are placed inside another loop. They allow us to iterate within iterations, performing more complex operations or accessing nested data structures. Any type of loop can be nested under any other loop, such as a `for` loop inside a `for` loop, a `for` loop inside a `while` loop, or a `while` loop nested inside a `for` loop.
+
 Nested loops are commonly used when we need to iterate over multiple dimensions or combinations of data. Here's an example:
 
 {% highlight python %}
@@ -462,26 +476,28 @@ for i in range(1, 4):
     for j in range(4, 7):
         print('  j =', j)
 
-# Output
-i = 1
-  j = 4
-  j = 5
-  j = 6
-i = 2
-  j = 4
-  j = 5
-  j = 6
-i = 3
-  j = 4
-  j = 5
-  j = 6
+# Output:
+# i = 1
+#   j = 4
+#   j = 5
+#   j = 6
+# i = 2
+#   j = 4
+#   j = 5
+#   j = 6
+# i = 3
+#   j = 4
+#   j = 5
+#   j = 6
 {% endhighlight %}
 
 In this example, a `for` loop is nested inside another `for` loop. The outer loop iterates over the numbers 1, 2, and 3, while the inner loop iterates over the numbers 4, 5, and 6.
 
 While nested loops allow performing operations on each combination of outer and inner loop variables, be cautious, especially with large data sets or complex operations. Too many nested loops or inefficient algorithms can lead to slower execution times.
 
-## Putting It All Together: Practical Examples of Control Flow <hr>
+## Putting It All Together: Practical Examples of Control Flow
+
+---
 
 Now that we understand how if statements and while loops work, let's explore some practical examples of using control flow statements to solve programming problems and implement conditional and iterative logic in real-world scenarios.
 
@@ -501,8 +517,8 @@ for num in numbers:
 
 print(f'The maximum value is: {max_value}')
 
-# Output
-The maximum value is: 8
+# Output:
+# The maximum value is: 8
 {% endhighlight %}
 
 Here, we initialize `max_value` with the first element of the list, then iterate over the remaining elements, updating `max_value` when encountering a larger number.
@@ -523,29 +539,31 @@ elif cart_total >= 500:
 final_price = cart_total - (cart_total * discount)
 print(f'Final price after discount: ${final_price}')
 
-# Output
-Final price after discount: $570.0
+# Output:
+# Final price after discount: $570.0
 {% endhighlight %}
 
 In this example, we use `if` and `elif` statements to check the value of `cart_total` and determine the appropriate discount based on the total amount spent by the customer. The final price is then calculated by subtracting the discount from the cart total.
 
 ### More Examples
 
-Feel free to browse my <a href="https://github.com/joj-macho" target="_new">GitHub page</a> for more comprehensive programs:
+Feel free to browse my [GitHub page](https://github.com/joj-macho){:target='_blank'} for more comprehensive programs:
 
-- **Unit Converter Program:** <a href="https://github.com/joj-macho/Pythological-Playground/tree/main/converter" target="_new">Link to Program</a>
+- **Unit Converter Program:** [Link to Program](https://github.com/joj-macho/Pythological-Playground/tree/main/converter){:target='_blank'}
   - Converts lengths, masses, or temperatures based on user input.
   - Uses a series of `if-elif-else` statements for user input and for converting units.
 
-- **Indentation Animation Program:** <a href="https://github.com/joj-macho/Pythological-Playground/tree/main/indentation-animation" target="_new">Link to Program</a>
+- **Indentation Animation Program:** [Link to Program](https://github.com/joj-macho/Pythological-Playground/tree/main/indentation-animation){:target='_blank'}
   - Creates an animation of indentation using asterisks (*).
   - The indentation level oscillates between increasing and decreasing, forming a rhythmic pattern of asterisk lines.
   - Demonstrates using indentation and uses `if-else` statements to check the value to determine whether to increase or decrease the indentation.
   - Uses loops that continue indefinitely, creating a back-and-forth motion of the asterisks with changing indentation.
   - Uses infinite loops, and if the user interrupts the program by pressing Ctrl+C (`KeyboardInterrupt`), the program catches the exception and calls `sys.exit()` to terminate the program.
 
-You can find more programs that implement branching statements and looping structures in my <a href="https://github.com/joj-macho/Pythological-Playground" target="_new">Python Playground</a> Repository.
+You can find more programs that implement branching statements and looping structures in my [Python Playground](https://github.com/joj-macho/Pythological-Playground){:target='_blank'} Repository.
 
-## Summary <hr>
+## Summary
+
+---
 
 Great job! You've completed the tutorial on Python flow control. You now know how to make decisions, create loops, and structure your code for various scenarios. Understanding control structures is a critical skill for developing sophisticated Python programs. With this knowledge, you're well-prepared to move on to [Python Functions](/workspace/python/functions), the building blocks of code.
