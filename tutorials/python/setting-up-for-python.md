@@ -562,4 +562,6 @@ Remember, learning Python is a journey, and continuous learning is key to master
 
 Congratulations on configuring your development environment! You've installed Python, set up your text editor or IDE, and created a virtual environment. Troubleshooting common errors and exploring valuable learning resources are essential steps in your Python journey.
 
+To get you started on Python programming, check out the [Getting Started Exercises and Examples](https://github.com/joj-macho/Python-Exercise-Playground/blob/main/00_getting_started.ipynb){:target='_blank'}. These exercises provide hands-on practice, allowing you to apply the concepts learned in the respective tutorials.
+
 In the upcoming section, [Python Definitions and Concepts](/workspace/python/definitions-and-concepts), delve into fundamental Python structures, covering variables, data types, and syntax. This knowledge will serve as a solid foundation for more advanced Python concepts.
