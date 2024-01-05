@@ -7,8 +7,6 @@ category: "python"
 permalink: /workspace/python/getting-started
 ---
 
-
-
 Hello! If you're reading this, it means you're interested in programming or maybe just curious about what it is. Either way, I'm here to tell you that programming is not as scary as it seems.
 
 As someone who's passionate about science, programming has been a game-changer in the way I approach problem-solving. Python's adaptability and simplicity make it the perfect language to start with. Allow me to share my insights on why programming is an incredible resource and why Python is the ideal language to begin with.
