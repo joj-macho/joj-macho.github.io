@@ -612,7 +612,7 @@ print(f'Average Shares Per Post: {average_shares:.2f}')
 
 In this the example above, we have lists of likes, comments, and shares for each post for an entire week. We calculate the total likes, comments, and shares for the week and then calculate the average engagement metrics per post. This provides a practical illustration of how Python can be used to analyze user engagement data on a social media platform. 
 
-This is just one example of how Python can be used to solve real-world problems. You can find more programs that implement variables, constants, statements, and expressions in my [Python Playground Repository](https://github.com/joj-macho/Pythological-Playground){:target='_blank'} on GitHub.
+This is just one example of how Python can be used to solve real-world problems. You can find more programs that implement variables, constants, statements, and expressions in my [Python Playground Repository](https://github.com/joj-macho/Pythological-Playground){:target='_blank'} on GitHub. For hands-on practice and reinforcement of these concepts, check out the [Python Basics Exercises](https://github.com/joj-macho/Python-Exercise-Playground/blob/main/01_python_basics.ipynb){:target='_blank'}.
 
 ## Summary
 
