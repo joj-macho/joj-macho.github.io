@@ -720,6 +720,54 @@ margin-top: 20px;
 
 
 /* ====================== WORKSPACE SINGLE PAGE STYLES ====================== */
+.workspace-page .page-item {
+    min-height: 300px;
+    margin-top: 30px;
+    // background-color: rgba(124, 187, 255, 0.205);
+    // box-shadow: 0px 0px 30px rgba(145, 176, 248, 0.34);
+    background-color: rgba(0, 191, 255, 0.05);
+    box-shadow: 0 2px 1px rgba(145, 176, 248, 0.34);
+    padding: 40px 50px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.workspace-page .page-item:hover {
+    transform: scale(1.008);
+    background-color: rgba(27, 197, 254, 0.08);
+    box-shadow: 1px 2px 1px rgba(160, 208, 246, 0.34);
+}
+
+.workspace-page .page-item h3 {
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    padding-bottom: 8px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    transition: 0.3s;
+}
+
+.workspace-page .page-item:hover h3 {
+    border-color: #007bff;
+}
+
+.workspace-page .page-item p {
+    line-height: 24px;
+    margin-bottom: 0;
+    color: #ddd;
+}
+
+.workspace-page .category-item .readmore {
+    margin-top: 15px;
+    display: inline-block;
+    color: #fff;
+}
+
+.workspace-page .category-item .readmore:hover {
+    color: #007bff;
+}
+
 
 .workspace .workspace-details {
     box-shadow: 0px 0px 3px rgba(48, 158, 255, 0.5);
