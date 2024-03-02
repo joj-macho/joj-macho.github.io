@@ -37,12 +37,11 @@ body::before {
     position: fixed;
     background: #0A0A0A url("../images/portfolio/adelin-preda--tOr_T4qTpQ-unsplash.jpg") top right no-repeat;
     background-size: cover;
-    filter: brightness(75%) opacity(30%);
+    filter: brightness(75%) opacity(75%);
     left: 0;
     right: 0;
     top: 0;
     height: 100vh;
-    z-index: -1;
 }
 
 #particles-js {
@@ -90,7 +89,7 @@ hr {
 }
 
 #header * {
-    transition: ease-in-out .2s;
+    transition: ease-in-out 0.5s;
   }
 
 #header h1 {
@@ -234,11 +233,12 @@ section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
     font-size: 18px;
     font-weight: 700;
     color: var(--link-color);
     transition: 0.3s;
-    position: relative;
+    white-space: nowrap;
 }
 
 .navbar a i,
@@ -302,7 +302,6 @@ section .container {
     transition: 0.3s;
     z-index: 999;
     margin-top: 0;
-    /* display: none; */
 }
 
 
@@ -314,6 +313,7 @@ section .container {
   
 .navbar-mobile ul {
     display: none;
+    position: absolute;
     background: rgba(0, 0, 0, 0.9);
     border: none;
     top: 80px;
@@ -324,7 +324,6 @@ section .container {
     transition: 0.3s;
     z-index: 999;
     overflow-y: auto;
-    position: fixed;
 }
 
 .navbar-mobile ul.active {
@@ -396,11 +395,12 @@ section .container {
 .skill-category,
 .interests .icon-box {
     margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0);
 }
 
 .skill-category h3 {
     color: var(--accent-blue);
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
 }
 
@@ -421,8 +421,9 @@ section .container {
 .skill-list .skill-badge {
     display: flex;
     align-items: center;
-    background-color: #47d1ffe7;
-    color: #fff;
+    // background-color: #47d1ffe7;
+    background-color: #009dc963;
+    color: rgba(27, 232, 215, 0.375);
     font-size: 16px;
     padding: 5px 10px;
     margin: 10px;
@@ -445,7 +446,7 @@ section .container {
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: #47d1ffe7;
+    background-color: #009dc963;
     border-radius: 10px;
     transition: background-color 0.3s ease-in-out;
 }
@@ -547,7 +548,7 @@ section .container {
 
 .workspace .card {
     border: none;
-    background-color: #121212;
+    background-color: rgba(27, 197, 254, 0.05);
     text-align: center;
     padding: 20px;
     height: 100%;
@@ -557,6 +558,7 @@ section .container {
 
 .workspace .card:hover {
     transform: translateY(0);
+    background-color: rgba(27, 197, 254, 0.08);
     box-shadow: 0 2px 1px var(--accent-violet);
 }
 
@@ -596,16 +598,14 @@ section .container {
     margin-bottom: 20px;
 }
 
-
 .contact .info-box {
-    background-color: #121212;
+    // background-color: #121212;
+    background: rgba(255, 255, 255, 0.08);
     text-align: center;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
 
 .contact .info-box i {
     font-size: 36px;
@@ -613,9 +613,10 @@ section .container {
 }
 
 .contact .info-box h3 {
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 800;
     margin-bottom: 10px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .contact .info-box h3:hover {
@@ -628,7 +629,6 @@ section .container {
     margin-bottom: 0;
 }
 
-
 /* ====================== FOOTER STYLES ====================== */
 
 .footer {
@@ -638,12 +638,10 @@ section .container {
     bottom: 0;
     padding: 15px;
     text-align: right;
-    font-size: 13px;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.5);
     z-index: 999999;
     font-size: 14px;
-    color: #CCCCCC;
-    z-index: 999999;
+    z-index: 9999;
 }
 
 
@@ -681,7 +679,7 @@ section .container {
 /* Header Mobile Styles */
 @media (max-width: 992px) {
     #header h1 {
-        font-size: 36px;
+        font-size: 42px;
     }
 
     #header h2 {
@@ -706,6 +704,19 @@ section .container {
     }
 }
 
+/* Mobile Navbar Stylse */
+@media (max-width: 991px) {
+    /* Hide the mobile navigation toggle */
+    .mobile-nav-toggle {
+        display: block;
+    }
+
+    /* Hide the regular navigation menu */
+    .navbar ul {
+        display: none;
+    }
+}
+
 /* Sections Mobile Styles */
 @media (max-width: 768px) {
     section {
@@ -721,15 +732,6 @@ section .container {
 @media (max-width: 768px) {
     .about .content {
         padding: 30px;
-    }
-}
-
-/* Resume Section Mobile Styles */
-@media (max-width: 768px) {
-    .resume .resume-item {
-        padding: 0 0 20px 0;
-        border-left: none;
-        position: relative;
     }
 }
 
@@ -758,55 +760,11 @@ section .container {
 }
 
 /* Footer Mobile Styles */
-@media (max-width: 768px) {
-    .footer {
-        position: relative;
-    }
-}
-
-/* Media query for screens up to 991px (larger screens) */
 @media (max-width: 991px) {
-    /* Hide the mobile navigation toggle */
-    .mobile-nav-toggle {
-        display: block;
-    }
-
-    /* Hide the regular navigation menu */
-    .navbar ul {
-        display: none;
-    }
-
-    /* Styles for the active mobile navigation menu */
-    .navbar-mobile ul {
-        display: none;
-        background: rgba(0, 0, 0, 0.9);
-        border: none;
-        top: 80px;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        padding: 0;
-        transition: 0.3s;
-        z-index: 999;
-        overflow-y: auto;
-        position: fixed;
-    }
-
-    .navbar-mobile ul.active {
-        display: block;
-    }
-
-    .navbar-mobile li {
-        padding: 12px 20px;
-    }
-
-    .navbar-mobile li+li {
-        margin: 0;
-    }
-
-    .navbar-mobile a,
-    .navbar-mobile a:focus {
-        font-size: 16px;
-        position: relative;
+    .footer {
+        text-align: center;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.8);
     }
 }
+
