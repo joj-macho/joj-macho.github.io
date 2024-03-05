@@ -9,6 +9,9 @@ permalink: /workspace/computational_python/statistical-analysis
 
 Welcome to the eighth tutorial in our Computational Programming with Python series. In this tutorial, we'll delve into the world of statistical analysis using Python. Statistical methods are essential for extracting meaningful insights from data, and Python provides powerful tools for performing various statistical analyses. Join us as we explore descriptive and inferential statistics, unraveling the secrets of statistical interpretation with Python.
 
+* toc
+{:toc}
+
 ## Objectives of the Tutorial
 
 By the end of this tutorial, you'll have a comprehensive understanding of statistical analysis using Python. From descriptive statistics to advanced inferential techniques, you'll be equipped to analyze and interpret data for informed decision-making. 

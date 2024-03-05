@@ -9,13 +9,20 @@ permalink: /workspace/cryptography/col-transposition-cipher
 
 The Columnar Transposition Cipher is a classic encryption technique known for its transposition of characters within a matrix. In this guide, we will cover the history of the Columnar Transposition Cipher, how it works, implementation in Python, and more.
 
-## A Brief History of the Columnar Transposition Cipher <hr>
+* toc
+{:toc}
+
+## A Brief History of the Columnar Transposition Cipher
+
+---
 
 The Columnar Transposition Cipher was initially conceptualized by Antoine Rossignol in the 19th century. Rossignol, a French cryptographer, advocated for the utilization of a grid to obfuscate messages. Subsequently, this cipher found practical application among Union forces during the American Civil War for encrypting messages. Moreover, it was employed by the British during World War I.
 
 The Columnar Transposition Cipher, a variant of the transposition cipher, involves arranging the text in rows of a fixed length and then reading it out column by column. Historically, its usage has been prominent in military and diplomatic contexts, providing an effective method for concealing the meaning of messages.
 
-## How the Columnar Transposition Cipher Works <hr>
+## How the Columnar Transposition Cipher Works
+
+---
 
 The Columnar Transposition Cipher works by rearranging the characters of the plaintext within a matrix. The encryption involves writing the plaintext in rows of a fixed length, then reading it out column by column. Here's a step-by-step guide on how the Columnar Transposition Cipher operates:
 
@@ -46,7 +53,9 @@ Decoded Message: HELLO WORLD
 
 The Columnar Transposition Cipher is a transposition cipher, a type of encryption where the positions of the characters are changed according to a system. This cipher relies on the rearrangement of characters within a matrix, introducing complexity to the ciphertext.
 
-## Implementation in Python <hr>
+## Implementation in Python
+
+---
 
 Python provides a straightforward way to implement the Columnar Transposition Cipher. Here's an example Python code snippet:
 
@@ -77,10 +86,14 @@ decoded_text = columnar_transposition_cipher(encoded_text, key, mode='decrypt')
 print('Decoded Text:', decoded_text)
 {% endhighlight %}
 
-## Real-World Use Cases of the Columnar Transposition Cipher <hr>
+## Real-World Use Cases of the Columnar Transposition Cipher
+
+---
 
 The Columnar Transposition Cipher has historical significance in military and diplomatic communications. Its ability to rearrange characters within a matrix provided a method of encryption that could be adapted to different key arrangements, adding a layer of security.
 
-## Summary <hr>
+## Summary
+
+---
 
 The Columnar Transposition Cipher, with its unique approach to rearranging characters, is a classic example of a transposition cipher. While not as complex as modern encryption methods, it showcases the significance of changing the positions of characters within a message. The Columnar Transposition Cipher stands as a testament to the diversity of encryption techniques.

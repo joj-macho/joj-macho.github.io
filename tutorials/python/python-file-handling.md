@@ -9,13 +9,18 @@ permalink: /workspace/python/file-handling
 
 File handling is a crucial aspect of programming, enabling interaction with external data sources. In Python, file handling allows you to read from and write to files, making it possible to store and retrieve information persistently. This tutorial will guide you through the essential concepts of file handling in Python, covering file modes, reading and writing files, and best practices.
 
-## Working with Directory Paths <hr>
+* toc
+{:toc}
+
+## Working with Directory Paths
+
+---
 
 Before working with files and folders, understanding how to locate and specify their paths is essential.
 
-A file is characterized by two essential properties: a file name and a path. The file name is the name of the file, while the path specifies its location on the computer. For instance, consider the file "anime_list.txt" located in the path "home/joj-macho/Documents/AnimeStuff/". The file extension, the part after the last period, indicates the file type. Folders, or directories, can contain files and other folders, creating a hierarchical structure. For example, "anime_list.txt" resides in the "AnimeStuff" folder, which is inside the "Documents" folder, which is inside the "joj-macho" folder, itself within the "home" folder.
+A file is characterized by two essential properties: a **file name** and a **path**. The file name is the name of the file, while the path specifies its location on the computer. For instance, consider the file "anime_list.txt" located in the path "home/joj-macho/Documents/AnimeStuff/". The file extension, the part after the last period, indicates the file type. Folders, or directories, can contain files and other folders, creating a hierarchical structure. For example, "anime_list.txt" resides in the "AnimeStuff" folder, which is inside the "Documents" folder, which is inside the "joj-macho" folder, itself within the "home" folder.
 
-A directory path is a string of characters used to uniquely identify a location in a directory structure. The path starts with a root directory, designated by a letter (such as C:) in Windows and a forward slash (/) in Unix-based systems. Pathnames appear differently depending on the operating system.
+A directory path is a string of characters used to uniquely identify a location in a directory structure. The path starts with a root directory, designated by a letter (such as `C:`) in Windows and a forward slash (`/`) in Unix-based systems. Pathnames appear differently depending on the operating system.
 
 - Windows: Backslash (`\`)
 - macOS and Unix: Forward slash (`/`)
@@ -45,7 +50,7 @@ normalized_path = os.path.normpath('folder1/folder2/file.txt')
 
 The `os.getcwd()` method returns the current working directory. This is the folder that contains the running program. It's crucial for understanding the context in which your code is executing. `The os.chdir()` method changes the current working directory to the specified path. This is useful when you need to perform operations in a different directory. The `os.path.join()` method joins the provided path components using the appropriate separator for the operating system. This ensures platform-independent manipulation of file and folder names. The `os.path.normpath()` method normalizes the path, converting it to the appropriate format for the operating system. This is useful for dealing with paths that may have inconsistent separators.
 
-### Absolute vs. Relative Paths
+#### Absolute vs. Relative Paths
 
 - **Absolute Path**: Full directory path from the drive to the current file or folder.
 - **Relative Path**: Interpreted from the perspective of the current working directory.
@@ -63,7 +68,7 @@ Creating a path using `os.path.join()` with folder and file names creates a rela
 
 If a file, folder, or user-defined module that you need to access is stored in the same folder as your code, you can simply refer to the item’s name in your code, without the need for a path or a "dot" shortcut.
 
-### The pathlib Module
+### The `pathlib` Module
 
 The `pathlib` module treats paths as objects rather than strings, providing a more convenient and platform-independent way to work with directories.
 
@@ -103,28 +108,100 @@ In this example, `write_text()` creates a new text file or overwrites an existin
 
 These methods offer simplicity for basic file interactions. However, for more common operations, using the `open()` function and file objects is prevalent.
 
-The `pathlib` module offers a variety of useful methods for working with paths and directories. The table below summarizes some of the more useful methods available through the `pathlib` module. For the full list, visit the documentation at [Python pathlib Documentation](https://docs.python.org/3/library/pathlib.xhtml).
+The `pathlib` module offers a variety of useful methods for working with paths and directories. The table below summarizes some of the more useful methods available through the `pathlib` module. For the full list, visit the documentation at [Python pathlib Documentation](https://docs.python.org/3/library/pathlib.xhtml){:target='_blank'}.
 
+<style>
+    table {
+        border-collapse: collapse;
+        max-width: 80%;
+        margin: 20px auto;
+    }
 
-| Method               | Description                                                  |
-| -------------------- | ------------------------------------------------------------ |
-| `Path.parts`         | Returns a tuple containing the components of the path.       |
-| `Path.parent`        | Returns the parent directory of the path.                    |
-| `Path.name`          | Returns the last component of the path.                      |
-| `Path.stem`          | Returns the last component of the path without the suffix.    |
-| `Path.suffix`        | Returns the file suffix of the last component of the path.   |
-| `Path.anchor`        | Returns the anchor part of the path (e.g., the root).        |
-| `Path.exists()`      | Checks whether the path points to an existing file or directory. |
-| `Path.is_dir()`      | Checks whether the path points to a directory.               |
-| `Path.is_file()`     | Checks whether the path points to a regular file.            |
-| `Path.mkdir()`       | Creates a new directory at the path.                         |
-| `Path.rmdir()`       | Removes the directory at the path.                           |
-| `Path.rename(target)` | Renames the path to the specified target path.               |
-| `Path.unlink()`      | Removes the file or symbolic link at the path.              |
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        text-align: center;
+    }
+    
+    caption {
+    caption-side: top;
+    color: #adb5bd;
+    font-style: italic;
+</style>
+
+<table class="table table-dark table-responsive table-sm table-striped table-hover caption-top">
+    <caption>Pathlib Methods and Descriptions</caption>
+    <thead>
+        <tr>
+            <th scope="col">Method</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr>
+            <td><code>Path.parts</code></td>
+            <td>Returns a tuple containing the components of the path.</td>
+        </tr>
+        <tr>
+            <td><code>Path.parent</code></td>
+            <td>Returns the parent directory of the path.</td>
+        </tr>
+        <tr>
+            <td><code>Path.name</code></td>
+            <td>Returns the last component of the path.</td>
+        </tr>
+        <tr>
+            <td><code>Path.stem</code></td>
+            <td>Returns the last component of the path without the suffix.</td>
+        </tr>
+        <tr>
+            <td><code>Path.suffix</code></td>
+            <td>Returns the file suffix of the last component of the path.</td>
+        </tr>
+        <tr>
+            <td><code>Path.anchor</code></td>
+            <td>Returns the anchor part of the path (e.g., the root).</td>
+        </tr>
+        <tr>
+            <td><code>Path.exists()</code></td>
+            <td>Checks whether the path points to an existing file or directory.</td>
+        </tr>
+        <tr>
+            <td><code>Path.is_dir()</code></td>
+            <td>Checks whether the path points to a directory.</td>
+        </tr>
+        <tr>
+            <td><code>Path.is_file()</code></td>
+            <td>Checks whether the path points to a regular file.</td>
+        </tr>
+        <tr>
+            <td><code>Path.mkdir()</code></td>
+            <td>Creates a new directory at the path.</td>
+        </tr>
+        <tr>
+            <td><code>Path.rmdir()</code></td>
+            <td>Removes the directory at the path.</td>
+        </tr>
+        <tr>
+            <td><code>Path.rename(target)</code></td>
+            <td>Renames the path to the specified target path.</td>
+        </tr>
+        <tr>
+            <td><code>Path.unlink()</code></td>
+            <td>Removes the file or symbolic link at the path.</td>
+        </tr>
+    </tbody>
+</table>
 
 Understanding these methods can greatly enhance your ability to manipulate paths and directories in a Python program.
 
-## File Input/Output (I/O) <hr>
+## File Input/Output (I/O)
+
+---
 
 File Input/Output (I/O) is a fundamental aspect of programming, allowing interaction with external data sources through reading from and writing to files. In Python, the `open()` function plays a pivotal role in facilitating file I/O. It opens files and returns file objects, enabling various operations on the files.
 
@@ -214,7 +291,9 @@ with open('example.txt', 'r') as file:
 
 The `with` statement is recommended for file I/O as it promotes cleaner and more readable code.
 
-## Handling Exceptions in File Handling <hr>
+## Handling Exceptions in File Handling
+
+---
 
 File operations can encounter various errors, such as file not found, insufficient permissions, or disk full. Properly handling these exceptions ensures that your program responds gracefully to unexpected situations.
 
@@ -236,7 +315,9 @@ finally:
 
 In this example, the code attempts to open and read a file that does not exist. The `except` block catches the `FileNotFoundError` exception, and the `finally` block ensures that the file is closed, whether an exception occurs or not.
 
-## More File Operations <hr>
+## More File Operations
+
+---
 
 Building on the basics of file I/O, this section explores more advanced file operations and techniques.
 
@@ -285,7 +366,9 @@ Python's standard library includes various modules that can be leveraged for spe
 
 Each module comes with its set of functions and methods tailored to its specific file format.
 
-## Serialization and Deserialization <hr>
+## Serialization and Deserialization
+
+---
 
 Serialization is the process of converting complex data types, such as objects or data structures, into a format that can be easily stored or transmitted. Deserialization is the reverse process, where the serialized data is reconstructed back into its original form.
 
@@ -362,13 +445,40 @@ Bob 28
 
 The `shelve` module is useful for saving and loading application state or caching expensive computations.
 
-## Working with Different File Formats <hr>
+## Working with Different File Formats
 
-Python supports working with various file formats, each with its own challenges and best practices. Understanding how to handle different file formats is crucial for real-world applications.
+---
+
+https://pythonnumericalmethods.berkeley.edu/notebooks/chapter11.04-JSON-Files.html
+
+While the `print` function has served us well for displaying data on the screen, storing and sharing data with other programs or colleagues involves different file formats. Python offers robust support for handling various file formats, each presenting its own set of challenges and best practices.
+
+### Reading and Writing TXT Files
+
+Text files, often denoted by the `.txt` extension, consist solely of plain text. However, effective handling of text files requires an understanding of the specific format expected by both the programs you write and those that read your text files.
+
+#### Reading from a txt File
+
+Reading from a text file in Python involves opening the file, reading its contents, and processing the data as needed. The `open()` function is commonly used, allowing you to specify the file's path and the desired mode (read, write, etc).
+
+{% highlight python %}
+with open('data.txt', 'r') as file:
+    content = file.read()
+    print(content)
+{% endhighlight %}
+
+#### Writing to a txt File
+
+When writing to a text file, you open the file in write mode ('w') and use methods like `write()` to add content. The `with` statement ensures proper file handling, automatically closing the file when the block is exited.
+
+{% highlight python %}
+with open('data.txt', 'w') as file:
+    file.write('Hello, this is a sample text.')
+{% endhighlight %}
 
 ### Reading and Writing CSV Files
 
-The `csv` module in Python provides functionality for both reading from and writing to CSV files, a common format for tabular data.
+Comma-Separated Values (CSV) is a popular format for tabular data. Python's built-in `csv` module simplifies working with CSV files. You can see the details in the [documentation](https://docs.python.org/3/library/csv.html){:target='_blank'}.
 
 #### Reading from a CSV File
 
@@ -388,12 +498,15 @@ with open('data.csv', 'r') as file:
 import csv
 
 # Writing to a CSV file
-data = [['Name', 'Age', 'City'], ['Alice', 25, 'Paris'], ['Bob', 28, 'New York']]
+data = [['Name', 'Surname', 'Age'],
+        ['John', 'Doe', 25],
+        ['Jane', 'Doe', 24]]
 with open('output.csv', 'w', newline='') as file:
     csv_writer = csv.writer(file)
     csv_writer.writerows(data)
 {% endhighlight %}
 
+Working with CSV files is common in data analysis, and Python's `csv` module provides a straightforward approach for handling tabular data in this format.
 
 ### Working with JSON Files
 
@@ -449,7 +562,61 @@ tree = ET.ElementTree(root)
 tree.write('output.xml')
 {% endhighlight %}
 
-## Best Practices and Tips <hr>
+### Working with Pickle Files
+
+Pickle is a Python-specific binary format for serializing and deserializing objects. It's particularly useful for storing complex data structures.
+
+#### Reading from a Pickle File
+
+{% highlight python %}
+import pickle
+
+with open('data.pkl', 'rb') as pickle_file:
+    data = pickle.load(pickle_file)
+    print(data)
+{% endhighlight %}
+
+#### Writing to a Pickle File
+
+{% highlight python %}
+import pickle
+
+data = {'name': 'Alice', 'age': 25, 'city': 'London'}
+
+with open('data.pkl', 'wb') as pickle_file:
+    pickle.dump(data, pickle_file)
+{% endhighlight %}
+
+
+### Working with HDF5 Files
+
+HDF5 (Hierarchical Data Format version 5) is a file format and set of tools for managing complex data. The `h5py` library is commonly used for working with HDF5 files in Python.
+
+#### Reading from an HDF5 File
+
+{% highlight python %}
+import h5py
+
+with h5py.File('data.h5', 'r') as h5_file:
+    data = h5_file['dataset'][:]
+    print(data)
+{% endhighlight %}
+
+#### Writing to an HDF5 File
+
+{% highlight python %}
+import h5py
+
+data = [1, 2, 3, 4, 5]
+
+with h5py.File('data.h5', 'w') as h5_file:
+    h5_file.create_dataset('dataset', data=data)
+{% endhighlight %}
+
+
+## Best Practices and Tips
+
+---
 
 Efficient and secure file handling is crucial for robust Python applications. Consider the following best practices and tips when working with files:
 
@@ -566,9 +733,9 @@ else:
 
 By verifying file existence beforehand, your code can handle the absence of a file in a controlled manner.
 
-Certainly! Below is the added section on **Practical Applications and Use Cases** for the Python file handling tutorial:
+## Practical Applications and Use Cases
 
-## Practical Applications and Use Cases <hr>
+---
 
 Now that you've grasped the essential concepts of file handling in Python, let's explore practical applications and use cases where these skills are indispensable.
 
@@ -663,8 +830,18 @@ with open('custom_data.pkl', 'rb') as file:
 print(loaded_obj.name, loaded_obj.value)
 {% endhighlight %}
 
-Explore these practical applications to solidify your understanding and consider incorporating them into your projects. As you encounter diverse scenarios in your coding journey, the file handling skills you've acquired will prove to be an invaluable asset.
+### More Examples
 
-## Summary <hr>
+Explore additional examples and comprehensive programs on my [GitHub page](https://github.com/joj-macho){:target='_blank'}. The repository contains various projects and programs showcasing different aspects of Python programming.
 
-Congratulations on completing the tutorial on Python file handling! You've acquired a fundamental skill for interacting with external data, enabling seamless reading from and writing to files. This proficiency enhances your capabilities for diverse data processing tasks, making Python an invaluable tool in your programming arsenal. To further elevate your Python expertise, the next step involves [Error Handling and Exception in Python](/workspace/python/python-error-handling), where you will learn to fortify your code against unforeseen challenges and ensure robust program execution.
+To explore a broader range of programs and projects, take a look at my [GitHub Repositories](https://github.com/joj-macho?tab=repositories){:target='_blank'}. There, you'll find a diverse collection of code, covering areas such as web development, data science, machine learning, and more.
+
+For practical exercises and reinforcement of error handling concepts, check out the [Python Error Handling Exercises](https://github.com/joj-macho/Python-Exercise-Playground/blob/main/08_file_handling.ipynb){:target='_blank'}. These exercises are designed to provide hands-on practice, helping you solidify your understanding of error handling in Python.
+
+Explore these practical applications to solidify your understanding and consider incorporating them into your projects. As you encounter diverse scenarios in your coding journey, the file handling skills you've acquired will prove to be an invaluable asset. For hands-on practice and reinforcement of these concepts, check out the [Python File Handling Exercises](https://github.com/joj-macho/Python-Exercise-Playground/blob/main/08_file_handling.ipynb){:target='_blank'}.
+
+## Summary
+
+---
+
+Congratulations on completing the tutorial on Python file handling! You've acquired a fundamental skill for interacting with external data, enabling seamless reading from and writing to files. This proficiency enhances your capabilities for diverse data processing tasks, making Python an invaluable tool in your programming arsenal.  As you advance, consider exploring the next topic: [Object-Oriented Programming in Python](/workspace/python/python-oop) to delve into the principles and practices of object-oriented programming (OOP), including classes, objects, inheritance, and more.

@@ -891,7 +891,7 @@ print('Query:', parsed_url.query)
 
 Feel free to browse my [GitHub page](https://github.com/joj-macho){:target='_blank'} for more comprehensive programs.
 
-Discover additional programs that handle string data types in my [Python Playground](https://github.com/joj-macho/Pythological-Playground){:target='_blank'} repository. For a broader range of programs, you can explore my [GitHub Repositories](https://github.com/joj-macho?tab=repositories){:target='_blank'}.
+Discover additional programs that handle string data types in my [Python Playground](https://github.com/joj-macho/Pythological-Playground){:target='_blank'} repository. For a broader range of programs, you can explore my [GitHub Repositories](https://github.com/joj-macho?tab=repositories){:target='_blank'}. For hands-on practice and reinforcement of these concepts, check out the [Python String Data Types Exercises](https://github.com/joj-macho/Python-Exercise-Playground/blob/main/04_python_strings.ipynb){:target='_blank'}.
 
 ## Summary
 

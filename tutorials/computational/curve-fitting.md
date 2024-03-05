@@ -9,6 +9,9 @@ permalink: /workspace/computational_python/interpolation-curve-fitting
 
 Welcome to the sixth tutorial in our Computational Programming with Python series. In this tutorial, we'll explore the fascinating world of interpolation and curve fitting. These techniques play a crucial role in scientific data analysis, allowing us to make sense of experimental data and create predictive models. Join us as we delve into the principles and applications of interpolation and curve fitting using Python.
 
+* toc
+{:toc}
+
 ## Objectives of the Tutorial
 
 By the end of this tutorial, you'll have a solid understanding of interpolation and curve fitting, empowering you to analyze and model scientific data effectively. Whether you're working with experimental results or predicting future trends, these techniques are invaluable in scientific programming. 

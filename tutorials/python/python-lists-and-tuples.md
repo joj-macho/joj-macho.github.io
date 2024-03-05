@@ -798,7 +798,7 @@ Feel free to browse my [GitHub page](https://github.com/joj-macho){:target='_bla
 
 - [ATM Simulation](https://github.com/joj-macho/Pythological-Playground/blob/main/bank-manager/){:target='_blank'}: This program utilizes lists to store banking records for a user, providing a simulated banking experience.
 
-Discover additional programs that handle sequence data types in my [Python Playground](https://github.com/joj-macho/Pythological-Playground){:target='_blank'} repository. For a broader range of programs, you can explore my [GitHub Repositories](https://github.com/joj-macho?tab=repositories){:target='_blank'}.
+Discover additional programs that handle sequence data types in my [Python Playground](https://github.com/joj-macho/Pythological-Playground){:target='_blank'} repository. For a broader range of programs, you can explore my [GitHub Repositories](https://github.com/joj-macho?tab=repositories){:target='_blank'}. For hands-on practice and reinforcement of these concepts, check out the [Python List and Tuples Data Types Exercises](https://github.com/joj-macho/Python-Exercise-Playground/blob/main/03_python_list_tuple.ipynb){:target='_blank'}.
 
 ## Summary
 

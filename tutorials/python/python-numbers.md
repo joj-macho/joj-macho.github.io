@@ -601,9 +601,56 @@ By using these complex-specific functions and methods, you can perform various c
 
 ### Type Casting
 
+Type casting, also known as type conversion, is a method of converting the value of one data type to another data type. Python, being an object-oriented language, utilizes classes to define data types, allowing for type casting through the use of constructor functions of the respective data type classes.
+
+#### Integer Conversion: `int()`
+
+The `int()` function converts different data types into an integer. It can accept various input types, including:
+- Integer literals
+- Float literals
+- String literals representing whole numbers.
+
+Example:
+
+{% highlight bash %}
+>>> int(5.6)
+5
+>>> int('10')
+10
+{% endhighlight %}
+
+#### Float Conversion: `float()`
+
+The `float()` function converts different data types into a float number. It can accept various input types, including:
+- Integer literals
+- Float literals
+- String literals representing integer or float numbers
+
+Example:
+
+{% highlight bash %}
+>>> float(5)
+5.0
+>>> float('3.14')
+3.14
+{% endhighlight %}
+
+#### String Conversion: `str()`
+
+The `str()` function converts all data types into a string.
+
+Example:
+
+{% highlight bash %}
+>>> str(42)
+'42'
+>>> str(3.14)
+'3.14'
+{% endhighlight %}
+
 In Python, you can convert between different numeric data types using implicit or explicit type conversion. Implicit type conversion occurs automatically when Python converts a value from one type to another without any explicit instructions. Explicit type conversion, also known as type casting, involves manually converting a value from one type to another using specific functions or methods.
 
-Here are a few examples of converting between different numeric types:
+Here are some examples of Implicit and Explicit Type Conversion
 
 {% highlight bash %}
 >>> # Implicit type conversion
@@ -628,6 +675,8 @@ Here are a few examples of converting between different numeric types:
 >>> complex(real_part, imaginary_part)
 (2+3j)
 {% endhighlight %}
+
+These examples demonstrate both implicit and explicit type conversion, showcasing how Python handles different data types and their conversions effectively.
 
 ### Working with Long Numbers
 
@@ -747,7 +796,7 @@ Feel free to browse my [GitHub page](https://github.com/joj-macho){:target='_bla
     - A number guessing game, Bagels, which generates a random secret number and challenges the player to guess it within a limited number of attempts.
     - Demonstrates using integer numbers and random numbers from the `random()` module.
 
-You can find more programs that handle numerical data types on my [Math & Science Playground](https://github.com/joj-macho/Math-Science-Playground){:target='_blank'} and [Computational Programming Playground](https://github.com/joj-macho/Computational-Programming-Playground){:target='_blank'} repositories. These repositories contain a collection of Python programs covering a wide array of mathematical and scientific concepts, including topics in numerical methods, linear algebra, differential equations, and more.
+You can find more programs that handle numerical data types on my [Math & Science Playground](https://github.com/joj-macho/Math-Science-Playground){:target='_blank'} and [Computational Programming Playground](https://github.com/joj-macho/Computational-Programming-Playground){:target='_blank'} repositories. These repositories contain a collection of Python programs covering a wide array of mathematical and scientific concepts, including topics in numerical methods, linear algebra, differential equations, and more. For hands-on practice and reinforcement of these concepts, check out the [Python Numeric Data Types Exercises](https://github.com/joj-macho/Python-Exercise-Playground/blob/main/02_python_numbers.ipynb){:target='_blank'}.
 
 ## Summary
 

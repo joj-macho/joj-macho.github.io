@@ -611,7 +611,7 @@ Feel free to browse my [GitHub page](https://github.com/joj-macho){:target='_bla
 
 - [Dice Rolling Simulator](https://github.com/joj-macho/Pythological-Playground/tree/main/dice-roll){:target='_blank'}: This program utilizes dictionaries to store and use ASCII representations of each possible dice face and simulates rolling a dice or multiple dice and displays the corresponding ASCII characters of the rolled die.
 
-Discover additional programs that handle dictionary data types in my [Python Playground](https://github.com/joj-macho/Pythological-Playground){:target='_blank'} repository. For a broader range of programs, you can explore my [GitHub Repositories](https://github.com/joj-macho?tab=repositories){:target='_blank'}.
+Discover additional programs that handle dictionary data types in my [Python Playground](https://github.com/joj-macho/Pythological-Playground){:target='_blank'} repository. For a broader range of programs, you can explore my [GitHub Repositories](https://github.com/joj-macho?tab=repositories){:target='_blank'}. For hands-on practice and reinforcement of these concepts, check out the [Python Dictionary Data Types Exercises](https://github.com/joj-macho/Python-Exercise-Playground/blob/main/05_python_dictionaries.ipynb){:target='_blank'}.
 
 ## Summary
 

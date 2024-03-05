@@ -9,6 +9,9 @@ permalink: /workspace/computational_python/differential-equations
 
 Welcome to the seventh tutorial in our Computational Programming with Python series. In this tutorial, we'll unravel the intricacies of solving differential equations using Python. Differential equations are fundamental in describing dynamic systems, making them essential in scientific simulations and modeling. Join us as we explore numerical methods and Python tools to tackle these equations efficiently.
 
+* toc
+{:toc}
+
 ## Objectives of the Tutorial
 
 By the end of this tutorial, you'll have a solid foundation in solving differential equations using Python. Whether you're dealing with single ODEs or complex systems, the knowledge gained here is crucial for scientific research and simulations. 

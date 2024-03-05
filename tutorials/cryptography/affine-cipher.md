@@ -9,7 +9,12 @@ permalink: /workspace/cryptography/affine-cipher
 
 The Affine Cipher is a historical encryption technique that involves using a combination of modular arithmetic and linear algebra to encrypt messages. In this guide, we will cover the history of the Affine Cipher, how it works, implementation in Python, and more.
 
-## A Brief History of the Affine Cipher <hr>
+* toc
+{:toc}
+
+## A Brief History of the Affine Cipher
+
+---
 
 The Affine Cipher derives its name from the mathematical concept of an affine transformation, employed for transforming coordinates in geometry. This cipher was initially elucidated by Al-Kindi, an Arab mathematician, in the 9th century AD. Subsequently, it garnered further attention and exploration from other mathematicians, including the Persian scholar Al-Khwārizmī. Its recognition received a boost in the mid-19th century when Augustus De Morgan, an English mathematician, popularized it.
 
@@ -27,7 +32,9 @@ where:
 - $x$ is the numeric equivalent of the letter
 - $m$ is the size of the alphabet
 
-## How the Affine Cipher Works <hr>
+## How the Affine Cipher Works
+
+---
 
 The Affine Cipher works by applying a mathematical transformation to each letter in the plaintext. The transformation involves multiplying the numeric value of a letter by a key component, adding another key component, and taking the result modulo the size of the alphabet. Here's a step-by-step guide on how the Affine Cipher operates:
 
@@ -56,7 +63,9 @@ Decoded Message: HELLO WORLD
 
 The Affine Cipher is a substitution cipher that combines the simplicity of substitution with mathematical operations. Its use of modular arithmetic adds a layer of complexity, making it more secure than simple Caesar-like ciphers. However, it remains vulnerable to attacks, particularly when the key components are not carefully chosen.
 
-## Implementation in Python <hr>
+## Implementation in Python
+
+---
 
 Python provides a straightforward way to implement the Affine Cipher. Here's an example Python code snippet:
 
@@ -89,10 +98,14 @@ decoded_text = affine_cipher(encoded_text, a, b, mode='decrypt')
 print('Decoded Text:', decoded_text)
 {% endhighlight %}
 
-## Real-World Use Cases of the Affine Cipher <hr>
+## Real-World Use Cases of the Affine Cipher
+
+---
 
 The Affine Cipher found applications in ancient military and diplomatic communications due to its simplicity and effectiveness. Its use of mathematical operations provided a level of security suitable for the contexts of its time. In contemporary settings, it serves as a historical example of cryptographic techniques.
 
-## Summary <hr>
+## Summary
+
+---
 
 The Affine Cipher, with its historical significance and mathematical foundation, is a classic example of encryption. While not as complex as modern cryptographic methods, the Affine Cipher showcases the combination of substitution and mathematical operations. It stands as a testament to the evolution of cryptographic techniques.

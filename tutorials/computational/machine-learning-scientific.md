@@ -9,6 +9,9 @@ permalink: /workspace/computational_python/machine-learning-scientific
 
 Welcome to the fourteenth tutorial in our Computational Programming with Python series. In this tutorial, we'll dive into "Machine Learning for Scientific Applications." Machine learning (ML) has become a transformative tool in scientific research, offering new ways to analyze data, make predictions, and gain insights. Join us as we explore the intersection of machine learning and scientific applications using Python.
 
+* toc
+{:toc}
+
 ## Objectives of the Tutorial
 
 By the end of this tutorial, you'll have a solid foundation in applying machine learning to scientific problems. Whether predicting outcomes, uncovering patterns, or forecasting trends, machine learning provides valuable tools for scientists across disciplines. 

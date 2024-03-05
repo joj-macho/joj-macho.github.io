@@ -9,7 +9,12 @@ permalink: /workspace/cryptography/atbash-cipher
 
 The Atbash Cipher is a classic encryption technique known for its simplicity and historical use. In this guide, we will cover the history of Atbash, how it works, implementation in Python, and more.
 
-## A Brief History of the Atbash Cipher <hr>
+* toc
+{:toc}
+
+## A Brief History of the Atbash Cipher
+
+---
 
 The Atbash Cipher is one of the earliest known substitution ciphers, with its origins traced back to ancient civilizations. The method involves replacing each letter in the plaintext with its mirror image in the alphabet. While its exact origin is uncertain, the Atbash Cipher is mentioned in various historical texts and has significance in the context of religious and mystical traditions.
 
@@ -25,7 +30,9 @@ where:
 - $Z$ is the position of the letter in the alphabet (e.g., A = 1, B = 2, ..., Z = 26)
 - $A$ is the total number of letters in the alphabet
 
-## How the Atbash Cipher Works <hr>
+## How the Atbash Cipher Works
+
+---
 
 The Atbash Cipher works by substituting each letter in the plaintext with its mirror image in the alphabet. The method is a simple yet effective way of obscuring text without the need for complex encryption algorithms. Here's a step-by-step guide on how the Atbash Cipher operates:
 
@@ -52,7 +59,9 @@ Decoded Message: HELLO WORLD
 
 The Atbash Cipher is a straightforward substitution cipher, where each letter in the plaintext is replaced with its mirror image. This makes it a monoalphabetic substitution cipher, as each letter is substituted with a single corresponding letter in the ciphertext. Despite its simplicity, Atbash provides a level of confidentiality in certain contexts.
 
-## Implementation in Python <hr>
+## Implementation in Python
+
+---
 
 Python provides a simple way to implement the Atbash Cipher. Here's an example Python code snippet:
 
@@ -79,12 +88,16 @@ print('Decoded Text:', decoded_text)
 
 To decrypt a message encoded with the Atbash Cipher, simply call the <code>atbash()</code> function again with the ciphertext as the parameter. The function will reverse the substitution and return the original plaintext message.
 
-## Real-World Use Cases of the Atbash Cipher <hr>
+## Real-World Use Cases of the Atbash Cipher
+
+---
 
 The Atbash Cipher has been used throughout history for various purposes, ranging from encoding the names of angels in Kabbalistic writings to concealing secret messages in wartime communications. In modern times, it is frequently utilized as a fun and educational tool to teach children about cryptography and basic encryption techniques.
 
 The Atbash Cipher holds historical significance and has found application in diverse contexts over the centuries. Its usage can be traced back to ancient religious texts and mystical traditions. In contemporary settings, Atbash is occasionally employed for symbolic or artistic purposes, highlighting its enduring presence.
 
-## Summary <hr>
+## Summary
+
+---
 
 The Atbash Cipher, with its ancient origins, remains a testament to the enduring simplicity of cryptographic methods. While not suitable for modern cryptographic needs, it holds historical and cultural importance. The Atbash Cipher stands as an example of how basic cryptographic principles have been employed throughout history.

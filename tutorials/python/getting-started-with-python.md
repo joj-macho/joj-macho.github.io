@@ -68,10 +68,14 @@ Whew, that's quite a collection to commit to memory, but don't worry! Learning t
 <figure>
     <div style="display: flex; align-items: center;">
         <img src="../../assets/images/python-images/what-is-programming.png" alt="What is Programming" width="600" style="margin-right: 20px;">
-        <p>Computers have become an integral part of our daily lives, helping us perform different tasks with ease. From reading news and watching videos to playing games and communicating with friends, computers have made many things possible. However, have you ever wondered how a computer knows what to do in response to your inputs? The answer is simple: a person gives the computer instructions on what actions to take in response to the input. This is where programming comes in.</p>
+        <p>So, what exactly is a computer? A computer consists of a Central Processing Unit (CPU), memory, and Input/Output (I/O) devices. Examples of I/O devices include screens, which are output devices, and mice, which are input devices. The CPU acts as the brain, performing operations like storing and retrieving values, arithmetic calculations, and decision-making based on comparisons. However, the CPU's capabilities are limited, and it relies on layers of programs created by many individuals to enhance its functionality.</p>
     </div>
     <figcaption>Image source: <a href="https://www.blogwaping.com/2019/08/what-is-programming.html" target="_blank">BlogWaping</a></figcaption>
 </figure>
+
+The memory of a computer is a fast but volatile storage device, losing its contents when the computer is turned off. On the other hand, the hard drive provides non-volatile storage, retaining data even when the power is off. In a computer, data is represented as sequences of 0's and 1's, where each binary digit is called a bit, and eight bits form a byte.
+
+Computers have become an integral part of our daily lives, simplifying various tasks. Whether it's reading news, watching videos, playing games, or communicating with friends, computers facilitate a multitude of activities. However, have you ever wondered how a computer interprets and acts upon your inputs? The answer lies in programming.
 
 ### What is Programming?
 
@@ -204,6 +208,63 @@ Python has a large and welcoming community of developers who are always happy to
 
 As a versatile and powerful language, Python is not only easy to learn and understand but also easy to apply. It has a clean and straightforward syntax that requires less coding, allowing programmers to focus on the business logic instead of getting stuck in the language's details. Additionally, Python can run on various platforms such as Windows, Linux, UNIX, and Macintosh, making it a portable language. As an open-source language, Python is free to use, modify, and distribute, even for commercial purposes. Whether you're a beginner or a seasoned developer, Python is an excellent language to learn and utilize.
 
+### Python Constructs
+
+Python offers several fundamental constructs that serve as the building blocks for developing various applications. These constructs provide a user-friendly interface for coding and include:
+
+**Functions:**
+Functions are predefined blocks of code that perform specific tasks. They help reduce code complexity by encapsulating logic and promoting reusability. For example, the `def` statement defines a function, allowing the coder to call it multiple times without rewriting the same logic.
+
+**Classes and Objects:**
+Classes and objects are essential concepts in object-oriented programming. They allow the creation of custom data types with attributes and methods. Objects are instances of classes, representing specific entities in a program. Classes and objects enable modular and structured code design.
+
+**Modules and Packages:**
+Modules are Python files containing functions, classes, and variables that can be imported and reused in other Python scripts. Packages are directories containing multiple modules and a special `__init__.py` file. They facilitate code organization and reuse by grouping related functionality together.
+
+**Data Structures:**
+Data structures are fundamental components for organizing and storing data in Python. They include lists, tuples, dictionaries, sets, and more, each serving specific purposes and providing efficient ways to manipulate data.
+
+**Comments:**
+Comments in Python are non-executable statements used to provide explanations, documentation, or clarification within the code. They enhance code readability and maintainability by describing the logic or purpose of the code to other developers.
+
+### Python Implementations
+
+Python can be implemented and executed in various environments, each with its unique features and functionalities. Some popular implementations include:
+
+**CPython:**
+CPython is the reference implementation of Python, written in C language. It is widely used and provides a user-friendly runtime environment. However, debugging the main code can be challenging due to its underlying C implementation.
+
+**Jython:**
+Jython is an implementation of Python that runs on the Java Virtual Machine (JVM). It allows seamless integration with Java libraries and supports importing CSV and binary files. Jython requires a good understanding of Java and scripting languages.
+
+**IronPython:**
+IronPython is an implementation of Python for the .NET framework, written in C#. It enables interoperability with other .NET languages and allows encryption of hashable objects at runtime. It is commonly used in gaming software development.
+
+**Brython:**
+Brython is a browser-based implementation of Python that runs in web browsers. It enables importing modules and executing Python code directly within a browser environment. Brython uses dynamic programming to generate code dynamically.
+
+**RubyPython:**
+RubyPython is a hybrid implementation of Python and Ruby, allowing collaboration between Ruby and Python interpreters. It plays a significant role in quantum computing and general mechanics, offering both static and dynamic features.
+
+**PyPy:**
+PyPy is an alternative Python interpreter that focuses on speed and efficiency. It compiles Python code into machine code, resulting in faster execution. While not as widely used as CPython, PyPy is suitable for small programming tasks.
+
+**MicroPython:**
+MicroPython is a lightweight implementation of Python designed for microcontrollers and embedded systems. It offers efficient execution and supports running time-critical code on small platforms. MicroPython is ideal for IoT applications and hardware prototyping.
+
+### Executing Python
+
+Python code can be executed on a computer using the built-in interpreter (IDLE), which provides an interactive development environment. Additionally, Python files can be run directly using various file extensions:
+
+- `.py` for Python source files
+- `.pyc` for compiled bytecode files
+- `.pyd` for Windows DLL files
+- `.pyo` for optimized files
+- `.pyw` for Windows scripts
+- `.pyz` for script archives
+
+These extensions enable Python code to be executed in different contexts and environments, depending on the specific requirements of the application.
+
 ### The Limitations of Python
 
 Python is a versatile and popular programming language used for a wide range of applications. However, like any language, it has limitations. There are many things that Python can't do or at least not that well compared to alternative tools. Let's take a closer look at some of the downsides of Python and how they can be mitigated:
@@ -282,6 +343,29 @@ While Python may not be the first language that comes to mind when it comes to g
 #### Desktop Applications
 
 Python is also useful for developing desktop applications. Libraries like [PyQt](https://wiki.python.org/moin/PyQt){:target='_blank'} and [Tkinter](https://tkdocs.com/){:target='_blank'} enable developers to create graphical user interfaces (GUIs) with relative ease. Additionally, Python can be used for cross-platform development, enabling developers to create applications that run on Windows, Linux, and macOS.
+
+### Top Companies Using Python
+
+Python is widely adopted by leading companies across various industries for building robust and scalable applications. Here are some prominent companies that leverage Python in their products:
+
+<div style="text-align: center; margin-bottom: 1rem;">
+  <img src="../../assets/images/python-images/top-python-companies.jpeg" alt="Companies using Python" width="500" height="400">
+</div>
+
+**Facebook:**
+As the parent company of Instagram and WhatsApp, Facebook relies on a mix of programming languages, including C, PHP, and Python, for its diverse range of products and services.
+
+**Instagram:**
+Acquired by Facebook in 2012, Instagram is a popular photo-sharing platform known for its extensive use of Python. It boasts one of the largest deployments of the Django web framework, demonstrating Python's versatility and scalability in handling large-scale applications.
+
+**Google:**
+Python has gained significant traction at Google and is recognized as an official programming language within the company. Its simplicity and versatility make it a preferred choice for various projects and initiatives across Google's vast ecosystem.
+
+**Netflix:**
+Netflix, the renowned streaming service provider, relies on Python for a wide range of tasks, including operations management, data analysis, security, and networking. Python's ease of use and extensive libraries make it suitable for handling diverse functionalities within the Netflix platform.
+
+**Spotify:**
+Founded in 2006, Spotify is a leading audio streaming platform that utilizes Python alongside other languages to power its services. Python's flexibility and robust ecosystem contribute to Spotify's ability to deliver a seamless music streaming experience to millions of users worldwide.
 
 ## Summary
 

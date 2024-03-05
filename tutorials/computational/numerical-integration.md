@@ -7,7 +7,12 @@ category: "computational-python"
 permalink: /workspace/computational_python/numerical-integration
 ---
 
+https://akuli.github.io/math-tutorial/integrals.html
+
 Welcome to the seventh tutorial in our Computational Programming with Python series. In this tutorial, we'll dive into the realm of numerical integration, a powerful tool in scientific computing. Numerical integration plays a crucial role in approximating definite integrals, computing areas under curves, and solving a variety of mathematical problems. Let's explore the principles and applications of numerical integration using Python.
+
+* toc
+{:toc}
 
 ## Objectives of the Tutorial
 

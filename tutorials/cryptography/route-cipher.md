@@ -9,11 +9,18 @@ permalink: /workspace/cryptography/route-cipher
 
 The Route Cipher is a transposition cipher known for its use of a route grid to encode and decode messages. In this guide, we will cover the history of the Route Cipher, how it works, implementation in Python, and more.
 
-## A Brief History of the Route Cipher <hr>
+* toc
+{:toc}
+
+## A Brief History of the Route Cipher
+
+---
 
 The Route Cipher, also known as the Columnar Transposition Cipher, is a transposition cipher that involves writing the plaintext in a grid and then reading the ciphertext by following a specific route.
 
-## How the Route Cipher Works <hr>
+## How the Route Cipher Works
+
+---
 
 The Route Cipher operates by writing the message in a grid and then reading the ciphertext by following a specific route. Here's a step-by-step guide on how the Route Cipher operates:
 
@@ -43,7 +50,9 @@ Decoded Message: HELLO
 
 The Route Cipher is a transposition cipher, a type of cryptographic technique that involves rearranging the order of the characters in the plaintext without altering the actual characters.
 
-## Implementation in Python <hr>
+## Implementation in Python
+
+---
 
 Python provides a practical way to implement the Route Cipher. Here's an example Python code snippet:
 
@@ -79,11 +88,15 @@ decoded_text = route_cipher(encoded_text, rows, cols, route_pattern, mode='decry
 print('Decoded Text:', decoded_text)
 {% endhighlight %}
 
-## Real-World Use Cases of the Route Cipher <hr>
+## Real-World Use Cases of the Route Cipher
+
+---
 
 The Route Cipher has historical significance in military and diplomatic communications. Its use of a grid pattern and specific routes provided a method for secure communication.
 
-## Summary <hr>
+## Summary
+
+---
 
 The Route Cipher is a transposition cipher known for its use of a route grid to encode and decode messages. Developed as a manual encryption method, it involves writing the plaintext in a grid and then reading the ciphertext by following a specific route. While not as secure as modern encryption methods, the Route Cipher holds historical significance in the evolution of cryptographic techniques.
 

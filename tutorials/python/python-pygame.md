@@ -7,7 +7,7 @@ category: "python"
 permalink: /workspace/python/python-pygame
 ---
 
-Welcome to the world of game development in Python with Pygame! This tutorial is your gateway to creating engaging and interactive games. Whether you're a beginner or an experienced developer, Pygame offers a versatile and accessible framework for turning your game ideas into reality. Let's embark on this exciting journey together.
+Welcome to the world of game development in Python with Pygame! This tutorial is your gateway to creating engaging and interactive games. Whether you're a beginner or an experienced developer, Pygame offers a versatile and accessible framework for turning your game ideas into reality. Let's get started.
 
 ## Getting Started with Pygame <hr>
    - Overview of Pygame.

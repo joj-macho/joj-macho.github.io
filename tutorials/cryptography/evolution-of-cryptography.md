@@ -9,7 +9,12 @@ permalink: /workspace/cryptography/evolution-of-cryptography
 
 Cryptography is the art of keeping information secure and has a long and rich history that dates back to ancient times. From the simplest substitution ciphers to complex algorithms, cryptography has been used to safeguard sensitive information, especially during wartime. In this introductory text, we will explore the evolution of cryptography from its earliest beginnings to its modern-day applications.
 
-## Cryptography in Ancient Times <hr>
+* toc
+{:toc}
+
+## Cryptography in Ancient Times
+
+---
 
 Cryptography has been used for centuries to secure communication, with some of the earliest examples found in ancient Egypt and Greece. The Egyptians used hieroglyphics to encode messages, replacing certain characters with others to create a text that was illegible to anyone who did not know the substitution rules. 
 
@@ -66,6 +71,8 @@ One promising area of cryptography is homomorphic encryption, which allows for c
 
 Another emerging technology is quantum cryptography, which uses the principles of quantum mechanics to ensure secure communication. Quantum cryptography is still in its early stages, but it has the potential to be more secure than traditional cryptography as it is based on fundamental laws of physics.
 
-## Summary <hr>
+## Summary
+
+---
 
 Cryptography will continue to play a vital role in securing our digital world. As technology advances, we must stay vigilant in protecting our data and continually adapt to new threats. By staying up to date with the latest advancements in cryptography, we can ensure that our information remains safe and secure in the years to come.

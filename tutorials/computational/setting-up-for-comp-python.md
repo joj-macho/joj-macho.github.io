@@ -9,6 +9,9 @@ permalink: /workspace/computational_python/setting-up
 
 Welcome to the second installment of our Computational Programming with Python series. In this tutorial, we'll guide you through the crucial process of setting up a robust scientific computing environment. A well-configured environment ensures that you have the necessary tools and libraries at your disposal for efficient scientific programming.
 
+* toc
+{:toc}
+
 ## Objectives of the Tutorial
 
 By the end of this tutorial, you'll be adept at setting up a tailored scientific computing environment. Whether you're working on numerical simulations, data analysis, or scientific modeling, a well-configured environment is your gateway to seamless and productive computational programming.

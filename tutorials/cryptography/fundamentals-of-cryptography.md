@@ -9,7 +9,12 @@ permalink: /workspace/cryptography/cryptography-fundamentals
 
 Have you ever wondered how you can protect your confidential information when you share it with someone over the internet? The answer lies in cryptography — a field that addresses this very concern. Cryptography, derived from the Greek words "kryptos" (meaning "hidden") and "graphein" (meaning "writing"), involves transforming a message from its original form (plaintext) into an indecipherable format (ciphertext) using various cryptographic techniques. This tutorial delves into the fundamental concepts of cryptography, such as plaintext, ciphertext, encryption, decryption, keys, and algorithms. Additionally, it introduces essential cryptography terms like key length, block size, and padding, while also discussing prevalent attacks on cryptography like brute force and dictionary attacks.
 
-## Introduction to Secure Communication <hr>
+* toc
+{:toc}
+
+## Introduction to Secure Communication
+
+---
 
 Whenever we discuss cryptology, we dive into scenarios involving Alice and Bob. They're our symbols of secure communication. Let's keep them in mind as we explore these concepts.
 
@@ -52,7 +57,9 @@ Here are some additional cryptographic terms to enhance our understanding:
 - **Padding**: Padding is the process of adding extra data to the plaintext to make it a multiple of the block size. Padding is necessary when the plaintext is not a multiple of the block size. Padding is like adding extra pieces to make sure all the puzzle pieces (message blocks) fit perfectly together.
 
 
-## Common Attacks Against Cryptography <hr>
+## Common Attacks Against Cryptography
+
+---
 
 As Alice and Bob enjoy their coffee and decipher secret messages, they are aware that their cryptographic methods need to be secure against various attacks. Attackers are always looking for vulnerabilities in cryptography to exploit. Here are some common attacks that they need to be cautious of:
 
@@ -65,6 +72,8 @@ As Alice and Bob enjoy their coffee and decipher secret messages, they are aware
 
 By being aware of these common attacks, Alice and Bob can better safeguard their secret messages their suspicious date.
 
-## Summary <hr>
+## Summary
+
+---
 
 Understanding key concepts and definitions in cryptography is crucial for anyone looking to use encryption to protect sensitive information. With the prevalence of cyber attacks, it is essential to have a strong understanding of the various attacks that can be used to exploit vulnerabilities in cryptographic systems. By implementing strong encryption protocols, using secure communication channels, and regularly updating cryptographic systems, we can significantly reduce the risk of unauthorized access to sensitive data.

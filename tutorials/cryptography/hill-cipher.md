@@ -9,11 +9,18 @@ permalink: /workspace/cryptography/hill-cipher
 
 The Hill Cipher is a matrix-based encryption technique known for its mathematical foundation and ability to encrypt messages using linear algebra. In this guide, we will cover the history of the Hill Cipher, how it works, implementation in Python, and more.
 
-## A Brief History of the Hill Cipher <hr>
+* toc
+{:toc}
+
+## A Brief History of the Hill Cipher
+
+---
 
 The Hill Cipher is a polygraphic substitution cipher developed by Lester S. Hill in 1929. It is one of the first practical examples of a block cipher, a type of symmetric key encryption where a block of plaintext is treated as a whole and transformed into a ciphertext block. The Cipher gained popularity during World War II and was used by the US Army to encrypt messages. The Cipher's strength lies in the fact that it uses matrix operations, making it difficult to crack.
 
-## How the Hill Cipher Works <hr>
+## How the Hill Cipher Works
+
+---
 
 The Hill Cipher operates by transforming blocks of plaintext into ciphertext using matrix multiplication. The key to the Hill Cipher is a square matrix known to both the sender and receiver. Here's a step-by-step guide on how the Hill Cipher operates:
 
@@ -48,7 +55,9 @@ Decoded Message: HELLO
 
 The Hill Cipher uses matrix multiplication to achieve encryption and decryption. This mathematical foundation provides a unique approach to symmetric key encryption, offering advantages in terms of security.
 
-## Implementation in Python <hr>
+## Implementation in Python
+
+---
 
 Python provides a practical way to implement the Hill Cipher. Here's an example Python code snippet:
 
@@ -92,10 +101,14 @@ decoded_text = hill_cipher(encoded_text, key_matrix, mode='decrypt')
 print('Decoded Text:', decoded_text)
 {% endhighlight %}
 
-## Real-World Use Cases of the Hill Cipher <hr>
+## Real-World Use Cases of the Hill Cipher
+
+---
 
 The Hill Cipher has found applications in secure communications, especially when dealing with small blocks of data. Its reliance on matrix multiplication adds a layer of complexity to the encryption process.
 
-## Summary <hr>
+## Summary
+
+---
 
 The Hill Cipher, developed by Lester S. Hill, represents a significant advancement in cryptographic techniques. Its use of matrix multiplication for encryption and decryption showcases the intersection of mathematics and cryptography. While not as widely used as some modern encryption methods, the Hill Cipher remains an important part of the history and evolution of cryptographic algorithms.

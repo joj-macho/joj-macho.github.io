@@ -75,6 +75,13 @@ In Python, flow control statements consist of a condition followed by a block of
 
 The `if` statement is one of the fundamental flow control statements. It executes a specific block of code if the associated condition evaluates to true; otherwise, the block is skipped. The structure of an `if` statement includes:
 
+<figure>
+    <div style="text-align: center;">
+     <img src="../../assets/images/python-images/python-if.png" alt="Python If Statement" width="600">
+     <figcaption>Image source: <a href="https://www.alphacodingskills.com/python/python-if-else.php" target="_blank">AlphaCodingSkills</a></figcaption>
+    </div>
+</figure>
+
 - The `if` keyword
 - A condition (an expression that evaluates to true or false)
 - A colon (`:`)
@@ -105,6 +112,13 @@ The above code checks if the variable `name` is equal to 'Admin'. If the conditi
 ### Conditional `if-else` Statements
 
 An `if` statement can be followed by an `else` statement, allowing us to specify an alternative action when the condition evaluates to false. The `else` clause is executed only if the `if` statement's condition is false. The structure of an `if-else` statement includes:
+
+<figure>
+    <div style="text-align: center;">
+     <img src="../../assets/images/python-images/python-if-else.png" alt="Python If Else Statement" width="600">
+     <figcaption>Image source: <a href="https://www.alphacodingskills.com/python/python-if-else.php" target="_blank">AlphaCodingSkills</a></figcaption>
+    </div>
+</figure>
 
 - The `if` keyword
 - A condition
@@ -145,6 +159,13 @@ In the above code, if the condition `name == 'Admin'` evaluates to true, the `if
 ### Conditional `if-elif-else` Statements
 
 For scenarios where we have multiple conditions to evaluate, we can use `if-elif-else` statements. The `elif` keyword is short for "else if" and allows us to test additional conditions. The structure of an `if-elif-else` statement includes:
+
+<figure>
+    <div style="text-align: center;">
+     <img src="../../assets/images/python-images/python-if-elif-else.png" alt="Python If Elif Else Statement" width="600">
+     <figcaption>Image source: <a href="https://www.alphacodingskills.com/python/python-if-else.php" target="_blank">AlphaCodingSkills</a></figcaption>
+    </div>
+</figure>
 
 - The `if` keyword
 - A condition
@@ -296,11 +317,11 @@ The ternary operator provides a compact and readable way to make decisions and a
 
 ---
 
-Loops are fundamental to programming, enabling the repetition of actions and iteration over data collections. Python provides two primary looping structures: the `for` loop and the `while` loop. In this section, we'll delve into these loops, exploring their syntax, applications, and control flow.
+Loops are fundamental to programming, enabling the repetition of actions and iteration over data collections. Python provides two primary looping structures: the `for` loop and the `while` loop.
 
 ### For Loop Statements
 
-The `for` loop is used for iterating over a sequence, such as a list, tuple, or string, or for repeating a specific action a predetermined number of times. Its structure comprises:
+The `for` loop is used for iterating over a sequence, such as a list, tuple, or string, or for repeating a specific action a predetermined number of times. Its structure includes:
 
 - The `for` keyword
 - A variable to store each item in the sequence
@@ -328,7 +349,23 @@ The `for` loop is a powerful tool for iterating over collections and performing 
 
 #### Iterating with `range()` and `enumerate()`
 
-To perform an action a specific number of times, we can use the `range()` function in conjunction with a `for` loop. The `range()` function generates a sequence of numbers for iteration. It takes up to three arguments: start, stop, and step values. Here's an example:
+Python's `range()` function offers a convenient way to generate sequences of integers, facilitating iteration and repetitive tasks. Its syntax follows the pattern `range([start,] stop[, step])`, with optional arguments enclosed in square brackets. Let's explore its functionality with examples:
+
+{% highlight bash %}
+>>> # Generating sequences with range()
+>>> list(range(11))
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> list(range(1, 11))
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> list(range(2, 11))
+[2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> list(range(1, 11, 2))
+[1, 3, 5, 7, 9]
+{% endhighlight %}
+
+In these examples, `range()` generates sequences with different start, stop, and step values, allowing for flexible iteration.
+
+Pairing `range()` with a `for` loop enables iteration over a specific range of values:
 
 {% highlight python %}
 for num in range(1, 11):
@@ -347,7 +384,7 @@ for num in range(1, 11):
 # 10
 {% endhighlight %}
 
-In this example, `range(1, 11)` generates a sequence from 1 to 10 (inclusive). The output displays numbers from 1 to 10.
+Here, `range(1, 11)` generates numbers from 1 to 10, inclusive, facilitating iteration within the loop.
 
 The `enumerate()` function is another useful tool when iterating over a sequence. It provides both the index and the value of each item in the sequence, allowing for more flexibility in handling data.
 Here's an example that demonstrates the usage of `enumerate()`:
@@ -560,7 +597,7 @@ Feel free to browse my [GitHub page](https://github.com/joj-macho){:target='_bla
   - Uses loops that continue indefinitely, creating a back-and-forth motion of the asterisks with changing indentation.
   - Uses infinite loops, and if the user interrupts the program by pressing Ctrl+C (`KeyboardInterrupt`), the program catches the exception and calls `sys.exit()` to terminate the program.
 
-You can find more programs that implement branching statements and looping structures in my [Python Playground](https://github.com/joj-macho/Pythological-Playground){:target='_blank'} Repository.
+You can find more programs that implement branching statements and looping structures in my [Python Playground](https://github.com/joj-macho/Pythological-Playground){:target='_blank'} Repository. For hands-on practice and reinforcement of these concepts, check out the [Python Control Flow Exercises](https://github.com/joj-macho/Python-Exercise-Playground/blob/main/06_control_flow.ipynb){:target='_blank'}.
 
 ## Summary
 

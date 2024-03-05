@@ -11,6 +11,9 @@ permalink: /workspace/computational_python/simulating-physical-systems
 
 Welcome to the tenth tutorial in our Computational Programming with Python series. In this tutorial, we'll delve into "Simulating Physical Systems with Python," exploring the fascinating world of numerical simulations for various physical phenomena. Python provides powerful tools and libraries for simulating dynamic systems, making it an ideal choice for researchers and scientists. Join us as we embark on a journey to simulate and model physical systems using Python.
 
+* toc
+{:toc}
+
 ## Objectives of the Tutorial
 
 By the end of this tutorial, you'll have a comprehensive understanding of Monte Carlo simulations in the context of physics. Whether simulating magnetic systems, integrating complex functions, or exploring quantum phenomena, Monte Carlo methods offer versatile tools for physicists. 

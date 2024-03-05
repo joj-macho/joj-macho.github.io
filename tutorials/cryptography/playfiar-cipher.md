@@ -9,13 +9,20 @@ permalink: /workspace/cryptography/playfair-cipher
 
 The Playfair Cipher is a digraph-based substitution cipher known for its use of a 5x5 matrix and specific rules for encrypting and decrypting messages. In this guide, we will cover the history of the Playfair Cipher, how it works, implementation in Python, and more.
 
-## A Brief History of the Playfair Cipher <hr>
+* toc
+{:toc}
+
+## A Brief History of the Playfair Cipher
+
+---
 
 The Playfair Cipher, created by Charles Wheatstone in the mid-19th century and named after his associate, Baron Playfair, gained widespread popularity during World War I as a secure method of communication. Later, the British Government employed it in World War II for secure communication between British officials and their allies.
 
 This manual symmetric encryption technique, initially used in military and diplomatic communications, earned recognition for its resistance to frequency analysis.
 
-## How the Playfair Cipher Works <hr>
+## How the Playfair Cipher Works
+
+---
 
 The Playfair Cipher operates on pairs of letters (digraphs), making it more secure than simple substitution ciphers. The key to the Playfair Cipher is a 5x5 matrix, known as the Playfair Square, constructed based on a keyword. Here's a step-by-step guide on how the Playfair Cipher operates:
 
@@ -57,7 +64,9 @@ Decoded Message: HELLO
 
 The Playfair Cipher combines the principles of substitution ciphers and digraph-based encryption. The use of a keyword and the Playfair Square adds complexity to the encryption process.
 
-## Implementation in Python <hr>
+## Implementation in Python
+
+---
 
 Python provides a practical way to implement the Playfair Cipher. Here's an example Python code snippet:
 
@@ -109,10 +118,14 @@ decoded_text = playfair_cipher(encoded_text, keyword, mode='decrypt')
 print('Decoded Text:', decoded_text)
 {% endhighlight %}
 
-## Real-World Use Cases of the Playfair Cipher <hr>
+## Real-World Use Cases of the Playfair Cipher
+
+---
 
 The Playfair Cipher has historical significance in military and diplomatic communications. Its use of digraphs enhances security compared to simple substitution ciphers.
 
-## Summary <hr>
+## Summary
+
+---
 
 The Playfair Cipher is a manual symmetric encryption technique known for its use of digraphs and a 5x5 matrix, providing enhanced security compared to simple substitution ciphers. Developed in the 19th century, it played a crucial role in secure communications during its time. While not in widespread use today, the Playfair Cipher holds historical significance in the evolution of cryptographic methods.

@@ -2,16 +2,21 @@
 layout: post
 title: "Python Modules and Packages"
 sub-title: "Organizing and Extending Your Python Projects"
-tags: ["python", "basics"]
+tags: ["python", "basics", "modules", "packages"]
 category: "python"
 permalink: /workspace/python/python-modules
 ---
 
 In Python, modules are programs that typically consist of functions designed to perform specific tasks or a group of related tasks. While functions can be defined directly in your code, modules need to be imported into a Python program before you can utilize their functionality.
 
+* toc
+{:toc}
+
 Modules and packages are foundational elements in Python, essential for enhancing code organization, promoting reusability, and facilitating collaborative development. This tutorial will guide you through understanding, creating, and leveraging modules and packages in Python. You will learn how to structure your code for better organization and how to share code efficiently between different parts of your project.
 
-## Understanding the Basics <hr>
+## Understanding the Basics
+
+---
 
 ### Modules Overview:
 
@@ -34,7 +39,9 @@ By segregating functions into individual modules, you can effortlessly manage an
 - **Encapsulation**: Modules hide implementation details, offering a clean interface to other programs and making code easier to understand.
 - **Collaboration**: Modules can be shared with other programmers, facilitating collaborative development.
 
-## Importing Modules <hr>
+## Importing Modules
+
+---
 
 Modules need to be imported before you can use their functions. By convention, imports are placed at the top of Python programs, providing a clear view of the applied modules. This practice is particularly helpful for users who may need to install modules before running the program.
 
@@ -129,7 +136,9 @@ Return random integer in range [a, b], including both end points.
 
 Besides checking what a module is doing, inspecting the source code can help you to learn how to write your own custom functions that expand on or modify an existing module's functionality.
 
-## Creating Your Own Modules <hr>
+## Creating Your Own Modules
+
+---
 
 A Python file (`.py`) can function as a module when imported. The filename serves as the module name. Store custom modules in your project directory for simplicity.
 
@@ -166,11 +175,13 @@ Goodbye, Bob!
 
 By importing the `example_module` module, we can access and utilize its functions within the main program. In this instance, we import the `example_module` module using the `import` statement. This instructs Python to open the `example_module.py` file and make all the functions defined in it available in the current program. Subsequently, we can call the `greet()` and `farewell()` functions using the dot notation (`example_module.greet('Alice')` and `example_module.farewell('Bob')`).
 
-### Using the Main Module and Conditional Execution
+### Controlling Module Execution with `__name__`
 
 In Python, the special variable `__name__` is automatically set to `'__main__'` for the module that is executed as the main program. This allows us to distinguish between a module being imported by another program and the module being run directly.
 
 By utilizing the `__name__` variable, we can include code in the module that will only run when the module is executed as the main program. This is useful when we want certain code to run only when the module is run directly and not when it's imported.
+
+Consider the following example in the `example_module.py` module:
 
 {% highlight python %}
 # example_module.py
@@ -188,11 +199,13 @@ if __name__ == '__main__':
     farewell('Diana')
 {% endhighlight %}
 
-In this example, the `greet()` and `farewell()` functions remain unchanged. However, we've added a conditional block that checks if the `__name__` variable is set to `'__main__'`. This check ensures that the code inside the block runs only when the module is executed directly.
+In this example, the `greet()` and `farewell()` functions remain unchanged. However, a conditional block has been added to check if the `__name__` variable is set to `'__main__'`. This block ensures that the contained code executes only when the module is run directly, not when imported into another program.
 
 When you run `example_module.py` directly, the code inside the conditional block executes. If the module is imported into another program, the block is skipped. This selective execution is useful for defining actions specific to the main module.
 
-## Creating Your Own Packages <hr>
+## Creating Your Own Packages
+
+---
 
 In Python, packages are a way to organize related modules into a directory hierarchy.
 
@@ -260,7 +273,9 @@ Here, `.` indicates the current package or module.
 
 Sharing packages involves packaging them and making them accessible to others. Tools like `pip` facilitate package distribution. Create a `setup.py` file for package metadata and dependencies. Once created, you can share your package on the Python Package Index (PyPI).
 
-## Exploring Python Standard Library Modules <hr>
+## Exploring Python Standard Library Modules
+
+---
 
 Python's Standard Library is a rich collection of modules that provide a wide range of functionalities. These modules are included with every Python installation, eliminating the need for external dependencies in many cases.
 
@@ -313,9 +328,11 @@ Here's a quick reference table summarizing some of the commonly used built-in mo
 | `datetime`  | Handling dates and times                          | `from datetime import datetime`<br>`current_time = datetime.now()` |
 | `json`      | Working with JSON data                            | `import json`<br>`json_data = '{"key": "value"}'`<br>`python_obj = json.loads(json_data)` |
 
-While this overview provides a glimpse of the commonly used built-in modules, the Python Standard Library is extensive. You can refer to the official documentation at [Python Standard Library](https://docs.python.org/3/library/index.html) for in-depth information on all available modules. Remember, you don't need to memorize the modules; a quick online search for your specific task will often lead you to the right module and usage examples.
+While this overview provides a glimpse of the commonly used built-in modules, the Python Standard Library is extensive. You can refer to the official documentation at [Python Standard Library](https://docs.python.org/3/library/index.html){:target='_blank'} for in-depth information on all available modules. Remember, you don't need to memorize the modules; a quick online search for your specific task will often lead you to the right module and usage examples.
 
-## Practical Applications and Use Cases <hr>
+## Practical Applications and Use Cases
+
+---
 
 ### Code Modularity and Reusability
 
@@ -371,6 +388,8 @@ my_project/
 
 Establish a collaboration workflow using version control tools like Git. Collaborators can clone, modify, and push changes, ensuring a synchronized development process.
 
-## Summary <hr>
+## Summary
 
-Congratulations on learning the essentials of modules and packages in Python! This knowledge is crucial for effective Python development. Stay tuned for the next comprehensive guide on [Python File Handling](/workspace/python/file-handling), where you'll learn techniques for reading, writing, and manipulating data stored in various file formats. This skill is fundamental for building robust and practical Python applications. 
+---
+
+Congratulations on learning the essentials of modules and packages in Python! This knowledge is crucial for effective Python development.  To further elevate your Python expertise, the next step involves [Error Handling and Exception in Python](/workspace/python/error-handling), where you will learn to fortify your code against unforeseen challenges and ensure robust program execution.

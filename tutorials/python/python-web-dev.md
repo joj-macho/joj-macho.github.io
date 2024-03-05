@@ -7,7 +7,7 @@ category: "python"
 permalink: /workspace/python/python-flask
 ---
 
-Welcome to the world of web development with Flask! This tutorial is your gateway to creating dynamic and interactive web applications using Python. Flask, a lightweight and versatile web framework, empowers you to build web solutions with ease. Whether you're a beginner or an experienced developer, Flask offers a straightforward approach to web development. Let's embark on this exciting journey together.
+Welcome to the world of web development with Flask! This tutorial is your gateway to creating dynamic and interactive web applications using Python. Flask, a lightweight and versatile web framework, empowers you to build web solutions with ease. Whether you're a beginner or an experienced developer, Flask offers a straightforward approach to web development. Let's do this.
 
 ## Getting Started with Flask <hr>
    - Overview of Flask.

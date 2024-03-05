@@ -9,6 +9,9 @@ permalink: /workspace/computational_python/scientific-data-analysis
 
 Welcome to the ninth tutorial in our Computational Programming with Python series. In this tutorial, we'll explore "Scientific Data Analysis with Pandas," focusing on the powerful data manipulation and analysis capabilities offered by the Pandas library. Pandas is a fundamental tool in the Python ecosystem for handling structured data, making it an invaluable asset for scientific computing. Join us as we unravel the features of Pandas and its application in efficient scientific data analysis.
 
+* toc
+{:toc}
+
 ## Objectives of the Tutorial
 
 By the end of this tutorial, you'll be well-versed in using Pandas for scientific data analysis. From cleaning and preprocessing data to advanced analysis and visualization, Pandas offers a comprehensive suite of tools for data scientists and researchers. 

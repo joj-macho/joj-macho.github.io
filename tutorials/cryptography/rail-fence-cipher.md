@@ -9,13 +9,20 @@ permalink: /workspace/cryptography/rail-fence-cipher
 
 The Rail Fence Cipher, also known as the Zigzag Cipher, is a transposition cipher known for its simplicity and historical use in secure communications. In this guide, we will cover the history of the Rail Fence Cipher, how it works, implementation in Python, and more.
 
-## A Brief History of the Rail Fence Cipher <hr>
+* toc
+{:toc}
+
+## A Brief History of the Rail Fence Cipher
+
+---
 
 The rail fence cipher has a long history dating back to ancient times. It was widely used by the Greeks and Romans during times of war to protect sensitive messages. It was also used by famous figures throughout history, including Mary, Queen of Scots, who reportedly used the cipher to communicate with her supporters.
 
 During the American Civil War, both Union and Confederate forces used the rail fence cipher to send secret messages. The cipher was also used extensively during World War I.
 
-## How the Rail Fence Cipher Works <hr>
+## How the Rail Fence Cipher Works
+
+---
 
 The Rail Fence Cipher operates by writing the plaintext in a zigzag pattern across a certain number of "rails" or lines. The message is then read off in rows to create the ciphertext. Here's a step-by-step guide on how the Rail Fence Cipher operates:
 
@@ -49,7 +56,9 @@ Decoded Message: HELLO
 
 The Rail Fence Cipher is a transposition cipher, a type of cryptographic technique that involves rearranging the order of the characters in the plaintext without altering the actual characters.
 
-## Implementation in Python <hr>
+## Implementation in Python
+
+---
 
 Python provides a practical way to implement the Rail Fence Cipher. Here's an example Python code snippet:
 
@@ -78,10 +87,14 @@ decoded_text = rail_fence_cipher(encoded_text, rails, mode='decrypt')
 print('Decoded Text:', decoded_text)
 {% endhighlight %}
 
-## Real-World Use Cases of the Rail Fence Cipher <hr>
+## Real-World Use Cases of the Rail Fence Cipher
+
+---
 
 The Rail Fence Cipher has historical significance in military and diplomatic communications. Its simplicity and ease of implementation made it suitable for certain applications.
 
-## Summary <hr>
+## Summary
+
+---
 
 The Rail Fence Cipher is a transposition cipher known for its simplicity and historical use in secure communications. Developed as a manual encryption method, it involves writing the plaintext in a zigzag pattern across a certain number of rails. While not as secure as modern encryption methods, the Rail Fence Cipher holds historical significance in the evolution of cryptographic techniques.

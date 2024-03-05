@@ -12,15 +12,17 @@ Now that you have set up your programming environment and taken your first step 
 * toc
 {:toc}
 
-## Variables and Identifiers in Python
+Like any programming language, Python follows a set of rules that define how to write code and how the interpreter understands it. These rules, known as syntax, include guidelines for using symbols, punctuation, and words in your code. Let's explore some basic syntax rules for identifiers and variables in Python. 
+
+## Identifiers and Variables in Python
 
 ---
 
-In Python, a variable is a reserved memory location used to store values. It acts as a reference or pointer to an object in memory, encapsulating both data and the functions operating on that data. Everything in Python is an object, with each object having an identity, type, and value. While an object's identity and type remain constant, its value can be changed.
+**Identifiers** are names or labels used to identify functions, modules, classes, variables, or any other objects in Python, aiding in distinguishing and accessing them in your code. They act as labels assigned to variables, helping to distinguish and access them by name. **Variables**, on the other hand, are reserved memory locations used to store values in Python. They serve as references or pointers to objects in memory, encapsulating both data and the functions operating on that data.
+
+Everything in Python is an object, with each object having an identity, type, and value. While an object's identity and type remain constant, its value can be changed.
 
 When writing Python code, you commonly use variables to store values. To create a variable, you employ an assignment statement that assigns a value to a variable name. For instance, creating a variable named "x" and assigning it the value 42 allows you to refer to the stored value using the name "x".
-
-Identifiers are labels assigned to variables to refer to them by name. They act as names for variables, aiding in distinguishing and accessing them in your code. Identifiers are essential for clarity and readability in your code.
 
 Here's an example demonstrating the creation and use of variables:
 
@@ -181,9 +183,9 @@ By using meaningful and descriptive variable names, such as "num_students" and "
 
 #### Reserved Words in Python
 
-Python reserves certain keywords for its internal operations, and these keywords cannot be used as variable names or identifiers in your code.
+Python has reserved certain keywords for specific functions, providing predefined functionalities. These reserved words cannot be used as variable names or identifiers in your code, as they are reserved for internal operations.
 
-Below is a list of reserved keywords in Python:
+Here is a list of reserved keywords in Python:
 
 {% highlight bash %}
 >>> import keyword
@@ -192,7 +194,7 @@ Below is a list of reserved keywords in Python:
 >>>
 {% endhighlight %}
 
-Attempting to use any of these reserved words as variable names will result in a syntax error. For example:
+Attempting to use any of these reserved words as variable names will result in a syntax error:
 
 {% highlight bash %}
 >>> import = 42
@@ -516,6 +518,382 @@ Access docstrings with the `__doc__` attribute:
 
 Docstrings follow [PEP-257](https://www.python.org/dev/peps/pep-0257/){:target='_blank'} conventions, especially crucial in larger projects. These essential comments aid in comprehending modules, classes, methods, and functions, providing context and guidance. Keep docstrings updated in tandem with code changes to ensure accurate and reliable documentation.
 
+## Data Types and Operators in Python
+
+---
+
+### Data Types in Python: An Overview
+
+In Python, data types play a crucial role in defining and manipulating variables. These types represent the nature of the data and determine the operations that can be performed on them.
+
+Data types are classifications that define the nature of data in a programming language. While computers inherently understand binary numbers (1s and 0s), Python provides various ways for programmers to represent diverse information – from names, numbers, and heights to complex structures and more.
+
+#### Key Python Data Types
+
+Python is a dynamically typed language, meaning you don't have to explicitly declare the data type of a variable. The interpreter automatically determines the type during runtime. Let's explore some of the fundamental data types in Python:
+
+- **Numbers:**
+  - **Integers (`int`):** Whole numbers without decimal points.
+  - **Floating-point numbers (`float`):** Numbers with decimal points or in scientific notation.
+  - **Complex numbers (`complex`):** Numbers with a real and an imaginary part.
+
+- **Sequences:**
+  - **Strings:** Sequences of characters enclosed in single quotes (`''`) or double quotes (`""`).
+
+- **Collections:**
+  - **Lists:** Ordered collections of items enclosed in square brackets (`[]`).
+  - **Tuples:** Similar to lists but immutable, enclosed in parentheses (`()`).
+  - **Sets:** Unordered collections of unique elements enclosed in curly braces (`{}`).
+
+- **Mappings:**
+  - **Dictionaries:** Key-value pairs enclosed in curly braces (`{}`).
+
+- **None Type:**
+  - **None:** Represents the absence of a value or a null value.
+
+- **Boolean Type:**
+  - **Boolean (`bool`):** Represents truth values with `True` and `False`.
+
+Boolean type  Represents truth values (`True` and `False`). Strings  Sequences of characters enclosed in single quotes (`''`) or double quotes (`""`). Lists  Ordered collections of items enclosed in square brackets (`[]`). Tuples: Similar to lists but immutable, enclosed in parentheses (`()`). Dictionaries  Key-value pairs enclosed in curly braces (`{}`).
+
+Detailed explanations of data types are provided in subsequent sections of this series:
+
+- [Numeric Data Types](/workspace/python/numbers): Integers, floating-point numbers, and complex numbers.
+- [Lists & Tuples Data Types](/workspace/python/lists-and-tuples): Ordered collections and their immutability.
+- [String Data Types](/workspace/python/strings): Manipulating and working with sequences of characters.
+- [Dictionary Data Types](/workspace/python/dictionaries): Understanding key-value pairs.
+
+As you progress through these sections, you'll gain a deeper understanding of how to effectively use and manipulate different data types in Python.
+
+### Operators in Python
+
+Operators in Python are essential elements that perform diverse operations on operands. These operations can range from simple arithmetic calculations to complex manipulations of values and variables.
+
+In programming, operators consist of symbols or keywords specifically designed to execute operations on values. Python provides a rich set of operators, allowing developers to evaluate expressions and manipulate data effectively.
+
+#### Arithmetic Operators
+
+Arithmetic operators are crucial in performing mathematical operations on numeric values. Python supports various arithmetic operators that facilitate tasks like addition, subtraction, multiplication, division, and more.
+
+<style>
+    table {
+        border-collapse: collapse;
+        max-width: 80%;
+        margin: 20px auto;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        text-align: center;
+    }
+    
+    caption {
+    caption-side: top;
+    color: #adb5bd;
+    font-style: italic;
+</style>
+
+<table class="table table-dark table-responsive table-sm table-striped table-hover caption-top">
+    <caption>Table: Arithmetic Operators in Python</caption>
+    <thead>
+        <tr>
+            <th scope="col">Operator</th>
+            <th scope="col">Usage</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr>
+            <td><code>+</code></td>
+            <td><code>a + b</code></td>
+            <td>Addition</td>
+        </tr>
+        <tr>
+            <td><code>-</code></td>
+            <td><code>a - b</code></td>
+            <td>Subtraction</td>
+        </tr>
+        <tr>
+            <td><code>*</code></td>
+            <td><code>a * b</code></td>
+            <td>Multiplication</td>
+        </tr>
+        <tr>
+            <td><code>/</code></td>
+            <td><code>a / b</code></td>
+            <td>Division</td>
+        </tr>
+        <tr>
+            <td><code>%</code></td>
+            <td><code>a % b</code></td>
+            <td>Modulus (Remainder of Division)</td>
+        </tr>
+        <tr>
+            <td><code>//</code></td>
+            <td><code>a // b</code></td>
+            <td>Floor Division</td>
+        </tr>
+        <tr>
+            <td><code>**</code></td>
+            <td><code>a ** b</code></td>
+            <td>Exponentiation (Power)</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Comparison Operators
+
+Comparison operators are used to compare values and return Boolean results. They evaluate expressions and produce `True` or `False` based on the comparison's outcome.
+
+<table class="table table-dark table-responsive table-sm table-striped table-hover caption-top">
+    <caption>Table: Comparison Operators in Python</caption>
+    <thead>
+        <tr>
+            <th scope="col">Operator</th>
+            <th scope="col">Usage</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr>
+            <td><code>==</code></td>
+            <td><code>a == b</code></td>
+            <td>Equal</td>
+        </tr>
+        <tr>
+            <td><code>!=</code></td>
+            <td><code>a != b</code></td>
+            <td>Not Equal</td>
+        </tr>
+        <tr>
+            <td><code>&gt;</code></td>
+            <td><code>a &gt; b</code></td>
+            <td>Greater Than</td>
+        </tr>
+        <tr>
+            <td><code>&lt;</code></td>
+            <td><code>a &lt; b</code></td>
+            <td>Less Than</td>
+        </tr>
+        <tr>
+            <td><code>&gt;=</code></td>
+            <td><code>a &gt;= b</code></td>
+            <td>Greater Than or Equal</td>
+        </tr>
+        <tr>
+            <td><code>&lt;=</code></td>
+            <td><code>a &lt;= b</code></td>
+            <td>Less Than or Equal</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Logical Operators
+
+Logical operators allow combining conditions to yield a logical result. These operators include `and`, `or`, and `not`.
+
+<table class="table table-dark table-responsive table-sm table-striped table-hover caption-top">
+    <caption>Table: Logical Operators in Python</caption>
+    <thead>
+        <tr>
+            <th scope="col">Operator</th>
+            <th scope="col">Usage</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr>
+            <td><code>and</code></td>
+            <td><code>a and b</code></td>
+            <td>Logical AND</td>
+        </tr>
+        <tr>
+            <td><code>or</code></td>
+            <td><code>a or b</code></td>
+            <td>Logical OR</td>
+        </tr>
+        <tr>
+            <td><code>not</code></td>
+            <td><code>not a</code></td>
+            <td>Logical NOT</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Assignment Operators
+
+Assignment operators are used to assign values to variables. The `=` operator is the most common, and it can be combined with arithmetic operators for concise assignments.
+
+<table class="table table-dark table-responsive table-sm table-striped table-hover caption-top">
+    <caption>Table: Assignment Operators in Python</caption>
+    <thead>
+        <tr>
+            <th scope="col">Operator</th>
+            <th scope="col">Usage</th>
+            <th scope="col">Example</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr>
+            <td><code>=</code></td>
+            <td><code>a = b</code></td>
+            <td><code>a = b</code></td>
+            <td>Assigns the value of b to a</td>
+        </tr>
+        <tr>
+            <td><code>+=</code></td>
+            <td><code>a += b</code></td>
+            <td><code>a = a + b</code></td>
+            <td>Adds the values of a and b to a</td>
+        </tr>
+        <tr>
+            <td><code>-=</code></td>
+            <td><code>a -= b</code></td>
+            <td><code>a = a - b</code></td>
+            <td>Subtracts the value of b from a</td>
+        </tr>
+        <tr>
+            <td><code>*=</code></td>
+            <td><code>a *= b</code></td>
+            <td><code>a = a * b</code></td>
+            <td>Multiplies the values of a and b</td>
+        </tr>
+        <tr>
+            <td><code>/=</code></td>
+            <td><code>a /= b</code></td>
+            <td><code>a = a / b</code></td>
+            <td>Divides the value of a by b</td>
+        </tr>
+        <tr>
+            <td><code>%=</code></td>
+            <td><code>a %= b</code></td>
+            <td><code>a = a % b</code></td>
+            <td>Assigns the remainder of a divided by b to a</td>
+        </tr>
+        <tr>
+            <td><code>//=</code></td>
+            <td><code>a //= b</code></td>
+            <td><code>a = a // b</code></td>
+            <td>Assigns the floor division of a by b to a</td>
+        </tr>
+        <tr>
+            <td><code>**=</code></td>
+            <td><code>a **= b</code></td>
+            <td><code>a = a ** b</code></td>
+            <td>Assigns the exponentiation of a by b to a</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Bitwise Operators
+
+Bitwise operators operate on individual bits of values. They are used in low-level programming for manipulation at the bit level.
+
+<table class="table table-dark table-responsive table-sm table-striped table-hover caption-top">
+    <caption>Table: Bitwise Operators in Python</caption>
+    <thead>
+        <tr>
+            <th scope="col">Operator</th>
+            <th scope="col">Usage</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr>
+            <td><code>&</code></td>
+            <td><code>a & b</code></td>
+            <td>Bitwise AND</td>
+        </tr>
+        <tr>
+            <td><code>|</code></td>
+            <td><code>a | b</code></td>
+            <td>Bitwise OR</td>
+        </tr>
+        <tr>
+            <td><code>^</code></td>
+            <td><code>a ^ b</code></td>
+            <td>Bitwise XOR</td>
+        </tr>
+        <tr>
+            <td><code>~</code></td>
+            <td><code>~a</code></td>
+            <td>Bitwise NOT</td>
+        </tr>
+        <tr>
+            <td><code>&lt;&lt;</code></td>
+            <td><code>a &lt;&lt; b</code></td>
+            <td>Left Shift</td>
+        </tr>
+        <tr>
+            <td><code>&gt;&gt;</code></td>
+            <td><code>a &gt;&gt; b</code></td>
+            <td>Right Shift</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Identity Operators
+
+Identity operators are used to check if two variables point to the same object.
+
+<table class="table table-dark table-responsive table-sm table-striped table-hover caption-top">
+    <caption>Table: Identity Operators in Python</caption>
+    <thead>
+        <tr>
+            <th scope="col">Operator</th>
+            <th scope="col">Usage</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr>
+            <td><code>is</code></td>
+            <td><code>a is b</code></td>
+            <td>True if a is the same as b</td>
+        </tr>
+        <tr>
+            <td><code>is not</code></td>
+            <td><code>a is not b</code></td>
+            <td>True if a is not the same as b</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Membership Operators
+
+Membership operators check if a value is a member of a sequence, like a list or a string.
+
+<table class="table table-dark table-responsive table-sm table-striped table-hover caption-top">
+    <caption>Table: Membership Operators in Python</caption>
+    <thead>
+        <tr>
+            <th scope="col">Operator</th>
+            <th scope="col">Usage</th>
+            <th scope="col">Description</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr>
+            <td><code>in</code></td>
+            <td><code>x in sequence</code></td>
+            <td>True if x is found in the sequence</td>
+        </tr>
+        <tr>
+            <td><code>not in</code></td>
+            <td><code>x not in sequence</code></td>
+            <td>True if x is not found in the sequence</td>
+        </tr>
+    </tbody>
+</table>
+
+Understanding and using operators allows you to perform calculations, make comparisons, and control the flow of your program effectively.
+
 ## Elements of Flow Statements
 
 ---
@@ -545,32 +923,6 @@ Control flow statements allow you to control the execution of your program based
 Using control flow statements gives you the power to make decisions, iterate over collections, and create more dynamic and interactive programs.
 
 Control Flow Statements are explored further in [Python Control Flow](/workspace/python/control-flow) later in this tutorial series.
-
-## Data Types and Operators in Python
-
----
-
-Python, a dynamically typed language, supports various data types crucial for working with variables and expressions. Key data types include:
-
-- **Numeric types:** Integers (`int`), floating-point numbers (`float`), and complex numbers (`complex`).
-- **Boolean type:** Represents truth values (`True` and `False`).
-- **Strings:** Sequences of characters enclosed in single quotes (`''`) or double quotes (`""`).
-- **Lists:** Ordered collections of items enclosed in square brackets (`[]`).
-- **Tuples:** Similar to lists but immutable, enclosed in parentheses (`()`).
-- **Dictionaries:** Key-value pairs enclosed in curly braces (`{}`).
-
-Detailed explanations of data types are provided in subsequent sections of this series: [Numeric Data Types](/workspace/python/numbers), [Lists & Tuples Data Types](/workspace/python/lists-and-tuples), [String Data Types](/workspace/python/strings), and [Dictionary Data Types](/workspace/python/dictionaries).
-
-Operators, symbols, or keywords in Python perform operations on values or variables. A variety of operators are available, including:
-
-- **Arithmetic operators:** Perform basic mathematical operations (e.g., addition, subtraction, multiplication, division, modulus).
-- **Comparison operators:** Compare values and yield Boolean results (e.g., equal to, not equal to, greater than, less than).
-- **Logical operators:** Combine Boolean values (e.g., "and", "or", "not").
-- **Assignment operators:** Assign values to variables (e.g., `=`, `+=`, `-=`).
-- **Membership operators:** Test if a value is part of a sequence (e.g., "in", "not in").
-- **Identity operators:** Compare the identity of two objects (`is`, `is not`).
-
-Understanding and using operators allows you to perform calculations, make comparisons, and control the flow of your program effectively.
 
 ## Putting It All Together: A Practical Example
 

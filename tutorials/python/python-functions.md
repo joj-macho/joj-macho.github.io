@@ -650,7 +650,7 @@ By consistently documenting functions using docstrings, developers can create mo
 
 Python provides a wealth of built-in functions that streamline various tasks in your code. You might already be familiar with some, such as `print()`, `len()`, `type()`, `list()`, `input()`, `round()`, and many others.
 
-Let's explore a selection of frequently used built-in functions along with examples. For a comprehensive list and detailed descriptions, you can refer to the [official Python documentation](https://docs.python.org/3/library/functions.xhtml).
+Let's explore a selection of frequently used built-in functions along with examples. For a comprehensive list and detailed descriptions, you can refer to the [official Python documentation](https://docs.python.org/3/library/functions.xhtml){:target='_blank'}.
 
 ### Commonly Used Built-in Functions
 
@@ -804,7 +804,7 @@ These examples showcase the versatility of Python's built-in functions. Feel fre
 
 ## Advanced Python Functions
 
-*Note: A comprehensive tutorial covering the following content is available. Check out the [Advanced Python Functions tutorial](/workspace/python/advanced-functions) for an in-depth exploration.*
+*Note: A comprehensive tutorial covering the following content is available. Check out the [Advanced Python Functions tutorial](/workspace/python/advanced-functions){:target='_blank'} for an in-depth exploration.*
 
 ### Recursion
 
@@ -988,7 +988,7 @@ if check_collision(player_position, obstacles):
 
 Feel free to browse my [GitHub page](https://github.com/joj-macho){:target='_blank'} for more comprehensive programs.
 
-Discover more programs that use functions in my [Python Playground](https://github.com/joj-macho/Pythological-Playground){:target='_blank'} repository. For a broader range of programs, you can explore my [GitHub Repositories](https://github.com/joj-macho?tab=repositories){:target='_blank'}.
+Discover more programs that use functions in my [Python Playground](https://github.com/joj-macho/Pythological-Playground){:target='_blank'} repository. For a broader range of programs, you can explore my [GitHub Repositories](https://github.com/joj-macho?tab=repositories){:target='_blank'}. For hands-on practice and reinforcement of these concepts, check out the [Python Functions Exercises](https://github.com/joj-macho/Python-Exercise-Playground/blob/main/07_functions.ipynb){:target='_blank'}.
 
 ## Summary
 

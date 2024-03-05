@@ -9,7 +9,12 @@ permalink: /workspace/cryptography/caesar-cipher
 
 The Caesar Cipher is a historical encryption technique that involves shifting the letters of the alphabet a certain number of positions to the right or left. This simple encryption method is easy to understand and implement, making it one of the most widely known historical encryption methods. In this guide, we will cover the history of the Caesar Cipher, how it works, implementation in Python, and more.
 
-## A Brief History of the Caesar Cipher <hr>
+* toc
+{:toc}
+
+## A Brief History of the Caesar Cipher
+
+---
 
 The Caesar Cipher is named after Julius Caesar, who used this cipher to encrypt military messages. The encryption technique involved shifting all letters of the plain text three places to the right. According to the Roman historian Gaius Suetonius Tranquillus, Julius Caesar implemented this method during his campaigns.
 
@@ -31,7 +36,9 @@ where:
 - $K$ is the key (i.e. the number of positions to shift)
 - mod $26$ means "take the remainder when dividing by 26" (since there are 26 letters in the alphabet)
 
-## How the Caesar Cipher Works <hr>
+## How the Caesar Cipher Works
+
+---
 
 The Caesar Cipher works by taking each letter of the plaintext (the message that needs to be encrypted) and shifting it a certain number of positions to the right or left based on the key (the number of positions to shift). The resulting text, known as the ciphertext, can only be read by someone who knows the key and how to use it to decrypt the message.
 
@@ -71,7 +78,9 @@ The Caesar Cipher employs a substitution method of encryption, where each letter
 
 While the Caesar Cipher is a very basic encryption technique, it can be useful in situations where the message being encrypted is not sensitive or does not contain any confidential information. This can be useful in situations where a sender wants to communicate a message that can be easily shared but also kept away from prying eyes.
 
-## Implementation in Python <hr>
+## Implementation in Python
+
+---
 
 Python is a popular programming language that can be used to implement the Caesar Cipher. Here's an example Python code that can be used to encode and decode messages using the Caesar Cipher:
 
@@ -100,7 +109,9 @@ decoded_text = caesar_cipher(encoded_text, 26 - key)
 print('Decoded Text:', decoded_text)
 {% endhighlight %}
 
-## Real-World Use Cases of the Caesar Cipher <hr>
+## Real-World Use Cases of the Caesar Cipher
+
+---
 
 While the Caesar Cipher is not appropriate for modern cryptographic needs, it has been used throughout history in various ways. In addition to military use, the Caesar Cipher has been used in diplomatic correspondences, personal letters, and even in the movie industry to hide spoilers from cast and crew members.
 
@@ -108,6 +119,8 @@ One famous example of the use of the Caesar Cipher is the famous case of Mary Qu
 
 Moreover, the Caesar Cipher has also been used as a teaching tool to introduce students to the concept of cryptography and encryption. The simplicity of the Caesar Cipher makes it an excellent starting point for students to understand the fundamental concepts of encryption before moving on to more complex cryptographic techniques.
 
-## Summary <hr>
+## Summary
+
+---
 
 The Caesar Cipher is a simple yet historical encryption technique that has played an important role in the development of cryptography. While it may not be suitable for modern cryptographic needs, it still serves as an excellent teaching tool for students to understand the fundamental concepts of encryption.
