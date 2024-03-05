@@ -10,50 +10,71 @@ Hello! If you're reading this, it means you're interested in programming or mayb
 
 As someone who's passionate about science, programming has been a game-changer in the way I approach problem-solving. Python's adaptability and simplicity make it the perfect language to start with. Allow me to share my insights on why programming is an incredible resource and why Python is the ideal language to begin with.
 
-## Getting Started: Understanding Computer Science Term <hr>
+* toc
+{:toc}
+
+## Getting Started: Understanding Computer Science Term
+
+---
 
 Let's start with the basics. As you begin your programming journey, it's important to pick up some widely used computer science terms. In this section, I'll cover some of the key terms you'll encounter.
 
+<figure>
+    <div style="text-align: center;">
+     <img src="/assets/images/python-images/programming-terms.png" alt="Computer Sciences Terms">
+     <figcaption>Image source: <a href="https://www.stepbystep.com/difference-between-it-and-computer-science-88733/" target="_blank">StepByStep</a></figcaption>
+    </div>
+</figure>
 
 - **A Computer:** The fundamental hardware that processes information and executes programs.
 - **Operating Systems:** Software that manages computer hardware and software resources, controlling and coordinating activities and resource sharing.
 - **Scripting and Programming:** Scripting and programming are two fundamental concepts in computer science that are often used interchangeably. Scripting focuses on automating tasks and building simple applications, while programming involves developing more complex software by writing code that must be compiled before execution.
 - **Implementing a Program:** Writing code to create an application or solve a problem by translating a set of instructions or requirements into functional code.
 - **Executing a Program:** Running a program to see its output, where the program is loaded into memory and the computer follows the instructions to produce the desired results.
-- **Operating Systems:** Software that manages computer hardware and software resources, controlling and coordinating activities and resource sharing.
+- **Syntax:** Rules governing code structure in a specific programming language, ensuring code validity.
 - **Algorithms:** A set of step-by-step instructions to solve problems or perform tasks efficiently and accurately in various computer science domains.
+- **Algorithm Complexity:** Analyzing efficiency and resource requirements of algorithms.
+- **Recursion:** A programming technique where a function calls itself to solve problems.
+- **Error Handling:** Strategies to manage unexpected errors during program execution, improving software reliability.
 - **Bugs and Debugging:** Identifying and fixing errors in code that cause unexpected behavior, ensuring software quality and stability.
-- **Simulation:** Using programs to mimic real-world processes or phenomena, allowing researchers to test hypotheses and make predictions.
-- **Plots and Graphical Representations:** Graphical depictions of data using various types of plots, aiding visualization and interpretation in data analysis and research.
+- **Debugging Tools:** Software tools for identifying and rectifying errors in code, ensuring software functionality.
+- **IDE (Integrated Development Environment):** Software providing coding, debugging, and testing tools for developers.
 - **Data Types and Variables:** Different kinds of data (e.g., numbers, strings) and placeholders used to store and manipulate information in code.
+- **Comments and Documentation:** Annotations in code that explain functionality and usage, enhancing code readability and maintainability.
+- **User Input and Output:** Interaction between programs and users through input and output mechanisms, facilitating user communication with software.
 - **Conditions and Logic:** Statements that control program flow based on conditions and logic, enabling dynamic decision-making.
 - **Loops:** Structures for repeating a set of instructions until specific conditions are met, facilitating efficient automation.
-- **Functions:** Blocks of code that perform specific tasks, enhancing code modularity and reusability.
-- **User Input and Output:** Interaction between programs and users through input and output mechanisms, facilitating user communication with software.
-- **Version Control:** Managing code changes and collaboration using version control systems like Git.
-- **IDE (Integrated Development Environment):** Software providing coding, debugging, and testing tools for developers.
-- **API (Application Programming Interface):** Protocols and tools facilitating communication between different software components.
-- **Debugging Tools:** Software tools for identifying and rectifying errors in code, ensuring software functionality.
-- **Comments and Documentation:** Annotations in code that explain functionality and usage, enhancing code readability and maintainability.
-- **Syntax:** Rules governing code structure in a specific programming language, ensuring code validity.
-- **Error Handling:** Strategies to manage unexpected errors during program execution, improving software reliability.
-- **Recursion:** A programming technique where a function calls itself to solve problems.
-- **Memory Management:** Allocating and deallocating memory for data storage and optimization.
-- **Algorithm Complexity:** Analyzing efficiency and resource requirements of algorithms.
-- **Object-Oriented Programming (OOP):** A programming paradigm structuring code around objects and classes for modular design.
 - **Data Structures:** Organizing and storing data efficiently (e.g., arrays, lists, dictionaries) for manipulation.
+- **Functions:** Blocks of code that perform specific tasks, enhancing code modularity and reusability.
+- **Object-Oriented Programming (OOP):** A programming paradigm structuring code around objects and classes for modular design.
+- **Simulation:** Using programs to mimic real-world processes or phenomena, allowing researchers to test hypotheses and make predictions.
+- **Plots and Graphical Representations:** Graphical depictions of data using various types of plots, aiding visualization and interpretation in data analysis and research.
+- **Version Control:** Managing code changes and collaboration using version control systems like Git.
+- **API (Application Programming Interface):** Protocols and tools facilitating communication between different software components.
+- **Memory Management:** Allocating and deallocating memory for data storage and optimization.
 - **Software Development Life Cycle (SDLC):** Phases and processes in software development, from concept to deployment.
 - **User Experience (UX) Design:** Designing user-friendly interfaces and interactions for software applications.
 - **Security and Privacy:** Protecting software and user data from vulnerabilities and threats.
 - **Cloud Computing:** Using remote servers on the internet to store, manage, and process data on demand.
 - **Internet of Things (IoT):** Interconnecting devices via software, electronics, and network connectivity to collect and exchange data.
 
+Whew, that's quite a collection to commit to memory, but don't worry! Learning these terms will give you a solid foundation as you delve deeper into the world of programming. Moving on;
 
-Whew, that's quite a collection to commit to memory, but don't worry! Learning these terms will give you a solid foundation as you delve deeper into the world of programming. Moving on ...
+## Understanding Programming
 
-## Understanding Programming <hr>
+---
 
-Computers have become an integral part of our daily lives, helping us perform different tasks with ease. From reading news and watching videos to playing games and communicating with friends, computers have made many things possible. However, have you ever wondered how a computer knows what to do in response to your inputs? The answer is simple: a person gives the computer instructions on what actions to take in response to the input. This is where programming comes in.
+<figure>
+    <div style="display: flex; align-items: center;">
+        <img src="/assets/images/python-images/what-is-programming.png" alt="What is Programming" width="600" style="margin-right: 20px;">
+        <p>So, what exactly is a computer? A computer consists of a Central Processing Unit (CPU), memory, and Input/Output (I/O) devices. Examples of I/O devices include screens, which are output devices, and mice, which are input devices. The CPU acts as the brain, performing operations like storing and retrieving values, arithmetic calculations, and decision-making based on comparisons. However, the CPU's capabilities are limited, and it relies on layers of programs created by many individuals to enhance its functionality.</p>
+    </div>
+    <figcaption>Image source: <a href="https://www.blogwaping.com/2019/08/what-is-programming.html" target="_blank">BlogWaping</a></figcaption>
+</figure>
+
+The memory of a computer is a fast but volatile storage device, losing its contents when the computer is turned off. On the other hand, the hard drive provides non-volatile storage, retaining data even when the power is off. In a computer, data is represented as sequences of 0's and 1's, where each binary digit is called a bit, and eight bits form a byte.
+
+Computers have become an integral part of our daily lives, simplifying various tasks. Whether it's reading news, watching videos, playing games, or communicating with friends, computers facilitate a multitude of activities. However, have you ever wondered how a computer interprets and acts upon your inputs? The answer lies in programming.
 
 ### What is Programming?
 
@@ -63,58 +84,74 @@ To create a program, you will need an editor that enables writing in a specific 
 
 ### Popular Programming Languages and Their Uses
 
-Programming languages act as bridges between human logic and machine understanding. Each language has its strengths, catering to different domains and purposes. Here are a few:
+Programming languages act as bridges between human logic and machine understanding. Each language has its strengths, catering to different domains and purposes. Here are the top 5 popular programming languages, based on the [TIOBE Index](https://www.tiobe.com/tiobe-index/){:target='_blank'} rankings:
 
-- **Python:** Renowned for its simplicity and versatility, Python is ideal for data analysis, web development, and automation.
-- **C++:** Resilient and powerful, C++ shines in system programming, game development, and creating high-performance applications.
-- **JavaScript:** A staple of web development, JavaScript adds interactivity to websites, enabling engaging user experiences.
-- **PHP:** Embraced by web developers, PHP drives dynamic web pages and facilitates server-side scripting.
-- **C#:** A staple in Windows application development, C# empowers software engineers to craft desktop and web applications.
+1. **[Python](https://www.python.org/){:target='_blank'}**:
+   - Renowned for its simplicity and versatility.
+   - Ideal for data analysis, web development, and automation.
 
+2. **[C](https://en.wikipedia.org/wiki/C_(programming_language)){:target='_blank'}**:
+   - A foundational language with a strong influence on other languages.
+   - Widely used in system programming and operating systems.
 
-## The Benefits of Learning Programming <hr>
+3. **[C++](http://www.cplusplus.com/){:target='_blank'}**:
+   - Resilient and powerful.
+   - Shines in system programming, game development, and creating high-performance applications.
+
+4. **[Java](https://www.oracle.com/java/){:target='_blank'}**:
+   - Known for its portability and platform independence.
+   - Used in various domains, including enterprise applications and Android app development.
+
+5. **[C#](https://docs.microsoft.com/en-us/dotnet/csharp/){:target='_blank'}**:
+   - A staple in Windows application development.
+   - Empowers software engineers to craft desktop and web applications.
+
+**Note**: The TIOBE index is one of the popular programming language popularity indices, and the rankings mentioned here are based on its latest data. Keep in mind that popularity can vary based on different indices and criteria.
+
+## The Benefits of Learning Programming
+
+---
 
 Now that you understand what programming is and how to instruct a computer, let's explore some of the benefits of learning programming.
 
-#### Breaking Down Complex Problems
+<figure>
+    <div style="text-align: center;">
+     <img src="/assets/images/python-images/robot.jpeg" alt="Problem Solving Robot">
+     <figcaption><a href="https://www.channelfutures.com/cloud/cisco-hybrid-cloud-trends-report-indicates-important-uptake" target="_blank">Image source</a></figcaption>
+    </div>
+</figure>
 
-Programming teaches you how to solve complex problems by breaking them down into smaller, more manageable parts. This skill is valuable not only in computer science but also in many other aspects of life.
+- **Breaking Down Complex Problems**: Programming teaches you how to solve complex problems by breaking them down into smaller, more manageable parts. This skill is valuable not only in computer science but also in many other aspects of life.
 
-#### Automation
+- **Automation**: Programming enables you to automate repetitive or time-consuming tasks, saving you time and effort. For example, imagine having to sort through hundreds of files to find a specific piece of information. With programming, you can write a script that will do that task for you in a matter of seconds.
 
-Programming enables you to automate repetitive or time-consuming tasks, saving you time and effort. For example, imagine having to sort through hundreds of files to find a specific piece of information. With programming, you can write a script that will do that task for you in a matter of seconds.
+- **Understanding Technology**: Learning to program can help you understand how computers and software work, which is essential in our technology-driven world. Understanding how these devices work and how to interact with them is becoming increasingly important.
 
-#### Understanding Technology
+- **Creativity**: Programming allows you to express your creativity by building projects and applications that solve real-world problems or provide new and innovative solutions. Whether it's developing a new mobile app or designing a website, programming gives you the tools to turn your ideas into reality.
 
-Learning to program can help you understand how computers and software work, which is essential in our technology-driven world. Understanding how these devices work and how to interact with them is becoming increasingly important.
+- **Increased Career Opportunities**: Programming skills are in high demand across many industries. By learning to program, you can open up many career opportunities and increase your earning potential.
 
-#### Creativity
+## Introduction to Python Programming
 
-Programming allows you to express your creativity by building projects and applications that solve real-world problems or provide new and innovative solutions. Whether it's developing a new mobile app or designing a website, programming gives you the tools to turn your ideas into reality.
+---
 
-#### Increased Career Opportunities
+Python, created in 1991 by Guido van Rossum, is a versatile and widely-used programming language. Contrary to a common misconception, it's not named after a snake but after the British comedy sketch series, Monty Python's Flying Circus. Python has gained immense popularity due to its readability, simplicity, and support for various programming paradigms, including procedural, object-oriented, and functional programming.
 
-Programming skills are in high demand across many industries. By learning to program, you can open up many career opportunities and increase your earning potential.
+While Python's readability may give the impression of simplicity, it is a unique language, influenced by various others but standing distinctively on its own. Often described as "magic", Python has become a favorite among developers for its elegance and expressiveness. However, mastering Python requires approaching it on its terms rather than comparing it strictly with other languages.
 
-## Real-World Applications of Programming <hr>
+<figure>
+    <div style="display: flex; align-items: center;">
+        <p>Python has some rules for how you write your instructions, and the computer needs a special software called an interpreter to understand it. The interpreter translates each line of code into something that the computer can understand, known as machine code. What's cool about Python is that it's an interpreted programming language. This makes it easier for beginners to learn, as Python's syntax is simple and straightforward. Python is like a toolbox that has everything you need to build a program, from basic tools like loops and conditionals to more advanced tools like object-oriented programming. You can use these tools to build anything you want, from a simple calculator to a complex web application.</p>
+        <img src="/assets/images/python-images/Tools-Table-Python-Logo.jpg" alt="Alt Text" width="600" style="margin-left: 20px;">
+    </div>
+    <figcaption style="text-align: right; margin-right: 290px;"><a href="https://blogthinkbig.com/wp-content/uploads/sites/4/2019/04/Tools-Table-Python-Logo.jpg" target="_blank">Image source</a></figcaption>
+</figure>
 
-Programming has numerous real-world applications, and many industries rely on programming to solve problems. For example, in the medical industry, programming is used to develop medical software, analyze data, and model biological systems. In the finance industry, programming is used for risk management, fraud detection, and algorithmic trading. In the automotive industry, programming is used for designing and testing vehicle systems. In the manufacturing industry, programming is used to optimize production processes and minimize waste. <br> 
-To illustrate the practical applications of programming, let's look at some examples.
+Over the years, Python underwent significant version changes, with Python 2 being the standard for many years. However, since the official retirement of Python 2 on January 1, 2020, Python 3 has become the definitive standard. While the transition brought challenges, Python 3 offers enhanced features, and most projects have migrated to this version.
 
-- **Self-Driving Cars**: Self-driving cars are an excellent example of the real-world application of programming. These cars use a combination of sensors, GPS, and programming to navigate the roads and make decisions. The programming involved in self-driving cars is incredibly complex, requiring an understanding of computer vision, machine learning, and artificial intelligence.
-- **Weather Forecasting**: Programming is also used extensively in weather forecasting. Weather models use complex algorithms to simulate the behavior of the atmosphere, and this requires a great deal of programming expertise. The models take into account factors such as temperature, pressure, wind speed, and humidity to predict weather patterns with increasing accuracy.
-- **Medical Research**: Programming is also crucial in medical research. Researchers use programming to analyze large datasets, simulate biological processes, and develop algorithms to identify new drugs and therapies. The programming involved in medical research is often highly specialized, requiring an understanding of biology, chemistry, and mathematics.
+### Python 2 vs. Python 3
 
-
-## Introduction to Python Programming <hr>
-
-First of all, let me clear up a common misconception. Python is not just a large snake! It's actually a programming language that's named after an old BBC comedy sketch series called Monty Python's Flying Circus. But today, Python has become one of the most popular programming languages in the world. In fact, according to the Stack Overflow Developer Survey of 2021, Python has been the most wanted programming language for five years in a row. Impressive, right?
-
-### Python: More Than Just a Toolbox
-
-Python has some rules for how you write your instructions, and the computer needs a special software called an interpreter to understand it. The interpreter translates each line of code into something that the computer can understand, known as machine code. What's cool about Python is that it's an interpreted programming language. This makes it easier for beginners to learn, as Python's syntax is simple and straightforward. Python is like a toolbox that has everything you need to build a program, from basic tools like loops and conditionals to more advanced tools like object-oriented programming. You can use these tools to build anything you want, from a simple calculator to a complex web application.
-
-### Python 2 vs Python 3: What's the Difference?
+For many years, Python 2 was the norm, but since Python 3's release in 2008, it became the recommended version. Python 2 reached its end of life on January 1, 2020, and Python 3 is the ongoing standard. While you may still encounter Python 2 code, especially in older projects, it's crucial to focus on Python 3 for new developments. Tools like `2to3` aid in transitioning codebases, but manual updates may be necessary to leverage Python 3's advancements.
 
 Python has two major lines: version 2.x and version 3.x. It's important to know the difference between the two. Python 2.x is old and considered legacy code at companies, and it retired on January 1, 2020. Python 3.x, on the other hand, is the one that you should use. It has been available since December 3, 2008, and it's not fully backward compatible with Python 2.x. Unfortunately, you may still encounter many companies and projects that are stuck on Python 2.x, so you'll need to learn both versions. When searching for solutions on the Internet, you'll also encounter many examples written for Python 2.x. However, converting these examples to work on Python 3.x is usually simple and straightforward.
 
@@ -129,7 +166,7 @@ In traditional programming, you might encounter various complex punctuation char
 
 Python's code structure reflects its philosophy of emphasizing code readability. This design choice makes Python ideal for beginners who are learning to program. Now, let's dive into a simple example to showcase Python's user-friendliness:
 
-{% highlight python linenos %}
+{% highlight python %}
 # Simulating robot movements using Python
 class Robot:
     def __init__(self, name):
@@ -139,16 +176,16 @@ class Robot:
     def move_forward(self, distance):
         x, y = self.position
         self.position = (x, y + distance)
-        print(f"{self.name} moved forward by {distance} units.")
+        print(f'{self.name} moved forward by {distance} units.')
 
     def turn_left(self):
-        print(f"{self.name} turned left.")
+        print(f'{self.name} turned left.')
 
     def turn_right(self):
-        print(f"{self.name} turned right.")
+        print(f'{self.name} turned right.')
 
- # Creating a robot named "RoboBot"
- robot1 = Robot("RoboBot")
+ # Creating a robot named 'RoboBot'
+ robot1 = Robot('RoboBot')
 
  # Controlling robot movements
  robot1.move_forward(5)
@@ -170,13 +207,70 @@ Python has a large and welcoming community of developers who are always happy to
 
 As a versatile and powerful language, Python is not only easy to learn and understand but also easy to apply. It has a clean and straightforward syntax that requires less coding, allowing programmers to focus on the business logic instead of getting stuck in the language's details. Additionally, Python can run on various platforms such as Windows, Linux, UNIX, and Macintosh, making it a portable language. As an open-source language, Python is free to use, modify, and distribute, even for commercial purposes. Whether you're a beginner or a seasoned developer, Python is an excellent language to learn and utilize.
 
+### Python Constructs
+
+Python offers several fundamental constructs that serve as the building blocks for developing various applications. These constructs provide a user-friendly interface for coding and include:
+
+**Functions:**
+Functions are predefined blocks of code that perform specific tasks. They help reduce code complexity by encapsulating logic and promoting reusability. For example, the `def` statement defines a function, allowing the coder to call it multiple times without rewriting the same logic.
+
+**Classes and Objects:**
+Classes and objects are essential concepts in object-oriented programming. They allow the creation of custom data types with attributes and methods. Objects are instances of classes, representing specific entities in a program. Classes and objects enable modular and structured code design.
+
+**Modules and Packages:**
+Modules are Python files containing functions, classes, and variables that can be imported and reused in other Python scripts. Packages are directories containing multiple modules and a special `__init__.py` file. They facilitate code organization and reuse by grouping related functionality together.
+
+**Data Structures:**
+Data structures are fundamental components for organizing and storing data in Python. They include lists, tuples, dictionaries, sets, and more, each serving specific purposes and providing efficient ways to manipulate data.
+
+**Comments:**
+Comments in Python are non-executable statements used to provide explanations, documentation, or clarification within the code. They enhance code readability and maintainability by describing the logic or purpose of the code to other developers.
+
+### Python Implementations
+
+Python can be implemented and executed in various environments, each with its unique features and functionalities. Some popular implementations include:
+
+**CPython:**
+CPython is the reference implementation of Python, written in C language. It is widely used and provides a user-friendly runtime environment. However, debugging the main code can be challenging due to its underlying C implementation.
+
+**Jython:**
+Jython is an implementation of Python that runs on the Java Virtual Machine (JVM). It allows seamless integration with Java libraries and supports importing CSV and binary files. Jython requires a good understanding of Java and scripting languages.
+
+**IronPython:**
+IronPython is an implementation of Python for the .NET framework, written in C#. It enables interoperability with other .NET languages and allows encryption of hashable objects at runtime. It is commonly used in gaming software development.
+
+**Brython:**
+Brython is a browser-based implementation of Python that runs in web browsers. It enables importing modules and executing Python code directly within a browser environment. Brython uses dynamic programming to generate code dynamically.
+
+**RubyPython:**
+RubyPython is a hybrid implementation of Python and Ruby, allowing collaboration between Ruby and Python interpreters. It plays a significant role in quantum computing and general mechanics, offering both static and dynamic features.
+
+**PyPy:**
+PyPy is an alternative Python interpreter that focuses on speed and efficiency. It compiles Python code into machine code, resulting in faster execution. While not as widely used as CPython, PyPy is suitable for small programming tasks.
+
+**MicroPython:**
+MicroPython is a lightweight implementation of Python designed for microcontrollers and embedded systems. It offers efficient execution and supports running time-critical code on small platforms. MicroPython is ideal for IoT applications and hardware prototyping.
+
+### Executing Python
+
+Python code can be executed on a computer using the built-in interpreter (IDLE), which provides an interactive development environment. Additionally, Python files can be run directly using various file extensions:
+
+- `.py` for Python source files
+- `.pyc` for compiled bytecode files
+- `.pyd` for Windows DLL files
+- `.pyo` for optimized files
+- `.pyw` for Windows scripts
+- `.pyz` for script archives
+
+These extensions enable Python code to be executed in different contexts and environments, depending on the specific requirements of the application.
+
 ### The Limitations of Python
 
 Python is a versatile and popular programming language used for a wide range of applications. However, like any language, it has limitations. There are many things that Python can't do or at least not that well compared to alternative tools. Let's take a closer look at some of the downsides of Python and how they can be mitigated:
 
 #### Slower Speed
 
-Python is an interpreted language, which means it can run slower than compiled languages like C and C++. In fact, some applications that require lightning-fast performance, such as high-frequency trading or gaming, may not be the best fit for Python. It's worth noting, though, that Python has improved over time, and with optimization, it can be made to run much faster.
+One common concern is the perceived slower speed of Python, especially when compared to compiled languages like C. The default implementation, CPython, is indeed written in C, but its interpreted nature may introduce some performance overhead. It's crucial to recognize that Python's speed is often sufficient for a wide range of applications, including web development, data analysis, and scientific computing. To address speed concerns, alternative implementations like PyPy and optimization techniques can significantly enhance Python's performance. While there are scenarios where Python might face challenges in ultra-high-performance tasks, for the majority of projects, its baseline performance is more than satisfactory.
 
 #### Memory Consumption
 
@@ -196,43 +290,87 @@ Finally, Python is not as low-level as languages like C and C++. This can make i
 
 Despite these limitations, Python is still a popular language suitable for various applications. With optimization, third-party libraries, and complementary programming languages, Python's limitations can be mitigated. It's important to assess its trade-offs and consider your project's requirements before deciding to use it.
 
-
 ### What Can You Do with Python?
 
-Python is a versatile language that can be used for almost anything, from scripting other components and implementing standalone programs to website development, gaming, robotics, and spacecraft control. Let me break down some of the most common uses of Python with relevant data and statistics to back up its popularity:
+<figure>
+    <div style="display: flex; align-items: center;">
+        <img src="/assets/images/python-images/tech-concept.jpg" alt="Python Applications" width="600" style="margin-right: 20px;">
+        <p>Programming has numerous real-world applications, and many industries rely on programming to solve problems. For example, in the medical industry, programming is used to develop medical software, analyze data, and model biological systems. In the finance industry, programming is used for risk management, fraud detection, and algorithmic trading. In the automotive industry, programming is used for designing and testing vehicle systems. In the manufacturing industry, programming is used to optimize production processes and minimize waste.</p>
+    </div>
+    <figcaption>Image source: <a href="https://www.freepik.com/premium-photo/futuristic-robot-artificial-intelligence-enlightening-ai-technology-concept_29321700.htm" target="_blank">Freepik</a></figcaption>
+</figure>
+
+Python is a versatile language that can be used for almost anything, from scripting other components and implementing standalone programs to website development, gaming, robotics, and spacecraft control. Let me break down some of the most common Python domains:
 
 #### Web Development
 
-Python is widely used in web development, particularly in the back-end. In fact, Django, a popular Python web framework, powers over 1.5 million websites worldwide <a href="https://djangostars.com/blog/10-popular-sites-made-with-django/" target="_blank">(source)</a>. Python's ease of use, flexibility, and scalability make it a popular choice for developing web applications. Additionally, front-end web development is possible with libraries like Beautiful Soup, Requests, and Selenium, which enable web scraping, automated testing, and web automation.
+Python is widely used in web development, particularly in the back-end. In fact, [Django](https://www.djangoproject.com/){:target='_blank'}, a popular Python web framework, powers over [80,000 websites](https://webtechsurvey.com/technology/django){:target='_blank'} worldwide, according to Web Tech Survey. Python's ease of use, flexibility, and scalability make it a popular choice for developing web applications. Additionally, front-end web development is possible with libraries like Beautiful Soup, Requests, and Selenium, which enable web scraping, automated testing, and web automation.
 
 #### Data Science and Machine Learning
 
-Python's extensive libraries and tools for data analysis and machine learning make it a popular choice for data scientists and machine learning engineers. It has the largest number of libraries for data science and analytics among all programming languages, making it a clear favorite <a href="https://towardsdatascience.com/top-programming-languages-for-data-science-in-2021-25667d5b02fa" target="_blank">(source)</a>. Libraries like NumPy, Pandas, and Matplotlib provide tools for data analysis and visualization, while libraries like TensorFlow and PyTorch provide tools for machine learning and deep learning. Even tech giants like Google, Netflix, and Airbnb use Python for data analysis and machine learning.
+Python's dominance in the field of data science and machine learning is well-supported by industry surveys. According to the [2019 Kaggle Machine Learning and Data Science Survey](https://www.kaggle.com/kaggle-survey-2022){:target='_blank'}, which included responses from 19,717 data professionals, Python stands out as the language of choice among data scientists. Key statistics from the survey are as follows:
+
+- **Usage Among Data Scientists:**
+  - Of the data professionals who identified as data scientists, 93% reported using Python.
+  - SQL was also widely used, with 57% of data scientists utilizing it in their workflows.
+  - R, while still relevant, was used by 41% of data scientists.
+
+- **Comparison with 2018:**
+  - In comparing programming language usage from 2018 to 2019, Python's usage increased by 4 percentage points (from 83% in 2018).
+  - SQL usage remained consistent at 40% from 2018.
+
+Python's popularity is underscored by its extensive libraries and tools tailored for data analysis and machine learning tasks. It boasts the largest collection of libraries for data science and analytics among all programming languages. Essential libraries such as NumPy, Pandas, and Matplotlib facilitate data analysis and visualization, while machine learning frameworks like TensorFlow and PyTorch empower data scientists and engineers in building advanced models.
 
 #### Scientific Computing
 
-Python is widely used in scientific fields for numerical simulations and analysis. Its powerful numerical computing capabilities, together with its wide range of scientific libraries, including NumPy, SciPy, and Pandas, make it suitable for scientific applications that require heavy computational workloads. Python has become so popular in scientific computing that it has replaced languages like Matlab and Mathematica <a href="https://medium.com/ibm-data-science-experience/why-python-is-the-preferred-language-for-data-scientists-c968a09aef68" target="_blank">(source)</a>.
+Python is a cornerstone in scientific computing, driving numerical simulations and analysis across various fields. Its dominance is evidenced by the following:
+
+- Python has emerged as a preferred language in scientific computing, surpassing traditional tools like Matlab and Mathematica according to [Slant](https://www.slant.co/topics/16647/~languages-for-scientific-computation){:target='_blank'}.
+- The language's powerful numerical computing capabilities, coupled with renowned scientific libraries such as [_NumPy_](https://numpy.org/){:target='_blank'}, [_SciPy_](https://scipy.org/){:target='_blank'}, and [_Pandas_](https://pandas.pydata.org/){:target='_blank'}, make it the go-to choice for applications demanding heavy computational workloads.
 
 #### Scripting and Automation
 
-Python is an excellent language for scripting tasks due to its simplicity, readability, and ease of use. It's useful for automating repetitive tasks, system administration, and batch processing. Python's popularity in this area is reflected in the fact that it's one of the most commonly used languages for automation <a href="https://www.businessnewsdaily.com/10759-best-programming-languages.html" target="_blank">(source)</a>.
+Python's role in scripting and automation is well-established, supported by industry recognition:
+
+- Python's simplicity, readability, and ease of use position it as an excellent language for scripting tasks, automation, and batch processing.
+- It holds a prominent place as one of the most commonly used languages for automation in diverse industries, ranked 1 on [TIOBE Index Rankings](https://www.tiobe.com/tiobe-index/){:target='_blank'}.
 
 #### Game Development
 
-While Python may not be the first language that comes to mind when it comes to game development, it's entirely possible to develop games using Python. Libraries like Pygame, PyOpenGL, and Panda3D provide game development capabilities. While Python may not be the most performant language for game development, it's useful for rapid prototyping and developing simple games.
+While Python may not be the first language that comes to mind when it comes to game development, it's entirely possible to develop games using Python. Libraries like [Pygame](https://www.pygame.org/news){:target='_blank'}, [PyOpenGL](https://pyopengl.sourceforge.net/){:target='_blank'}, and [Panda3D](https://www.panda3d.org/){:target='_blank'} provide game development capabilities. While Python may not be the most performant language for game development, it's useful for rapid prototyping and developing simple games.
 
 #### Desktop Applications
 
-Python is also useful for developing desktop applications. Libraries like PyQt and Tkinter enable developers to create graphical user interfaces (GUIs) with relative ease. Additionally, Python can be used for cross-platform development, enabling developers to create applications that run on Windows, Linux, and macOS.
+Python is also useful for developing desktop applications. Libraries like [PyQt](https://wiki.python.org/moin/PyQt){:target='_blank'} and [Tkinter](https://tkdocs.com/){:target='_blank'} enable developers to create graphical user interfaces (GUIs) with relative ease. Additionally, Python can be used for cross-platform development, enabling developers to create applications that run on Windows, Linux, and macOS.
 
-Python's versatility and wide range of applications make it a powerful language to have in your arsenal. With examples and case studies, it's clear that Python is a reliable tool for solving real-world problems. So, whether you're a developer, data scientist, or researcher, learning Python is undoubtedly worth your time and effort.
+### Top Companies Using Python
 
+Python is widely adopted by leading companies across various industries for building robust and scalable applications. Here are some prominent companies that leverage Python in their products:
 
-## Summary <hr>
+<div style="text-align: center; margin-bottom: 1rem;">
+  <img src="/assets/images/python-images/top-python-companies.jpeg" alt="Companies using Python" width="500" height="400">
+</div>
+
+**Facebook:**
+As the parent company of Instagram and WhatsApp, Facebook relies on a mix of programming languages, including C, PHP, and Python, for its diverse range of products and services.
+
+**Instagram:**
+Acquired by Facebook in 2012, Instagram is a popular photo-sharing platform known for its extensive use of Python. It boasts one of the largest deployments of the Django web framework, demonstrating Python's versatility and scalability in handling large-scale applications.
+
+**Google:**
+Python has gained significant traction at Google and is recognized as an official programming language within the company. Its simplicity and versatility make it a preferred choice for various projects and initiatives across Google's vast ecosystem.
+
+**Netflix:**
+Netflix, the renowned streaming service provider, relies on Python for a wide range of tasks, including operations management, data analysis, security, and networking. Python's ease of use and extensive libraries make it suitable for handling diverse functionalities within the Netflix platform.
+
+**Spotify:**
+Founded in 2006, Spotify is a leading audio streaming platform that utilizes Python alongside other languages to power its services. Python's flexibility and robust ecosystem contribute to Spotify's ability to deliver a seamless music streaming experience to millions of users worldwide.
+
+## Summary
+
+---
 
 Congratulations! You've reached the end of this introduction to Python programming. You now have a solid grasp of the world of programming and the practical applications of Python. Python's simplicity, readability, and extensive libraries make it an ideal choice for beginners. You've also learned the significance of programming, from problem-solving and automation to promising job prospects. The Python community is always welcoming to new learners, offering support and guidance. As you continue on your coding journey, remember that programming is a limitless realm of possibilities, and it can be an incredibly rewarding experience.
 
 With this foundation, you're now ready to move on to the next section, [Setting Up Your Python Programming Environment](/workspace/python/setting-up). Where you will learn how to install Python, choose an Integrated Development Environment (IDE), and get started with the basics of Python programming.
-
-
 
