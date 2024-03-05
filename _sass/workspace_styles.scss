@@ -725,7 +725,7 @@ margin-top: 20px;
     margin-top: 30px;
     background-color: rgba(0, 191, 255, 0.05);
     box-shadow: 0 2px 1px rgba(145, 176, 248, 0.34);
-    padding: 40px 50px;
+    padding: 15px 20px;
     text-align: center;
     transition: all 0.4s ease;
 }
@@ -1022,6 +1022,58 @@ margin-top: 20px;
     color: #3093db;
     text-shadow: 2px 2px 3px rgba(48, 147, 219, 0.5);
     font-weight: bold;
+}
+
+/* ====================== COMING SOON ====================== */
+.coming-soon-area {
+    height: 100vh;
+    text-align: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #081828;
+    position: relative;
+    overflow: hidden;
+}
+
+.coming-soon-area .coming-soon-content {
+    display: inline-block;
+    padding: 70px 60px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.coming-soon-area .coming-soon-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #081828;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.coming-soon-area .coming-soon-content p {
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #888;
+}
+
+.coming-soon-area .coming-soon-content h1 {
+    font-size: 90px;
+    color: #1f98d1;
+    margin-bottom: 25px;
+    font-weight: 800;
+    line-height: 100px;
+}
+
+.d-table {
+    width: 100%;
+    height: 100%;
+    display: table !important;
+}
+
+.d-table-cell {
+    vertical-align: middle;
+    display: table-cell !important;
 }
 
 /* ====================== ERROR 404 ====================== */
