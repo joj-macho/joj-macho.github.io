@@ -27,45 +27,44 @@ const select = (el, all = false) => {
     const elementPosition = select(el).offsetTop;
     const offsetPosition = elementPosition - headerOffset;
   
-    window.scroll({
+    window.scrollTo({
       top: offsetPosition,
       behavior: 'smooth'
     });
   };
-  
+
   // Mobile nav toggle function
   const toggleMobileNav = () => {
-    select('#navbar').classList.toggle('navbar-mobile');
+    const navbar = select('#navbar');
+    navbar.classList.toggle('navbar-mobile');
     select('.mobile-nav-toggle').classList.toggle('bi-list');
-    select('.mobile-nav-toggle').classList.toggle('bi-x');
-    select('ul', true).forEach(ul => ul.classList.toggle('active'));
+    select('.mobile-nav-toggle').classList.toggle('bi-x');  
+    const navLinks = select('ul', true);
+    navLinks.forEach(ul => ul.classList.toggle('active'));
   };
-  
+
   // Attach event listener for mobile nav toggle
-  on('click', '.mobile-nav-toggle', toggleMobileNav);
-  
+  on('click', '.mobile-nav-toggle', function (e) {
+    e.stopPropagation(); // Stop event propagation
+    toggleMobileNav();
+  });
+
   // Scroll with offset on links with a class name .scrollto
   on('click', '#navbar .nav-link', function (e) {
     e.preventDefault();
     const hash = this.getAttribute('href');
-  
+
     if (hash) {
-      const navbar = select('#navbar');
       const header = select('#header');
       const sections = select('section', true);
       const navlinks = select('#navbar .nav-link', true);
-  
+
       navlinks.forEach(item => {
         item.classList.remove('active');
       });
-  
+
       this.classList.add('active');
-  
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile');
-        toggleMobileNav(); // Reuse the mobile nav toggle function
-      }
-  
+
       if (hash === '#header') {
         header.classList.remove('header-top');
         sections.forEach(item => {
@@ -87,11 +86,13 @@ const select = (el, all = false) => {
           select(hash).classList.add('section-show');
         }
       }
-  
+
       scrollto(hash);
       window.history.pushState({}, '', hash); // Update the URL without refreshing the page
     }
   }, true);
+
+
   
   // Activate/show sections on load with hash links
   window.addEventListener('load', () => {
