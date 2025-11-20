@@ -18,6 +18,9 @@ resource_hints:
 webfonts: https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@400;600;700;900&display=swap
 
 # Libraries
+bootstrap:
+  css: https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css
+  js: https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js
 
 toc:
   css: https://cdn.jsdelivr.net/npm/tocbot@4.36.4/dist/tocbot.min.css
