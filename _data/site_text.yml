@@ -24,7 +24,7 @@ search:
 
 panel:
   lastmod: Recently Updated
-  trending_tags: Trending Tags
+  trending_tags: Tags
   toc: Contents
 
 copyright:
@@ -60,7 +60,7 @@ post:
   read_time:
     unit: min
     prompt: read
-  relate_posts: Further Reading
+  relate_posts: Related Posts
   share: Share
   button:
     next: Newer
@@ -75,7 +75,7 @@ post:
 # See: <http://strftime.net/>, <https://day.js.org/docs/en/display/format>
 df:
   post:
-    strftime: "%b %e, %Y"
+    strftime: "%e %b %Y"
     dayjs: "ll"
   archives:
     strftime: "%b"

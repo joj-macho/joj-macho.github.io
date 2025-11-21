@@ -1,8 +1,8 @@
 <!-- Navigation buttons at the bottom of the post. -->
 
 <nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
-  {% assign previous = site.data.locales[include.lang].post.button.previous %}
-  {% assign next = site.data.locales[include.lang].post.button.next %}
+  {% assign previous = site.data.site_text.post.button.previous %}
+  {% assign next = site.data.site_text.post.button.next %}
 
   {% if page.previous.url %}
     <a

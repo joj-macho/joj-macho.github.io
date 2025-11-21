@@ -3,8 +3,6 @@ layout: page
 # All the Categories of posts
 ---
 
-{% include lang.html %}
-
 {% assign HEAD_PREFIX = 'h_' %}
 {% assign LIST_PREFIX = 'l_' %}
 
@@ -51,13 +49,13 @@ layout: page
               {{ sub_categories_size }}
               {% if sub_categories_size > 1 %}
                 {{
-                  site.data.locales[lang].categories.category_measure.plural
-                  | default: site.data.locales[lang].categories.category_measure
+                  site.data.site_text.categories.category_measure.plural
+                  | default: site.data.site_text.categories.category_measure
                 }}
               {% else %}
                 {{
-                  site.data.locales[lang].categories.category_measure.singular
-                  | default: site.data.locales[lang].categories.category_measure
+                  site.data.site_text.categories.category_measure.singular
+                  | default: site.data.site_text.categories.category_measure
                 }}
               {% endif -%}
               ,
@@ -67,13 +65,13 @@ layout: page
 
             {% if top_posts_size > 1 %}
               {{
-                site.data.locales[lang].categories.post_measure.plural
-                | default: site.data.locales[lang].categories.post_measure
+                site.data.site_text.categories.post_measure.plural
+                | default: site.data.site_text.categories.post_measure
               }}
             {% else %}
               {{
-                site.data.locales[lang].categories.post_measure.singular
-                | default: site.data.locales[lang].categories.post_measure
+                site.data.site_text.categories.post_measure.singular
+                | default: site.data.site_text.categories.post_measure
               }}
             {% endif %}
           </span>
@@ -115,13 +113,13 @@ layout: page
 
                   {% if posts_size > 1 %}
                     {{
-                      site.data.locales[lang].categories.post_measure.plural
-                      | default: site.data.locales[lang].categories.post_measure
+                      site.data.site_text.categories.post_measure.plural
+                      | default: site.data.site_text.categories.post_measure
                     }}
                   {% else %}
                     {{
-                      site.data.locales[lang].categories.post_measure.singular
-                      | default: site.data.locales[lang].categories.post_measure
+                      site.data.site_text.categories.post_measure.singular
+                      | default: site.data.site_text.categories.post_measure
                     }}
                   {% endif %}
                 </span>
