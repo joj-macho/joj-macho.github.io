@@ -16,11 +16,11 @@ search {
     color: var(--search-icon-color);
   }
 
-  @include bp.lt(bp.get(lg)) {
+  @include bp.lt(bp.get(sm)) {
     display: none;
   }
 
-  @include bp.lg {
+  @include bp.sm {
     max-width: v.$search-max-width;
   }
 

@@ -396,7 +396,7 @@ mjx-container {
 }
 
 @media (hover: hover) {
-  #sidebar ul > li:last-child::after {
+  #navbar ul > li:last-child::after {
     transition: top 0.5s ease;
   }
 
@@ -420,14 +420,6 @@ mjx-container {
 
   @include bp.lt(bp.get(lg)) {
     @include mx.slide;
-  }
-
-  @include bp.lg {
-    margin-left: v.$sidebar-width;
-  }
-
-  @include bp.xxxl {
-    margin-left: v.$sidebar-width-large;
   }
 
   > .container {

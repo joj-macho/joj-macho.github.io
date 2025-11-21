@@ -1,0 +1,253 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as mx;
+@use '../abstracts/breakpoints' as bp;
+@use '../abstracts/placeholders';
+
+#navbar-wrapper {
+  @include mx.pl-pr(0);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--topbar-bg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  @include bp.lt(bp.get(lg)) {
+    @include mx.slide;
+  }
+}
+
+/* Scrolled State */
+#navbar-wrapper.scroll {
+  background-color: color-mix(in srgb, var(--main-bg), transparent 15%);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--main-border-color);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.42);
+
+  #navbar {
+    padding: 0.25rem 0.42rem;
+    transition: all 0.3s ease;
+  }
+}
+
+#navbar {
+  @extend %btn-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 0.5rem 1rem;
+  height: v.$navbar-height;
+  overflow: hidden;
+
+  %navbar-link-hover {
+    &:hover {
+      color: var(--navbar-active-color);
+    }
+  }
+
+  a {
+    @extend %navbar-links;
+  }
+}
+
+
+/* -----------------------------------
+   MAIN NAVBAR CONTENT
+   ----------------------------------- */
+#navmenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(0.5rem, 1vw, 1.0rem);
+  width: 100%;
+
+  /* ---------- BRAND ---------- */
+  .navbar-brand-container {
+    flex-shrink: 0;
+  }
+
+  .navbar-brand {
+    @extend %clickable-transition;
+    @extend %navbar-link-hover;
+
+    font-family: inherit;
+    font-weight: 900;
+    font-size: clamp(1.3rem, 2vw + 0.4rem, 1.9rem);
+    line-height: 1.2;
+    letter-spacing: 0.25px;
+    color: var(--nav-brand-color);
+    white-space: nowrap;
+
+    span {
+      color: var(--nav-span-color);
+      font-size: 95%;
+      font-family: monospace;
+    }
+
+    @include bp.lt(bp.get(lg)) {
+      font-size: clamp(1.1rem, 2vw + 0.4rem, 1.5rem);
+    }
+  }
+
+  /* ---------- NAV LINKS ---------- */
+  .nav-container {
+    justify-content: center;
+    align-items: center;
+
+    .navbar-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: clamp(0.6rem, 1vw, 1rem);
+    }
+
+    .nav-item {
+        .nav-link {
+        display: flex;
+        align-items: center;
+        padding: 0.6rem 0.75rem;
+        font-size: clamp(0.85rem, 1vw + 0.4rem, 1rem);
+        font-weight: 600;
+        border-radius: 0.5rem;
+
+        &:hover {
+          background-color: var(--navbar-hover-bg);
+        }
+
+        i {
+          opacity: .8;
+          font-size: clamp(0.9rem, 1vw + 0.4rem, 1.1rem);
+          margin-right: 0.4rem;
+        }
+
+        span {
+          font-size: clamp(0.85rem, 1vw + 0.4rem, 1rem);
+          letter-spacing: 0.2px;
+        }
+      }
+
+      &.active {
+        .nav-link {
+          color: var(--navbar-active-color);
+          background-color: var(--navbar-hover-bg);
+        }
+      }
+    }
+  }
+
+  /* ---------- Navbar Right ---------- */
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: clamp(0.4rem, 0.6vw, 1rem);
+    flex-shrink: 0;
+
+    /* Social Icons Section */
+    .social-icons {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+
+      a:hover {
+        color: var(--navbar-active-color);
+        transform: scale(1.05);
+      }
+    }
+
+    /* Theme toggle */
+    #mode-toggle {
+      font-size: 1.1rem;
+
+      :hover {
+        color: var(--navbar-active-color);
+      }
+    }
+  }
+}
+
+
+/* -----------------------------------
+   RESPONSIVE BEHAVIOR
+   ----------------------------------- */
+
+/* ------- Compact Mode (< 850px) ------- */
+@include bp.lt(bp.get(lg)) {
+  #main-nav {
+    .navbar-nav-container {
+    gap: 0.75rem;
+    justify-content: flex-start; /* Align left */
+
+      .nav-link i {
+        display: none;
+      }
+
+      .navbar-nav {
+        gap: 0.4rem;
+      }
+    }
+  }
+}
+
+/* ------- Fully Collapsed Mode (< 576px) ------- */
+
+@include bp.lt(bp.get(sm)) {
+  #navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-brand {
+    font-size: clamp(1.1rem, 1.5vw + 0.4rem, 1.3rem);
+  }
+
+  #navbarContent {
+    .navbar-nav-container {
+      width: 100%;
+      justify-content: left;
+
+      ul.navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+
+        .nav-link i {
+          display: inline; // show text again
+        }
+      }
+    }
+
+    .nav-right {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+
+      .social-icons {
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
+
+
+/* ------- Large Screens (≥ 850px) ------- */
+@include bp.lg {
+  #main-nav .navbar-nav .nav-item a.nav-link {
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.2rem);
+  }
+
+  .nav-right {
+    width: clamp(160px, 20vw, 250px);
+  }
+}
+
+/* Smooth transitions across resizing */
+#navbar,
+#main-nav,
+.navbar-nav a,
+.nav-right * {
+  transition: all 0.25s ease-in-out;
+}

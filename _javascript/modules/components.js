@@ -7,4 +7,5 @@ export { initToc } from './components/toc';
 export { loadMermaid } from './components/mermaid';
 export { modeWatcher } from './components/mode-toggle';
 export { back2top } from './components/back-to-top';
+export { navbarScroll } from './components/navbar-scroll';
 export { loadTooptip } from './components/tooltip-loader';

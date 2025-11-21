@@ -6,6 +6,7 @@
 #topbar-wrapper {
   height: v.$topbar-height;
   background-color: var(--topbar-bg);
+  margin-top: 1rem;
 
   @include bp.lt(bp.get(lg)) {
     @include mx.slide(top 0.2s ease);
@@ -29,14 +30,10 @@
     span {
       &:not(:last-child) {
         &::after {
-          content: '›';
+          content: '/';
           padding: 0 0.3rem;
         }
       }
-    }
-
-    @include bp.lt(bp.get(lg)) {
-      display: none;
     }
 
     @include bp.between(bp.get(lg), calc(#{bp.get(xl)} - 1px)) {
@@ -66,21 +63,12 @@
   text-align: center;
   width: 70%;
   word-break: keep-all;
-
-  @include bp.lt(bp.get(lg)) {
-    display: block;
-  }
-
-  @include bp.lg {
-    text-align: left;
-  }
 }
 
-#sidebar-trigger,
 #search-trigger {
   display: none;
 
-  @include bp.lt(bp.get(lg)) {
+  @include bp.lt(bp.get(sm)) {
     display: block;
   }
 }
