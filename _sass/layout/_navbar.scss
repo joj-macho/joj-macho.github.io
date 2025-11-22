@@ -73,7 +73,7 @@
       }
     }
 
-    /* ---------- Nav Links ---------- */
+    /* Nav Links */
     #navbarNav {
       .navbar-nav {
         display: flex;
@@ -133,11 +133,9 @@
 }
 
 
-/* -----------------------------------
-   RESPONSIVE BEHAVIOR
-   ----------------------------------- */
+/* ------- Responsive Behavior ------- */
 
-/* ------- No Icons Mode (< 1200px) ------- */
+/* No Icons Mode (< 1200px) */
 @include bp.lt(bp.get(xl)) {
   #main-nav {
     .nav-link i {
@@ -150,7 +148,7 @@
   }
 }
 
-/* ------- Compact Mode (< 850px) ------- */
+/* Compact Mode (< 850px) */
 @include bp.lt(bp.get(lg)) {
   #main-nav {
     gap: 1rem;
@@ -170,8 +168,7 @@
   }
 }
 
-/* ------- Fully Collapsed Mode (< 576px) ------- */
-
+/* Fully Collapsed Mode (< 576px) */
 @include bp.lt(bp.get(sm)) {
   #main-nav {
 
@@ -190,7 +187,6 @@
     .nav-social {
       display: flex;
       align-items: center;
-      // justify-content: center;
 
       i {
         margin-right: 0.5rem;
