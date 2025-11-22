@@ -7,7 +7,7 @@ layout:
   category: Category
   tag: Tag
 
-# The tabs of sidebar
+# The tabs of navbar
 tabs:
   # format: <filename_without_extension>: <value>
   home: Home

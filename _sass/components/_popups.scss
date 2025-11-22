@@ -83,7 +83,7 @@
   }
 
   @include bp.lg {
-    left: v.$sidebar-width;
+    left: 0;
   }
 
   .header {

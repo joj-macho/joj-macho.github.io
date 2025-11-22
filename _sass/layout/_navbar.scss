@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: var(--topbar-bg);
+  background-color: var(--navbar-bg);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 
@@ -21,7 +21,7 @@
   &.scroll {
     background-color: color-mix(in srgb, var(--main-bg), transparent 15%);
     backdrop-filter: blur(6px);
-    border-bottom: 1px solid var(--main-border-color);
+    border-bottom: 1.42px solid var(--main-border-color);
     box-shadow: 0 4px 8px rgba(0,0,0,0.42);
 
     #main-nav {

@@ -28,17 +28,16 @@
     rgb(250 250 250 / 0%) 100%
   );
 
-  /* Sidebar */
-  --site-title-color: rgb(113 113 113);
-  --site-subtitle-color: #717171;
-  --sidebar-bg: #f6f8fa;
-  --sidebar-border-color: #efefef;
-  --sidebar-muted-color: #545454;
-  --sidebar-active-color: #1d1d1d;
-  --sidebar-hover-bg: rgb(223 233 241 / 64%);
-  --sidebar-btn-bg: white;
-  --sidebar-btn-color: #8e8e8e;
-  --avatar-border-color: white;
+  /* Navbar */
+  --nav-title-color: rgb(113 113 113);
+  --nav-span-color: #717171;
+  --navbar-bg: rgb(255 255 255 / 70%);
+  --navbar-border-color: #efefef;
+  --navbar-muted-color: #545454;
+  --navbar-active-color: #1d1d1d;
+  --navbar-hover-bg: rgb(223 233 241 / 64%);
+  --navbar-btn-bg: white;
+  --navbar-btn-color: #8e8e8e;
 
   /* Topbar */
   --topbar-bg: rgb(255 255 255 / 70%);
@@ -50,7 +49,7 @@
   /* Home page */
   --post-list-text-color: dimgray;
   --btn-patinator-text-color: #555555;
-  --btn-paginator-hover-color: var(--sidebar-bg);
+  --btn-paginator-hover-color: var(--topbar-bg);
 
   /* Posts */
   --toc-highlight: #0550ae;

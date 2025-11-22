@@ -17,7 +17,7 @@ const UNLOADED = 'd-none';
 const FOCUS = 'input-focus';
 const FLEX = 'd-flex';
 
-/* Actions in mobile screens (Sidebar hidden) */
+/* Actions in mobile screens */
 class MobileSearchBar {
   static on() {
     topbarTitle.classList.add(UNLOADED);
