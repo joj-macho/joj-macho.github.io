@@ -3,9 +3,9 @@
 @use '../abstracts/placeholders';
 
 .access {
-  top: 2rem;
+  top: 4.5rem;
   transition: top 0.2s ease-in-out;
-  margin-top: 3rem;
+  margin-top: 4rem;
 
   &:only-child {
     position: -webkit-sticky;
