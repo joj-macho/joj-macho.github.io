@@ -141,8 +141,10 @@
     .nav-link i {
       display: none;
     }
-
-    .navbar-nav {
+    #mode-toggle i {
+      display: block;
+    }
+    .nav-social {
       gap: 0.4rem;
     }
   }
@@ -186,7 +188,9 @@
     }
     .nav-social {
       display: flex;
+      flex-direction: row;
       align-items: center;
+      justify-content: center;
 
       i {
         margin-right: 0.5rem;
