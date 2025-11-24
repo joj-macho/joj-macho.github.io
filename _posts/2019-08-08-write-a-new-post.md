@@ -2,7 +2,7 @@
 title: Writing a New Post
 author: joj
 date: 2019-08-08 14:10:00 +0800
-categories: [Blogging]
+categories: [Tutorial]
 tags: [demo, writing]
 pin: true
 render_with_liquid: false
