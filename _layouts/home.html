@@ -54,6 +54,8 @@ layout: default
         {% assign src = '/assets/img/categories/' | append: category | downcase | append: '.webp' %}
       {% endif %}
 
+      {% comment %}
+      No lqip for now
       {% if post.image and post.image.lqip %}
         {% assign lqip = post.image.lqip %}
         {% assign lqip_attr = 'lqip="' | append: lqip | append: '"' %}
@@ -61,6 +63,7 @@ layout: default
         {% assign category_lqip = '/assets/img/categories/lqip/' | append: category | downcase | append: '.webp' %}
         {% assign lqip_attr = 'lqip="' | append: category_lqip | append: '"' %}
       {% endif %}
+      {% endcomment %}
 
       {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
 
