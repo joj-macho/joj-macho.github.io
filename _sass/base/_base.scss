@@ -72,13 +72,8 @@ main {
 
   @extend %rounded;
 
-  &:not(.no-bg) {
-    background: var(--img-bg);
-  }
-
   img {
-    height: 100%;
-    -o-object-fit: cover;
+    max-height: 100%;
     object-fit: cover;
 
     @extend %rounded;
@@ -427,10 +422,14 @@ mjx-container {
 
     @include bp.lte(bp.get(md)) {
       @include mx.max-w-100;
-      @include mx.pl-pr(0);
+      @include mx.pl-pr(1rem);
     }
 
     @include bp.lt(bp.get(lg)) {
+      max-width: 100%;
+    }
+
+    @include bp.lt(bp.get(xl)) {
       max-width: 100%;
     }
 
@@ -453,6 +452,7 @@ mjx-container {
 
       @include mx.pl-pr(1.75rem, true);
     }
+
   }
 }
 
